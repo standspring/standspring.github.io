@@ -1,6 +1,7 @@
 ---
 title: "shm_open, mmap, close의 관계 정리"
 date: 2025-04-19
+category: C
 tags: [C, 시스템프로그래밍, 공유메모리, shm_open, mmap]
 ---
 

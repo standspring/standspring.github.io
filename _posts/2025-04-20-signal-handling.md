@@ -1,6 +1,7 @@
 ---
 title: "signal 핸들링과 trap — C에서 프로세스를 안전하게 제어하기"
 date: 2025-04-20
+category: C
 tags: [C, 시스템프로그래밍, signal, sigaction, trap, 리눅스]
 ---
 
