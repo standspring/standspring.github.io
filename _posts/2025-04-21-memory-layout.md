@@ -14,7 +14,7 @@ C 프로그램은 실행될 때 운영체제에 의해 여러 영역으로 나�
 
 ## 📦 C 메모리 구조 요약
 
-<img src='/assets/img/2025-04-21_memory.png'>
+<img src='/assets/img/2025-04-21_memory.png' width=400>
 > 위 구조는 프로세스 메모리 공간의 대표적인 구성입니다.
 
 ## 🔍 각 영역 설명
