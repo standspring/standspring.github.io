@@ -100,7 +100,7 @@ cdn:
 # the avatar on sidebar, support local or CORS resources
 avatar:
   enabled: true
-  url: /assets/img/favicons/android-chrome-192x192.png
+  url: /assets/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
