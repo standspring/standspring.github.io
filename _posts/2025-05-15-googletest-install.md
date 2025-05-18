@@ -1,8 +1,8 @@
 ---
 title: "GoogleTest 설치부터 첫 테스트까지"
 date: 2025-05-15
-category: c
-tags: [c, googletest, gtest, unittest]
+category: C
+tags: [C, googletest, gtest, unittest]
 ---
 
 # GoogleTest 설치부터 첫 테스트까지
