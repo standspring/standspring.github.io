@@ -20,7 +20,7 @@ tags: [python, pyautogui, opencv, automation, image-recognition, rpa]
 
 ---
 
-# 1️⃣ 기본 준비
+## 1️⃣ 기본 준비
 
 ## 설치
 
@@ -32,7 +32,7 @@ pip install pyautogui opencv-python
 
 ---
 
-# 2️⃣ 기본 이미지 인식 구조
+## 2️⃣ 기본 이미지 인식 구조
 
 ```python
 import pyautogui
@@ -56,7 +56,7 @@ if location:
 
 ---
 
-# 3️⃣ 검색 영역 제한 (속도 5~10배 향상)
+## 3️⃣ 검색 영역 제한 (속도 5~10배 향상)
 
 전체 화면 대신 **특정 영역만 검색**하면 속도가 극적으로 빨라집니다.
 
@@ -76,7 +76,7 @@ location = pyautogui.locateOnScreen(
 
 ---
 
-# 4️⃣ center() 사용해서 정확히 클릭
+## 4️⃣ center() 사용해서 정확히 클릭
 
 ```python
 location = pyautogui.locateOnScreen("button.png", confidence=0.9)
@@ -91,7 +91,7 @@ if location:
 
 ---
 
-# 5️⃣ 여러 개 찾기 (locateAllOnScreen)
+## 5️⃣ 여러 개 찾기 (locateAllOnScreen)
 
 같은 버튼이 여러 개 있을 경우:
 
@@ -105,7 +105,7 @@ for m in matches:
 
 ---
 
-# 6️⃣ 안정적인 "기다림 로직" 만들기
+## 6️⃣ 안정적인 "기다림 로직" 만들기
 
 실전 자동화는 반드시 **대기 로직**이 필요합니다.
 
@@ -143,7 +143,7 @@ if not wait_and_click("confirm.png"):
 
 ---
 
-# 7️⃣ 그레이스케일 모드로 속도 향상
+## 7️⃣ 그레이스케일 모드로 속도 향상
 
 ```python
 location = pyautogui.locateOnScreen(
@@ -158,7 +158,7 @@ location = pyautogui.locateOnScreen(
 
 ---
 
-# 8️⃣ 이미지 캡처 잘 만드는 법 (성공률의 70%)
+## 8️⃣ 이미지 캡처 잘 만드는 법 (성공률의 70%)
 
 이미지가 잘못되면 자동화는 실패합니다.
 
@@ -177,7 +177,7 @@ location = pyautogui.locateOnScreen(
 
 ---
 
-# 9️⃣ 예외 처리 + 로그 구조 (실전용)
+## 9️⃣ 예외 처리 + 로그 구조 (실전용)
 
 ```python
 import logging
@@ -198,7 +198,7 @@ def safe_click(image):
 
 ---
 
-# 🔟 실전 구조 예시 (HTS 자동화 흐름)
+## 🔟 실전 구조 예시 (HTS 자동화 흐름)
 
 ```python
 focus_window(win)
@@ -215,7 +215,7 @@ wait_and_click("confirm.png")
 
 ---
 
-# 🚨 실전에서 가장 중요한 3가지
+## 🚨 실전에서 가장 중요한 3가지
 
 1. 창 위치 고정
 2. region 제한
@@ -225,7 +225,7 @@ wait_and_click("confirm.png")
 
 ---
 
-# 🔥 마무리
+## 🔥 마무리
 
 이미지 인식 기반 자동화는
 단순 매크로가 아니라 **RPA 수준의 자동화**로 가는 첫 단계입니다.

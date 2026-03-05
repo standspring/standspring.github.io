@@ -1,6 +1,6 @@
 ---
 title: "pyautogui + pygetwindow로 창 제어까지 하는 GUI 자동화"
-date: 2026-03-01
+date: "2026-03-01 00:00:00 +0900"
 categories: [Python, Automation]
 tags: [python, pyautogui, pygetwindow, gui, automation, windows, hts, 자동화]
 ---

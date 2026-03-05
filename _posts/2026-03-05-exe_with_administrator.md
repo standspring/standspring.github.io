@@ -27,7 +27,7 @@ Python으로 만든 자동화 프로그램을 exe로 배포했는데
 
 ---
 
-# 1️⃣ 왜 관리자 권한이 필요한가?
+## 1️⃣ 왜 관리자 권한이 필요한가?
 
 Windows는 보안상:
 
@@ -44,7 +44,7 @@ Windows는 보안상:
 
 ---
 
-# 2️⃣ Python 코드에서 관리자 권한 요청하기
+## 2️⃣ Python 코드에서 관리자 권한 요청하기
 
 가장 많이 쓰는 방법:
 
@@ -68,11 +68,11 @@ if not is_admin():
         1
     )
     sys.exit()
-````
+```
 
 ---
 
-# 동작 원리
+### 동작 원리
 
 현재 관리자 권한이 아니면:
 
@@ -85,7 +85,7 @@ if not is_admin():
 
 ---
 
-# 3️⃣ exe 배포 시 그대로 적용 가능
+## 3️⃣ exe 배포 시 그대로 적용 가능
 
 PyInstaller 빌드 후에도 그대로 동작합니다.
 
@@ -95,7 +95,7 @@ pyinstaller --onefile main.py
 
 ---
 
-# 4️⃣ exe 상태에서 sys.executable 의미
+## 4️⃣ exe 상태에서 sys.executable 의미
 
 exe로 빌드되면:
 
@@ -115,7 +115,7 @@ main.exe
 
 ---
 
-# 5️⃣ 콘솔창 없는 GUI 프로그램에서 사용
+## 5️⃣ 콘솔창 없는 GUI 프로그램에서 사용
 
 ```python
 import ctypes
@@ -144,13 +144,13 @@ elevate()
 
 ---
 
-# 6️⃣ 아예 exe 자체를 항상 관리자 권한으로 실행시키기
+## 6️⃣ 아예 exe 자체를 항상 관리자 권한으로 실행시키기
 
 PyInstaller만으로는 기본 지원이 약합니다.
 
 실전에서는:
 
-## manifest 파일 사용
+### manifest 파일 사용
 
 `app.manifest`
 
@@ -169,7 +169,7 @@ PyInstaller만으로는 기본 지원이 약합니다.
 
 ---
 
-# 빌드 시 적용
+### 빌드 시 적용
 
 ```bash
 pyinstaller --onefile --manifest app.manifest main.py
@@ -177,7 +177,7 @@ pyinstaller --onefile --manifest app.manifest main.py
 
 ---
 
-# 결과
+### 결과
 
 exe 실행 즉시:
 
@@ -186,9 +186,9 @@ exe 실행 즉시:
 
 ---
 
-# 7️⃣ 어떤 방식이 더 좋은가?
+## 7️⃣ 어떤 방식이 더 좋은가?
 
-## 코드 방식
+### 코드 방식
 
 장점:
 
@@ -201,7 +201,7 @@ exe 실행 즉시:
 
 ---
 
-## manifest 방식
+### manifest 방식
 
 장점:
 
@@ -215,7 +215,7 @@ exe 실행 즉시:
 
 ---
 
-# 8️⃣ pyautogui 자동화에서 매우 중요한 이유
+## 8️⃣ pyautogui 자동화에서 매우 중요한 이유
 
 예를 들어:
 
@@ -232,7 +232,7 @@ pyautogui.click()
 
 ---
 
-# 9️⃣ 관리자 권한 확인 로그 추가
+## 9️⃣ 관리자 권한 확인 로그 추가
 
 ```python
 print(ctypes.windll.shell32.IsUserAnAdmin())
@@ -248,7 +248,7 @@ True
 
 ---
 
-# 🔟 실전 추천 구조
+## 🔟 실전 추천 구조
 
 ```python
 elevate()
@@ -261,7 +261,7 @@ wait_and_click("buy.png")
 
 ---
 
-# 🔥 배포 시 추천 빌드
+## 🔥 배포 시 추천 빌드
 
 ```bash
 pyinstaller ^
@@ -274,7 +274,7 @@ pyinstaller ^
 
 ---
 
-# 🚨 주의사항
+## 🚨 주의사항
 
 관리자 권한 exe는:
 
@@ -284,7 +284,7 @@ pyinstaller ^
 
 ---
 
-# 마무리
+## 마무리
 
 Windows 자동화 프로그램에서 관리자 권한은 선택이 아니라 필수인 경우가 많습니다.
 
