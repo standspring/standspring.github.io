@@ -74,7 +74,7 @@ Windows 기본 기능으로:
 프로그램 시작:
 
 ```text
-C:\\myapp\\main.exe
+C:\myapp\main.exe
 ```
 
 ---
@@ -84,7 +84,7 @@ C:\\myapp\\main.exe
 Windows 기본 명령:
 
 ```bash
-schtasks /create /tn "MyAutoJob" /tr "C:\\myapp\\main.exe" /sc daily /st 08:00
+schtasks /create /tn "MyAutoJob" /tr "C:\myapp\main.exe" /sc daily /st 08:00
 ```
 
 설명:
@@ -101,7 +101,7 @@ schtasks /create /tn "MyAutoJob" /tr "C:\\myapp\\main.exe" /sc daily /st 08:00
 ```bash
 schtasks /create ^
  /tn "MyAutoJob" ^
- /tr "C:\\myapp\\main.exe" ^
+ /tr "C:\myapp\main.exe" ^
  /sc daily ^
  /st 08:00 ^
  /rl highest
@@ -122,7 +122,7 @@ cmd = [
     "schtasks",
     "/create",
     "/tn", "MyAutoJob",
-    "/tr", r"C:\\myapp\\main.exe",
+    "/tr", r"C:\myapp\main.exe",
     "/sc", "daily",
     "/st", "08:00",
     "/rl", "highest"
@@ -220,7 +220,7 @@ subprocess.run([
     "schtasks",
     "/create",
     "/tn", "StockMorningJob",
-    "/tr", r"C:\\stock\\main.exe",
+    "/tr", r"C:\stock\main.exe",
     "/sc", "daily",
     "/st", "07:30",
     "/rl", "highest"
@@ -253,7 +253,7 @@ GUI 자동화가 실패할 수 있습니다.
 ### 1) 경로 공백
 
 ```text
-C:\\Program Files\\...
+C:\Program Files\...
 ```
 
 → 반드시 따옴표 처리
