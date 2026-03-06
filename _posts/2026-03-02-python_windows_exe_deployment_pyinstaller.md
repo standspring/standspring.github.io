@@ -1,13 +1,11 @@
 ---
 title: "Python 프로그램을 Windows에서 exe로 배포하는 방법 (PyInstaller 완전 정리)"
 date: 2026-03-02 00:00:00 +0900
-categories: [Python, Deployment]
+categories: [python, deployment]
 tags: [python, exe, windows, pyinstaller, packaging, distribution]
 toc: true
 toc_sticky: true
 ---
-
-# Python 프로그램을 Windows에서 exe로 배포하는 방법
 
 Python으로 만든 자동화 프로그램(예: pyautogui 매크로, HTS 자동화, 내부 업무툴 등)을
 **설치 없이 실행파일(.exe) 형태로 배포**하고 싶다면?

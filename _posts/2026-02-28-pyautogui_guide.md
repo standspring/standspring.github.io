@@ -1,11 +1,9 @@
 ---
 title: "python 자동화 pyautogui"
 date: 2026-02-28
-category: python
+category: [python, automation]
 tags: [python, pyautogui, 자동화]
 ---
-
-# 🖱️ Python 자동화 끝판왕, `pyautogui`
 
 업무 자동화, 반복 클릭, HTS 매매 자동화, 테스트 자동 실행...\
 마우스와 키보드를 사람이 직접 조작하지 않고 **코드로 제어**하고 싶다면?

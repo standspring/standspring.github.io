@@ -7,8 +7,6 @@ toc: true
 toc_sticky: true
 ---
 
-# Windows에서 관리자 권한으로 실행되는 exe 만드는 방법
-
 Python으로 만든 자동화 프로그램을 exe로 배포했는데
 실행하면 이런 문제가 생기는 경우가 많습니다.
 
