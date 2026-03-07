@@ -114,7 +114,7 @@ else:
 
 예:
 
-```python id="pwa001"
+```python
 from pywinauto import Desktop
 
 dlg = Desktop(backend="uia").window(title_re=".*삼성증권.*")
@@ -221,6 +221,7 @@ def is_HTS_running():
 ### 삼성증권 프로그램이 실행된 상태가 아니라면
 
 subprocess 로 hts 를 실행
+
 ```python
 import subprocess
 
