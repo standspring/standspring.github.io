@@ -66,7 +66,7 @@ pyautogui.click()
 
 ---
 
-### 1. pygetwindow는 "창 단위 제어"
+### pygetwindow는 "창 단위 제어"
 
 `pygetwindow`는 말 그대로 **현재 열린 윈도우 창(Window) 자체를 찾고 이동하는 라이브러리**다.
 
@@ -80,7 +80,7 @@ pyautogui.click()
 
 예를 들어 HTS 실행 여부 확인은 아주 잘 맞는다.
 
-```python id="pgw001"
+```python
 import pygetwindow as gw
 
 windows = gw.getWindowsWithTitle("삼성증권")
@@ -101,7 +101,7 @@ else:
 
 ---
 
-### 2. pywinauto는 "창 내부 요소 제어"
+### pywinauto는 "창 내부 요소 제어"
 
 `pywinauto`는 창 내부의 버튼, 탭, 입력창까지 접근한다.
 
@@ -129,22 +129,12 @@ btn.click_input()
 `pygetwindow` 는 집 주소 찾기
 `pywinauto` 는 집 안 들어가서 스위치 누르기
 
-#### pygetwindow
-
+`pygetwindow`
 창까지만 본다.
-
-즉:
-
 > "삼성증권 창이 있나?"
 
----
-
-#### pywinauto
-
+`pywinauto`
 창 안까지 본다.
-
-즉:
-
 > "삼성증권 창 안에 매수주문 버튼 있나?"
 
 ---
@@ -156,24 +146,16 @@ btn.click_input()
 ##### pygetwindow
 
 초기 상태 체크
-
-```python
-삼성증권 실행 여부
-창 활성화
-최상단 올리기
-```
-
----
+* 삼성증권 실행 여부
+* 창 활성화
+* 최상단 올리기
 
 ##### pywinauto
 
 주문 단계
-
-```python
-탭 찾기
-버튼 찾기
-입력창 찾기
-```
+* 탭 찾기
+* 버튼 찾기
+*입력창 찾기
 
 ---
 
@@ -215,12 +197,10 @@ HTS 자동화 초기에 가장 먼저 필요한 건:
 
 ### 실전 추천 조합
 
-```python
 1. pygetwindow → HTS 존재 확인
 2. pygetwindow → 활성화
 3. pywinauto → 주문창 요소 찾기
 4. pyautogui → 최종 입력 보조
-```
 
 ---
 
