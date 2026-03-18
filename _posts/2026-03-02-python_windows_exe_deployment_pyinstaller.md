@@ -2,7 +2,7 @@
 title: "Python 프로그램을 Windows에서 exe로 배포하는 방법 (PyInstaller 완전 정리)"
 date: 2026-03-02 00:00:00 +0900
 categories: [python, deployment]
-tags: [python, exe, windows, pyinstaller, packaging, distribution]
+tags: [python, exe, windows, pyinstaller, packaging, distribution, deployment, windows-deployment]
 toc: true
 toc_sticky: true
 ---

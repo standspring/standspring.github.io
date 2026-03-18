@@ -2,7 +2,7 @@
 title: "pyautogui + pygetwindow로 창 제어까지 하는 GUI 자동화"
 date: "2026-03-01 00:00:00 +0900"
 categories: [python, automation]
-tags: [python, pyautogui, pygetwindow, gui, automation, windows, hts, 자동화]
+tags: [python, pyautogui, pygetwindow, gui, automation, windows, hts, 자동화, window-control]
 ---
 
 `pyautogui`만으로도 클릭/입력 자동화는 가능하지만, 실전(특히 HTS/업무 프로그램 자동화)에서는

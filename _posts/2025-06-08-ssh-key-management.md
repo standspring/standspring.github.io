@@ -2,7 +2,7 @@
 title: "ssh key 관리 팁"
 date: 2025-06-08
 category: ssh
-tags: [ssh, ssh-keygen, sshkey, ssh-key, ssh-key-commnet]
+tags: [ssh, ssh-keygen, sshkey, ssh-key, ssh-key-comment, ssh-config, key-rotation, authorized-keys]
 ---
 
 ## 🔧 1. SSH Key 관리 팁

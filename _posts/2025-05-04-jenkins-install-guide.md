@@ -2,7 +2,7 @@
 title: "Jenkins war 파일 이용해서 설치"
 date: 2025-05-04
 category: jenkins
-tags: [jenkins, install, CI/CD, jenkins.war]
+tags: [jenkins, install, CI/CD, jenkins.war, java, ubuntu, ci]
 ---
 
 # Jenkins 설치 가이드

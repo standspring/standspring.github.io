@@ -2,7 +2,7 @@
 title: "Git 브랜치(branch) 완전 이해하기: 초보자도 헷갈리지 않게 상세 설명"
 date: 2026-03-16 00:00:00 +0900
 categories: github
-tags: [github, branch, git, git-branch, git-merge, git-beginner, vscode-git]
+tags: [github, branch, git, git-branch, git-merge, git-beginner, vscode-git, branching]
 toc: true
 toc_sticky: true
 ---

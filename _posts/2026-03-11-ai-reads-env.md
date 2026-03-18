@@ -2,7 +2,7 @@
 title: "VS Code에서 Codex 사용할 때 `.env` 파일 유출될까? 안전하게 쓰는 방법 정리"
 date: 2026-03-11 00:00:00 +0900
 categories: vscode
-tags: [vscode, ai, codex, password]
+tags: [vscode, ai, codex, password, security, secrets, env-file]
 toc: true
 toc_sticky: true
 ---

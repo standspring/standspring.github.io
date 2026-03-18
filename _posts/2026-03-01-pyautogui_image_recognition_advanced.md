@@ -2,7 +2,7 @@
 title: pyautogui 이미지 인식 기반 자동화 고급편 (실전 안정화 전략)
 date: "2026-03-01 21:00:00 +0900"
 categories: [python, automation]
-tags: [python, pyautogui, opencv, automation, image-recognition, rpa]
+tags: [python, pyautogui, opencv, automation, image-recognition, rpa, template-matching, locateonscreen]
 ---
 
 좌표 기반 자동화는 빠르지만 치명적인 단점이 있습니다.

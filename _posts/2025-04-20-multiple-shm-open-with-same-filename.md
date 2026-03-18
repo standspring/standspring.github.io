@@ -2,7 +2,7 @@
 title: "shm_open을 동일한 이름으로 두 번 호출하면 같은 메모리인가요?"
 date: 2025-04-20
 category: C
-tags: [C, 시스템프로그래밍, 공유메모리, shm_open, mmap]
+tags: [C, 시스템프로그래밍, 공유메모리, shm_open, mmap, posix, ipc]
 ---
 
 # `shm_open`을 동일한 이름으로 두 번 호출하면 같은 메모리인가요?

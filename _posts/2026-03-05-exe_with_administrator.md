@@ -2,7 +2,7 @@
 title: "Windows에서 관리자 권한으로 실행되는 exe 만드는 방법 (Python 자동화 프로그램 배포)"
 date: 2026-03-05 00:00:00 +0900
 categories: [python, windows]
-tags: [python, exe, windows, administrator, pyinstaller, uac]
+tags: [python, exe, windows, administrator, pyinstaller, uac, privilege-elevation]
 toc: true
 toc_sticky: true
 ---

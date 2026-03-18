@@ -1,7 +1,7 @@
 ---
 title: "JavaScript for 반복문 완전 정리 (for / for...of / for...in / forEach)"
 date: 2025-12-19
-tags: [JavaScript, 반복문, for문, forof, forin, forEach, 기초문법]
+tags: [JavaScript, 반복문, for문, forof, forin, forEach, 기초문법, 배열순회, 객체순회]
 ---
 
 # JavaScript for 반복문 완전 정리 (for / for...of / for...in / forEach)

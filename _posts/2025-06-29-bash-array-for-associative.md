@@ -2,7 +2,7 @@
 title: "Bash에서 배열(Array)과 연관 배열(Associative Array) 반복문 사용법"
 date: 2025-06-29
 category: bash
-tags: [bash, array, for, associative, associativearray]
+tags: [bash, array, for, associative, associativearray, indexed-array, shell-script]
 ---
 
 # Bash에서 배열(Array)과 연관 배열(Associative Array) 반복문 사용법

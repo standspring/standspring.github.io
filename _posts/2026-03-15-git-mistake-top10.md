@@ -2,7 +2,7 @@
 title: "Git 초보자가 가장 많이 하는 실수 TOP10 (처음 시작하면 거의 다 겪는 문제들)"
 date: 2026-03-15 00:00:00 +0900
 categories: github
-tags: [github, vcs, git, mistake]
+tags: [github, vcs, git, mistake, git-tips, troubleshooting]
 toc: true
 toc_sticky: true
 ---

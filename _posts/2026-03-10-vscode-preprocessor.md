@@ -2,7 +2,7 @@
 title: "VS Code에서 C 전처리 지시자(`#ifdef`, `#if`) 임의로 컨트롤하는 방법"
 date: 2026-03-10 00:00:00 +0900
 categories: vscode
-tags: [vscode, c, preprocessor]
+tags: [vscode, c, preprocessor, ifdef, define, c-cpp]
 toc: true
 toc_sticky: true
 ---

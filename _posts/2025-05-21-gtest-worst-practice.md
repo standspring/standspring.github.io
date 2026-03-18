@@ -2,7 +2,7 @@
 title: "GoogleTest: 실수하기 쉬운 GTest 코드 패턴"
 date: 2025-05-21
 category: C
-tags: [C, googletest, gtest, unittest, pattern]
+tags: [C, c++, googletest, gtest, unittest, pattern, test-smell, refactoring]
 ---
 
 

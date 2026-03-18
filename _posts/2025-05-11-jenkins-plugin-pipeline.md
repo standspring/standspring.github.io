@@ -2,7 +2,7 @@
 title: "Jenkins Pipeline 사용법 가이드"
 date: 2025-05-11
 category: jenkins
-tags: [jenkins, plugin, pipeline]
+tags: [jenkins, plugin, pipeline, jenkinsfile, ci, cd, declarative-pipeline]
 ---
 
 # Jenkins Pipeline 사용법 가이드

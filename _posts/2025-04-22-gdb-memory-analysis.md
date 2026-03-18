@@ -2,7 +2,7 @@
 title: "gdb로 C 메모리 구조 파악 및 core dump 분석하기"
 date: 2025-04-22
 category: C
-tags: [C, gdb, 디버깅, 시스템프로그래밍, 메모리분석]
+tags: [C, gdb, 디버깅, 시스템프로그래밍, 메모리분석, core-dump, segmentation-fault]
 ---
 
 # gdb로 C 메모리 구조 분석하기 — 실습 중심 튜토리얼

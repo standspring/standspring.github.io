@@ -2,7 +2,7 @@
 title: "GoogleTest: 실무에 바로 쓰는 GTest & GMock 가이드"
 date: 2025-05-19
 category: C
-tags: [C, googletest, gtest, unittest, mock, expect_call]
+tags: [C, c++, googletest, gtest, unittest, mock, expect_call, gmock, test-fixture]
 ---
 
 # GoogleTest: 실무에 바로 쓰는 GTest & GMock 가이드

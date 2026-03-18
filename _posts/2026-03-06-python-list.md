@@ -2,7 +2,7 @@
 title: "python list 선언시 길이 설정"
 date: 2026-03-06 12:00:00 +0900
 categories: python
-tags: [python, list]
+tags: [python, list, dynamic-array, mutable-sequence]
 toc: true
 toc_sticky: true
 ---

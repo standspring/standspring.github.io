@@ -2,7 +2,7 @@
 title: "VS Code에서 OpenCV `cv2.IMREAD_COLOR` Pylint 경고 해결하기 (`E1101 no-member`)"
 date: 2026-03-09 00:00:00 +0900
 categories: python
-tags: [python, pylint, OpenCV, cv2, IMREAD_COLOR, E1101, no-member]
+tags: [python, pylint, OpenCV, cv2, IMREAD_COLOR, E1101, no-member, vscode, linting, false-positive]
 toc: true
 toc_sticky: true
 ---

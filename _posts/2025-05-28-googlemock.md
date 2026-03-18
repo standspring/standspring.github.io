@@ -2,7 +2,7 @@
 title: "Mocking을 위한 GoogleMock 사용법"
 date: 2025-05-28
 category: C
-tags: [C, googletest, gtest, unittest, mocking, mock, googlemock]
+tags: [C, c++, googletest, gtest, unittest, mocking, mock, googlemock, mock-object]
 ---
 
 # Mocking을 위한 GoogleMock 사용법

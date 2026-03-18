@@ -2,7 +2,7 @@
 title: "컴퓨터를 매일 특정 시간에 자동 부팅시키는 BIOS 설정법"
 date: 2026-03-18 00:00:00 +0900
 categories: bios
-tags: [bios, automation, rtc, power-on, bios 자동 부팅, rtc alarm 설정, power on by rtc, 컴퓨터 자동 켜기]
+tags: [bios, automation, rtc, power-on, bios 자동 부팅, rtc alarm 설정, power on by rtc, 컴퓨터 자동 켜기, uefi, wake-on-rtc]
 toc: true
 toc_sticky: true
 ---

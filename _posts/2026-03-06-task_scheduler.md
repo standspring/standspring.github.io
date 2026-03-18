@@ -2,7 +2,7 @@
 title: "Windows 작업 스케줄러 등록 자동화 (Python 프로그램 예약 실행 실전 가이드)"
 date: 2026-03-06 00:00:00 +0900
 categories: [python, automation]
-tags: [python, windows, task scheduler, automation, schtasks, scheduling]
+tags: [python, windows, task scheduler, automation, schtasks, scheduling, task-scheduler, windows-automation]
 toc: true
 toc_sticky: true
 ---

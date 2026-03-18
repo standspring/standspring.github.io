@@ -2,7 +2,7 @@
 title: "python 자동화 pyautogui"
 date: 2026-02-28
 category: [python, automation]
-tags: [python, pyautogui, 자동화]
+tags: [python, pyautogui, 자동화, gui-automation, rpa, mouse-keyboard]
 ---
 
 업무 자동화, 반복 클릭, HTS 매매 자동화, 테스트 자동 실행...\
