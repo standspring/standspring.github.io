@@ -73,13 +73,9 @@ Advanced → APM Configuration
 - Minute
 - Second
 
-예:
+![ASUS BIOS](/assets/img/2026-03-18-bios1.jpg)
 
-- 07 : 30 : 00
-
-<img src='/assets/img/bios1.png' width=400>
-
-<img src='/assets/img/bios2.png' width=400>
+![ASUS BIOS RTC](/assets/img/2026-03-18-bios2.jpg)
 
 ---
 
