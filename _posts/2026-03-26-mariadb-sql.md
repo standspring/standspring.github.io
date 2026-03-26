@@ -1,6 +1,6 @@
 ---
 title: "MariaDB SQL 기본 사용법 정리 (CREATE, INSERT, SELECT 완전 기초)"
-date: 2026-03-27
+date: 2026-03-26
 categories: [Database, SQL]
 tags: [MariaDB, SQL, DB, 입문]
 ---
