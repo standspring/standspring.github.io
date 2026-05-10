@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">해외 주식 양도세 계산 흐름</title>
+  <desc id="desc">해외 주식 양도세를 연간 손익통산, 기본공제 250만 원, 과세표준, 세율 22%, 다음 해 5월 신고 순서로 설명하는 계산식 이미지</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7faf9; }
+      .band { fill: #e5f1ef; }
+      .title { font: 800 56px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #1f302c; }
+      .subtitle { font: 500 25px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #5b6b66; }
+      .formula { font: 800 46px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #1f302c; }
+      .card { fill: #ffffff; stroke: #cad9d5; stroke-width: 3; }
+      .main-card { fill: #ffffff; stroke: #7fb1a8; stroke-width: 4; }
+      .step-title { font: 800 29px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #20342f; }
+      .step-note { font: 500 21px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #5d6c67; }
+      .num { font: 800 24px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #ffffff; }
+      .small { font: 500 18px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #66756f; }
+      .warn { font: 700 22px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #78392e; }
+      .teal { fill: #168d83; }
+      .gold { fill: #e3aa22; }
+      .green { fill: #5d9360; }
+      .coral { fill: #c94f3d; }
+      .bluegray { fill: #647f90; }
+      .line { fill: none; stroke: #79a9a0; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .arrow { fill: #79a9a0; }
+      .axis { stroke: #cbd9d5; stroke-width: 4; stroke-linecap: round; }
+      .gain { fill: #168d83; opacity: .9; }
+      .loss { fill: #c94f3d; opacity: .86; }
+    </style>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M2 1 L11 6 L2 11 Z" class="arrow"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <path class="band" d="M0 0h1600v280c-210 54-383 49-540 13-145-34-284-28-442 16-177 49-354 50-618-9z"/>
+
+  <text x="800" y="88" text-anchor="middle" class="title">해외 주식 양도세 계산 방법</text>
+  <text x="800" y="137" text-anchor="middle" class="subtitle">종목별이 아니라 한 해 전체 손익을 합산한 뒤 공제와 세율을 적용합니다</text>
+
+  <g transform="translate(245 190)">
+    <rect width="1110" height="138" rx="18" class="main-card"/>
+    <text x="555" y="55" text-anchor="middle" class="small">빠른 요약식</text>
+    <text x="555" y="102" text-anchor="middle" class="formula">세금 = (연간 순양도차익 - 250만 원) × 22%</text>
+  </g>
+
+  <path d="M155 455 H1445" class="line" marker-end="url(#arrow)"/>
+
+  <g transform="translate(72 365)">
+    <rect width="260" height="180" rx="16" class="card"/>
+    <circle cx="36" cy="36" r="22" class="teal"/><text x="36" y="44" text-anchor="middle" class="num">1</text>
+    <text x="130" y="62" text-anchor="middle" class="step-title">원화 환산</text>
+    <text x="130" y="103" text-anchor="middle" class="step-note">매수·매도 금액</text>
+    <text x="130" y="133" text-anchor="middle" class="step-note">각 거래일 환율 적용</text>
+    <rect x="64" y="151" width="132" height="8" rx="4" fill="#168d83" opacity=".25"/>
+  </g>
+
+  <g transform="translate(365 365)">
+    <rect width="260" height="180" rx="16" class="card"/>
+    <circle cx="36" cy="36" r="22" class="gold"/><text x="36" y="44" text-anchor="middle" class="num">2</text>
+    <text x="130" y="62" text-anchor="middle" class="step-title">손익통산</text>
+    <text x="130" y="103" text-anchor="middle" class="step-note">수익 종목과</text>
+    <text x="130" y="133" text-anchor="middle" class="step-note">손실 종목 합산</text>
+    <rect x="67" y="151" width="126" height="8" rx="4" fill="#e3aa22" opacity=".30"/>
+  </g>
+
+  <g transform="translate(658 365)">
+    <rect width="260" height="180" rx="16" class="card"/>
+    <circle cx="36" cy="36" r="22" class="green"/><text x="36" y="44" text-anchor="middle" class="num">3</text>
+    <text x="130" y="62" text-anchor="middle" class="step-title">기본공제</text>
+    <text x="130" y="103" text-anchor="middle" class="step-note">연 1회</text>
+    <text x="130" y="133" text-anchor="middle" class="step-note">250만 원 차감</text>
+    <rect x="67" y="151" width="126" height="8" rx="4" fill="#5d9360" opacity=".28"/>
+  </g>
+
+  <g transform="translate(951 365)">
+    <rect width="260" height="180" rx="16" class="card"/>
+    <circle cx="36" cy="36" r="22" class="coral"/><text x="36" y="44" text-anchor="middle" class="num">4</text>
+    <text x="130" y="62" text-anchor="middle" class="step-title">세율 적용</text>
+    <text x="130" y="103" text-anchor="middle" class="step-note">양도소득세 20%</text>
+    <text x="130" y="133" text-anchor="middle" class="step-note">지방소득세 2%</text>
+    <rect x="67" y="151" width="126" height="8" rx="4" fill="#c94f3d" opacity=".26"/>
+  </g>
+
+  <g transform="translate(1244 365)">
+    <rect width="260" height="180" rx="16" class="card"/>
+    <circle cx="36" cy="36" r="22" class="bluegray"/><text x="36" y="44" text-anchor="middle" class="num">5</text>
+    <text x="130" y="62" text-anchor="middle" class="step-title">신고·납부</text>
+    <text x="130" y="103" text-anchor="middle" class="step-note">다음 해 5월</text>
+    <text x="130" y="133" text-anchor="middle" class="step-note">확정신고</text>
+    <rect x="67" y="151" width="126" height="8" rx="4" fill="#647f90" opacity=".28"/>
+  </g>
+
+  <g transform="translate(160 616)">
+    <rect width="560" height="168" rx="18" class="card"/>
+    <text x="280" y="46" text-anchor="middle" class="step-title">손익통산 예시</text>
+    <line x1="92" y1="126" x2="468" y2="126" class="axis"/>
+    <rect x="115" y="66" width="70" height="60" rx="8" class="gain"/>
+    <rect x="235" y="94" width="70" height="32" rx="8" class="loss"/>
+    <rect x="355" y="82" width="70" height="44" rx="8" class="gain"/>
+    <text x="150" y="151" text-anchor="middle" class="small">이익</text>
+    <text x="270" y="151" text-anchor="middle" class="small">손실</text>
+    <text x="390" y="151" text-anchor="middle" class="small">이익</text>
+  </g>
+
+  <g transform="translate(880 616)">
+    <rect width="560" height="168" rx="18" fill="#fff7f3" stroke="#e7c5bd" stroke-width="3"/>
+    <text x="280" y="46" text-anchor="middle" class="warn">자주 하는 실수</text>
+    <text x="280" y="86" text-anchor="middle" class="step-note">종목별로 250만 원씩 공제하지 않기</text>
+    <text x="280" y="118" text-anchor="middle" class="step-note">손실 종목과 여러 증권사 거래도 합산하기</text>
+  </g>
+
+  <g transform="translate(345 820)">
+    <rect width="910" height="48" rx="24" fill="#eaf5f2" stroke="#c7ddd8" stroke-width="2"/>
+    <text x="455" y="31" text-anchor="middle" class="small">핵심: 올해 해외 주식 전체 순이익을 먼저 계산한 뒤, 기본공제와 22% 세율을 적용합니다.</text>
+  </g>
+</svg>
