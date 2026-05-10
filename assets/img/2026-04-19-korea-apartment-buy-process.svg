@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">한국 아파트 매수 절차 한눈에 보기</title>
+  <desc id="desc">예산 확인부터 매물 점검, 계약, 대출, 실거래 신고, 잔금, 취득세, 등기, 전입 정리까지 이어지는 아파트 매수 절차도</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8faf9; }
+      .sky { fill: #dcefeb; }
+      .building { fill: #eef3f1; stroke: #9fb8b3; stroke-width: 3; }
+      .window { fill: #ffffff; stroke: #b9cbc7; stroke-width: 2; }
+      .title { font: 800 56px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #1f2f2b; }
+      .subtitle { font: 500 25px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #52645f; }
+      .step-title { font: 800 30px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #1f2f2b; }
+      .step-note { font: 500 20px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #52645f; }
+      .num { font: 800 23px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #ffffff; }
+      .label { font: 700 22px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #32423e; }
+      .small { font: 500 17px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #61736e; }
+      .card { fill: #ffffff; stroke: #cbd9d5; stroke-width: 3; }
+      .line { fill: none; stroke: #6da89f; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .arrow { fill: #6da89f; }
+      .teal { fill: #168d83; }
+      .gold { fill: #e3aa22; }
+      .green { fill: #5d9360; }
+      .coral { fill: #c94f3d; }
+      .ink { stroke: #31443f; stroke-width: 7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .muted { stroke: #7c918b; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M2 1 L11 6 L2 11 Z" class="arrow"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <path class="sky" d="M0 0h1600v310c-170 55-330 53-485 12-164-44-294-40-460 11-172 53-334 52-655-14z"/>
+
+  <g opacity=".86">
+    <rect x="92" y="170" width="86" height="180" class="building"/>
+    <rect x="208" y="116" width="118" height="234" class="building"/>
+    <rect x="1244" y="126" width="122" height="224" class="building"/>
+    <rect x="1395" y="180" width="88" height="170" class="building"/>
+    <g>
+      <rect x="113" y="197" width="18" height="26" class="window"/><rect x="142" y="197" width="18" height="26" class="window"/>
+      <rect x="113" y="239" width="18" height="26" class="window"/><rect x="142" y="239" width="18" height="26" class="window"/>
+      <rect x="113" y="281" width="18" height="26" class="window"/><rect x="142" y="281" width="18" height="26" class="window"/>
+      <rect x="233" y="147" width="22" height="28" class="window"/><rect x="278" y="147" width="22" height="28" class="window"/>
+      <rect x="233" y="195" width="22" height="28" class="window"/><rect x="278" y="195" width="22" height="28" class="window"/>
+      <rect x="233" y="243" width="22" height="28" class="window"/><rect x="278" y="243" width="22" height="28" class="window"/>
+      <rect x="1271" y="157" width="23" height="30" class="window"/><rect x="1316" y="157" width="23" height="30" class="window"/>
+      <rect x="1271" y="207" width="23" height="30" class="window"/><rect x="1316" y="207" width="23" height="30" class="window"/>
+      <rect x="1271" y="257" width="23" height="30" class="window"/><rect x="1316" y="257" width="23" height="30" class="window"/>
+    </g>
+  </g>
+
+  <text x="800" y="95" text-anchor="middle" class="title">한국 아파트 매수 절차</text>
+  <text x="800" y="142" text-anchor="middle" class="subtitle">계약 전 확인부터 잔금, 세금, 등기, 입주 정리까지 한눈에 보는 흐름</text>
+
+  <path d="M180 330 H1420 V555 H180 V780 H1420" class="line" marker-end="url(#arrow)"/>
+
+  <g transform="translate(70 250)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="teal"/><text x="34" y="42" text-anchor="middle" class="num">1</text>
+    <text x="105" y="70" text-anchor="middle" class="step-title">예산 확인</text>
+    <text x="105" y="108" text-anchor="middle" class="step-note">매매가 + 세금</text>
+    <text x="105" y="136" text-anchor="middle" class="step-note">대출 가능 금액</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#168d83" opacity=".28"/>
+  </g>
+
+  <g transform="translate(350 250)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="gold"/><text x="34" y="42" text-anchor="middle" class="num">2</text>
+    <text x="112" y="70" text-anchor="middle" class="step-title">매물 점검</text>
+    <text x="112" y="108" text-anchor="middle" class="step-note">하자, 점유</text>
+    <text x="112" y="136" text-anchor="middle" class="step-note">등기부 확인</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#e3aa22" opacity=".32"/>
+  </g>
+
+  <g transform="translate(630 250)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="green"/><text x="34" y="42" text-anchor="middle" class="num">3</text>
+    <text x="113" y="70" text-anchor="middle" class="step-title">조건 협의</text>
+    <text x="113" y="108" text-anchor="middle" class="step-note">가격, 잔금일</text>
+    <text x="113" y="136" text-anchor="middle" class="step-note">입주일, 특약</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#5d9360" opacity=".30"/>
+  </g>
+
+  <g transform="translate(910 250)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="teal"/><text x="34" y="42" text-anchor="middle" class="num">4</text>
+    <text x="116" y="70" text-anchor="middle" class="step-title">계약 체결</text>
+    <text x="116" y="108" text-anchor="middle" class="step-note">계약서 작성</text>
+    <text x="116" y="136" text-anchor="middle" class="step-note">계약금 지급</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#168d83" opacity=".28"/>
+  </g>
+
+  <g transform="translate(1190 250)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="gold"/><text x="34" y="42" text-anchor="middle" class="num">5</text>
+    <text x="113" y="70" text-anchor="middle" class="step-title">대출 준비</text>
+    <text x="113" y="108" text-anchor="middle" class="step-note">심사, 담보평가</text>
+    <text x="113" y="136" text-anchor="middle" class="step-note">실행일 확인</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#e3aa22" opacity=".32"/>
+  </g>
+
+  <g transform="translate(1190 475)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="green"/><text x="34" y="42" text-anchor="middle" class="num">6</text>
+    <text x="113" y="70" text-anchor="middle" class="step-title">거래 신고</text>
+    <text x="113" y="108" text-anchor="middle" class="step-note">30일 이내</text>
+    <text x="113" y="136" text-anchor="middle" class="step-note">필요 시 자금계획서</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#5d9360" opacity=".30"/>
+  </g>
+
+  <g transform="translate(910 475)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="coral"/><text x="34" y="42" text-anchor="middle" class="num">7</text>
+    <text x="113" y="70" text-anchor="middle" class="step-title">잔금·인도</text>
+    <text x="113" y="108" text-anchor="middle" class="step-note">잔금 송금</text>
+    <text x="113" y="136" text-anchor="middle" class="step-note">열쇠 인계</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#c94f3d" opacity=".28"/>
+  </g>
+
+  <g transform="translate(630 475)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="gold"/><text x="34" y="42" text-anchor="middle" class="num">8</text>
+    <text x="113" y="70" text-anchor="middle" class="step-title">취득세 납부</text>
+    <text x="113" y="108" text-anchor="middle" class="step-note">60일 이내</text>
+    <text x="113" y="136" text-anchor="middle" class="step-note">등기 전 확인</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#e3aa22" opacity=".32"/>
+  </g>
+
+  <g transform="translate(350 475)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="teal"/><text x="34" y="42" text-anchor="middle" class="num">9</text>
+    <text x="113" y="70" text-anchor="middle" class="step-title">이전등기</text>
+    <text x="113" y="108" text-anchor="middle" class="step-note">소유권 이전</text>
+    <text x="113" y="136" text-anchor="middle" class="step-note">법무사 접수</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#168d83" opacity=".28"/>
+  </g>
+
+  <g transform="translate(70 475)">
+    <rect width="210" height="170" rx="14" class="card"/>
+    <circle cx="34" cy="34" r="22" class="green"/><text x="34" y="42" text-anchor="middle" class="num">10</text>
+    <text x="112" y="70" text-anchor="middle" class="step-title">입주 정리</text>
+    <text x="112" y="108" text-anchor="middle" class="step-note">전입, 관리비</text>
+    <text x="112" y="136" text-anchor="middle" class="step-note">공과금 명의변경</text>
+    <rect x="48" y="153" width="114" height="8" rx="4" fill="#5d9360" opacity=".30"/>
+  </g>
+
+  <g transform="translate(360 735)">
+    <rect x="0" y="0" width="880" height="92" rx="14" fill="#edf7f4" stroke="#c4ddd8" stroke-width="3"/>
+    <text x="440" y="36" text-anchor="middle" class="label">핵심 흐름</text>
+    <text x="440" y="68" text-anchor="middle" class="small">돈 계획을 먼저 세우고, 권리관계와 점유를 확인한 뒤, 잔금일에 세금·등기·인도를 함께 맞춘다</text>
+  </g>
+</svg>
