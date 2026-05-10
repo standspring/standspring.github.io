@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">한국 아파트 매수 비용 한눈에 보기</title>
+  <desc id="desc">아파트 매수 시 매매대금 외 취득세, 지방교육세, 농어촌특별세, 중개보수, 인지세, 등기비용을 함께 계산해야 한다는 요약 이미지</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8faf7; }
+      .band { fill: #e3f1ed; }
+      .title { font: 800 56px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #20342f; }
+      .subtitle { font: 500 25px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #5d6d68; }
+      .card { fill: #ffffff; stroke: #cbd9d5; stroke-width: 3; }
+      .main-card { fill: #ffffff; stroke: #90bab2; stroke-width: 4; }
+      .section { font: 800 31px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #20342f; }
+      .body { font: 600 23px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #4d5d58; }
+      .small { font: 500 18px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #66756f; }
+      .num { font: 800 28px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #ffffff; }
+      .formula { font: 800 35px "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #20342f; }
+      .badge-teal { fill: #168d83; }
+      .badge-gold { fill: #e3aa22; }
+      .badge-green { fill: #5d9360; }
+      .badge-coral { fill: #c94f3d; }
+      .line { stroke: #80aaa2; stroke-width: 6; stroke-linecap: round; }
+      .muted-line { stroke: #d3e0dc; stroke-width: 4; stroke-linecap: round; }
+      .building { fill: #eef4f2; stroke: #9eb9b3; stroke-width: 3; }
+      .window { fill: #ffffff; stroke: #bfd0cc; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <path class="band" d="M0 0h1600v290c-180 45-336 48-493 17-155-31-302-35-469 10-173 46-334 53-638-14z"/>
+
+  <g opacity=".78">
+    <rect x="108" y="150" width="94" height="185" class="building"/>
+    <rect x="228" y="103" width="132" height="232" class="building"/>
+    <rect x="1250" y="105" width="138" height="230" class="building"/>
+    <rect x="1418" y="162" width="84" height="173" class="building"/>
+    <g>
+      <rect x="132" y="181" width="18" height="26" class="window"/><rect x="162" y="181" width="18" height="26" class="window"/>
+      <rect x="132" y="225" width="18" height="26" class="window"/><rect x="162" y="225" width="18" height="26" class="window"/>
+      <rect x="132" y="269" width="18" height="26" class="window"/><rect x="162" y="269" width="18" height="26" class="window"/>
+      <rect x="255" y="139" width="22" height="28" class="window"/><rect x="307" y="139" width="22" height="28" class="window"/>
+      <rect x="255" y="190" width="22" height="28" class="window"/><rect x="307" y="190" width="22" height="28" class="window"/>
+      <rect x="255" y="241" width="22" height="28" class="window"/><rect x="307" y="241" width="22" height="28" class="window"/>
+      <rect x="1281" y="143" width="24" height="29" class="window"/><rect x="1335" y="143" width="24" height="29" class="window"/>
+      <rect x="1281" y="195" width="24" height="29" class="window"/><rect x="1335" y="195" width="24" height="29" class="window"/>
+      <rect x="1281" y="247" width="24" height="29" class="window"/><rect x="1335" y="247" width="24" height="29" class="window"/>
+    </g>
+  </g>
+
+  <text x="800" y="91" text-anchor="middle" class="title">아파트 매수 비용 한눈에 보기</text>
+  <text x="800" y="139" text-anchor="middle" class="subtitle">매매대금만 보지 말고 세금, 복비, 인지세, 등기비용까지 함께 계산</text>
+
+  <g transform="translate(484 206)">
+    <rect width="632" height="138" rx="18" class="main-card"/>
+    <text x="316" y="54" text-anchor="middle" class="small">실제 준비 금액</text>
+    <text x="316" y="101" text-anchor="middle" class="formula">매매대금 + 부대비용</text>
+  </g>
+
+  <line x1="800" y1="344" x2="800" y2="405" class="line"/>
+  <line x1="260" y1="405" x2="1340" y2="405" class="line"/>
+  <line x1="260" y1="405" x2="260" y2="455" class="line"/>
+  <line x1="620" y1="405" x2="620" y2="455" class="line"/>
+  <line x1="980" y1="405" x2="980" y2="455" class="line"/>
+  <line x1="1340" y1="405" x2="1340" y2="455" class="line"/>
+
+  <g transform="translate(95 455)">
+    <rect width="330" height="240" rx="16" class="card"/>
+    <circle cx="46" cy="46" r="28" class="badge-teal"/><text x="46" y="56" text-anchor="middle" class="num">1</text>
+    <text x="182" y="58" text-anchor="middle" class="section">취득 단계 세금</text>
+    <line x1="42" y1="86" x2="288" y2="86" class="muted-line"/>
+    <text x="165" y="126" text-anchor="middle" class="body">취득세</text>
+    <text x="165" y="162" text-anchor="middle" class="body">지방교육세</text>
+    <text x="165" y="198" text-anchor="middle" class="body">농어촌특별세</text>
+  </g>
+
+  <g transform="translate(455 455)">
+    <rect width="330" height="240" rx="16" class="card"/>
+    <circle cx="46" cy="46" r="28" class="badge-gold"/><text x="46" y="56" text-anchor="middle" class="num">2</text>
+    <text x="182" y="58" text-anchor="middle" class="section">중개보수</text>
+    <line x1="42" y1="86" x2="288" y2="86" class="muted-line"/>
+    <text x="165" y="126" text-anchor="middle" class="body">거래금액별 상한요율</text>
+    <text x="165" y="162" text-anchor="middle" class="body">상한 내 협의</text>
+    <text x="165" y="198" text-anchor="middle" class="body">VAT 별도 여부 확인</text>
+  </g>
+
+  <g transform="translate(815 455)">
+    <rect width="330" height="240" rx="16" class="card"/>
+    <circle cx="46" cy="46" r="28" class="badge-green"/><text x="46" y="56" text-anchor="middle" class="num">3</text>
+    <text x="182" y="58" text-anchor="middle" class="section">계약·등기 비용</text>
+    <line x1="42" y1="86" x2="288" y2="86" class="muted-line"/>
+    <text x="165" y="126" text-anchor="middle" class="body">인지세</text>
+    <text x="165" y="162" text-anchor="middle" class="body">등기신청수수료</text>
+    <text x="165" y="198" text-anchor="middle" class="body">국민주택채권·법무사</text>
+  </g>
+
+  <g transform="translate(1175 455)">
+    <rect width="330" height="240" rx="16" class="card"/>
+    <circle cx="46" cy="46" r="28" class="badge-coral"/><text x="46" y="56" text-anchor="middle" class="num">4</text>
+    <text x="182" y="58" text-anchor="middle" class="section">계약 전 확인</text>
+    <line x1="42" y1="86" x2="288" y2="86" class="muted-line"/>
+    <text x="165" y="126" text-anchor="middle" class="body">조정대상지역</text>
+    <text x="165" y="162" text-anchor="middle" class="body">세대 기준 주택 수</text>
+    <text x="165" y="198" text-anchor="middle" class="body">총 현금흐름표</text>
+  </g>
+
+  <g transform="translate(280 744)">
+    <rect width="1040" height="88" rx="16" fill="#ffffff" stroke="#cbd9d5" stroke-width="3"/>
+    <text x="520" y="36" text-anchor="middle" class="body">체크 포인트</text>
+    <text x="520" y="67" text-anchor="middle" class="small">취득세만 계산하면 부족할 수 있습니다. 잔금일 전에 복비, 인지세, 채권, 등기대행비까지 합산하세요.</text>
+  </g>
+</svg>
