@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F6F7F9"/>
+  <rect x="72" y="66" width="1056" height="498" rx="28" fill="#FFFFFF" stroke="#D7DDE5" stroke-width="2"/>
+  <text x="104" y="130" fill="#1F2937" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="44" font-weight="700">공포·탐욕 지수</text>
+  <text x="104" y="174" fill="#5B6472" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22">시장 심리를 0부터 100까지 숫자로 보여주는 투자 온도계</text>
+
+  <path d="M270 470 A230 230 0 0 1 730 470" stroke="#E5E7EB" stroke-width="46" stroke-linecap="round"/>
+  <path d="M270 470 A230 230 0 0 1 337 307" stroke="#2563EB" stroke-width="46" stroke-linecap="round"/>
+  <path d="M337 307 A230 230 0 0 1 500 240" stroke="#22A06B" stroke-width="46" stroke-linecap="round"/>
+  <path d="M500 240 A230 230 0 0 1 663 307" stroke="#F59E0B" stroke-width="46" stroke-linecap="round"/>
+  <path d="M663 307 A230 230 0 0 1 730 470" stroke="#DC2626" stroke-width="46" stroke-linecap="round"/>
+
+  <path d="M500 470L628 342" stroke="#1F2937" stroke-width="12" stroke-linecap="round"/>
+  <path d="M642 328L623 368L602 347Z" fill="#1F2937"/>
+  <circle cx="500" cy="470" r="18" fill="#1F2937"/>
+  <circle cx="500" cy="470" r="7" fill="#FFFFFF"/>
+
+  <text x="248" y="538" fill="#2563EB" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700">공포</text>
+  <text x="476" y="204" fill="#22A06B" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="22" font-weight="700">중립</text>
+  <text x="708" y="538" fill="#DC2626" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="24" font-weight="700">탐욕</text>
+
+  <rect x="814" y="232" width="254" height="62" rx="12" fill="#F3F4F6"/>
+  <text x="838" y="271" fill="#374151" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="21" font-weight="700">0 = 극단적 공포</text>
+  <rect x="814" y="318" width="254" height="62" rx="12" fill="#F3F4F6"/>
+  <text x="838" y="357" fill="#374151" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="21" font-weight="700">50 = 중립</text>
+  <rect x="814" y="404" width="254" height="62" rx="12" fill="#F3F4F6"/>
+  <text x="838" y="443" fill="#374151" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="21" font-weight="700">100 = 극단적 탐욕</text>
+
+  <text x="814" y="522" fill="#6B7280" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="18">Fear &amp; Greed Index · 투자심리 · 변동성</text>
+</svg>
