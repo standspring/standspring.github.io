@@ -5,6 +5,8 @@ categories: [Linux, DevOps]
 tags: [ssh, ssh-keygen, 인증, 서버관리, 보안]
 ---
 
+![SSH keygen passwordless login](/assets/img/2026-04-27-ssh-keygen-sample.png)
+
 두 PC 간 **비밀번호 없이 SSH 접속하는 방법**
 
 ---
