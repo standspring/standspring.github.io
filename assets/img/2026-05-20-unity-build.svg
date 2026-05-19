@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Unity Build concept diagram</title>
+  <desc id="desc">Multiple C++ source files are included into one unity translation unit and compiled into a single object file.</desc>
+  <rect width="1200" height="630" fill="#f6f8fb"/>
+  <rect x="70" y="70" width="1060" height="490" rx="18" fill="#ffffff" stroke="#d7dde8" stroke-width="3"/>
+  <text x="600" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#1f2937">Unity Build / Jumbo Build</text>
+  <text x="600" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#526071">여러 .cpp 파일을 하나의 translation unit으로 묶어 컴파일하는 방식</text>
+
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#263241">
+    <rect x="125" y="240" width="160" height="70" rx="10" fill="#e8f1ff" stroke="#88aee8" stroke-width="2"/>
+    <text x="205" y="283" text-anchor="middle">a.cpp</text>
+    <rect x="125" y="335" width="160" height="70" rx="10" fill="#e8f1ff" stroke="#88aee8" stroke-width="2"/>
+    <text x="205" y="378" text-anchor="middle">b.cpp</text>
+    <rect x="125" y="430" width="160" height="70" rx="10" fill="#e8f1ff" stroke="#88aee8" stroke-width="2"/>
+    <text x="205" y="473" text-anchor="middle">c.cpp</text>
+  </g>
+
+  <g fill="none" stroke="#6b7280" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 275 C360 275 380 315 440 315"/>
+    <path d="M300 370 C360 370 380 345 440 345"/>
+    <path d="M300 465 C360 465 380 375 440 375"/>
+    <path d="M428 303 L445 317 L424 326"/>
+    <path d="M428 355 L445 344 L424 335"/>
+    <path d="M427 386 L445 374 L424 365"/>
+  </g>
+
+  <rect x="455" y="238" width="290" height="265" rx="14" fill="#eef8f1" stroke="#7dbd8f" stroke-width="2"/>
+  <text x="600" y="283" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#24422c">unity_0.cpp</text>
+  <text x="600" y="332" text-anchor="middle" font-family="Consolas, monospace" font-size="22" fill="#31523a">#include "a.cpp"</text>
+  <text x="600" y="372" text-anchor="middle" font-family="Consolas, monospace" font-size="22" fill="#31523a">#include "b.cpp"</text>
+  <text x="600" y="412" text-anchor="middle" font-family="Consolas, monospace" font-size="22" fill="#31523a">#include "c.cpp"</text>
+  <text x="600" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#536b58">전처리와 헤더 파싱을 한 번에 처리</text>
+
+  <g fill="none" stroke="#6b7280" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M765 370 L885 370"/>
+    <path d="M868 352 L890 370 L868 388"/>
+  </g>
+
+  <rect x="900" y="287" width="185" height="166" rx="14" fill="#fff5df" stroke="#d5a33b" stroke-width="2"/>
+  <text x="992" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#573d00">unity_0.o</text>
+  <text x="992" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#6b520f">링크 단계로 전달</text>
+
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#526071">장점: 빠른 전체 빌드 · 단점: 숨은 의존성, ODR 문제, 증분 빌드 악화 가능성</text>
+</svg>
