@@ -5,6 +5,8 @@ category: C
 tags: [C, 시스템프로그래밍, 공유메모리, shm_open, mmap, posix, ipc]
 ---
 
+![POSIX shared memory lifecycle](/assets/img/2025-04-19-shm-open-mmap-close.png)
+
 # `shm_open`, `mmap`, `close`의 관계 정리  
 > POSIX 공유 메모리에서 자주 헷갈리는 부분을 C 코드 예제와 함께 이해하기
 
