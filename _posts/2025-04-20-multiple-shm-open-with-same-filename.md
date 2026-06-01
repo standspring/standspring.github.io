@@ -3,7 +3,10 @@ title: "shm_open을 동일한 이름으로 두 번 호출하면 같은 메모리
 date: 2025-04-20
 category: C
 tags: [C, 시스템프로그래밍, 공유메모리, shm_open, mmap, posix, ipc]
----
+---
+
+![shm_open same filename shared memory mapping](/assets/img/2025-04-20-multiple-shm-open-with-same-filename.png)
+
 
 # `shm_open`을 동일한 이름으로 두 번 호출하면 같은 메모리인가요?
 
