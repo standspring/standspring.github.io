@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">C memory layout infographic</title>
+  <desc id="desc">C program memory layout showing stack, heap, bss, data, and text regions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9fc"/>
+      <stop offset="1" stop-color="#eef5f2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1f2937" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow-dark" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f3b4a"/>
+    </marker>
+    <marker id="arrow-heap" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#d77a32"/>
+    </marker>
+    <marker id="arrow-stack" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#4d73d9"/>
+    </marker>
+    <style>
+      .font { font-family: "Segoe UI", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; }
+      .title { fill: #1f2937; font-size: 42px; font-weight: 800; }
+      .subtitle { fill: #66758a; font-size: 20px; }
+      .region-title { fill: #ffffff; font-size: 24px; font-weight: 800; }
+      .region-sub { fill: #eef4fb; font-size: 16px; }
+      .note-title { fill: #263445; font-size: 19px; font-weight: 800; }
+      .note-text { fill: #66758a; font-size: 16px; }
+      .axis { fill: #334155; font-size: 17px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="72" y="56" width="1056" height="608" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+
+  <text class="font title" x="108" y="116">C 프로그램 메모리 구조</text>
+  <text class="font subtitle" x="108" y="153">프로세스 주소 공간은 역할에 따라 여러 영역으로 나뉩니다.</text>
+
+  <g transform="translate(118 198)">
+    <rect x="0" y="0" width="500" height="420" rx="16" fill="#f9fbfd" stroke="#d9e2ec" stroke-width="2"/>
+
+    <line x1="44" y1="366" x2="44" y2="54" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow-dark)"/>
+    <text class="font axis" x="20" y="34">높은 주소</text>
+    <text class="font axis" x="20" y="398">낮은 주소</text>
+
+    <rect x="112" y="32" width="326" height="64" rx="10" fill="#5677de"/>
+    <text class="font region-title" x="138" y="72">Stack</text>
+    <text class="font region-sub" x="252" y="58">지역 변수, 매개변수</text>
+    <text class="font region-sub" x="252" y="81">함수 호출 프레임</text>
+
+    <rect x="112" y="112" width="326" height="70" rx="10" fill="#fbf4e8" stroke="#efd1a6" stroke-width="2" stroke-dasharray="8 8"/>
+    <text class="font" x="210" y="154" fill="#7b5b35" font-size="20" font-weight="800">Unused / Shared Space</text>
+
+    <rect x="112" y="198" width="326" height="64" rx="10" fill="#e9894c"/>
+    <text class="font region-title" x="138" y="238">Heap</text>
+    <text class="font" x="252" y="224" fill="#fff7ef" font-size="16">malloc/free</text>
+    <text class="font" x="252" y="247" fill="#fff7ef" font-size="16">동적 메모리</text>
+
+    <rect x="112" y="276" width="326" height="42" rx="10" fill="#6aa77c"/>
+    <text class="font" x="138" y="304" fill="#ffffff" font-size="21" font-weight="800">BSS</text>
+    <text class="font" x="252" y="304" fill="#f0fff5" font-size="16">초기값 없는 전역/static</text>
+
+    <rect x="112" y="326" width="326" height="42" rx="10" fill="#3d8f84"/>
+    <text class="font" x="138" y="354" fill="#ffffff" font-size="21" font-weight="800">Data</text>
+    <text class="font" x="252" y="354" fill="#e9fbf7" font-size="16">초기값 있는 전역/static</text>
+
+    <rect x="112" y="376" width="326" height="42" rx="10" fill="#4e5f78"/>
+    <text class="font" x="138" y="404" fill="#ffffff" font-size="21" font-weight="800">Text</text>
+    <text class="font" x="252" y="404" fill="#e9eef5" font-size="16">컴파일된 코드</text>
+
+    <line x1="458" y1="88" x2="458" y2="116" stroke="#4d73d9" stroke-width="3" marker-end="url(#arrow-stack)"/>
+    <text class="font" x="300" y="109" fill="#4d73d9" font-size="15" font-weight="800">Stack grows down</text>
+
+    <line x1="458" y1="204" x2="458" y2="180" stroke="#d77a32" stroke-width="3" marker-end="url(#arrow-heap)"/>
+    <text class="font" x="312" y="196" fill="#d77a32" font-size="15" font-weight="800">Heap grows up</text>
+  </g>
+
+  <g transform="translate(680 218)">
+    <text class="font" x="0" y="0" fill="#263445" font-size="26" font-weight="800">한눈에 보는 포인트</text>
+
+    <g transform="translate(0 38)">
+      <rect x="0" y="0" width="402" height="76" rx="12" fill="#f2f7ff" stroke="#cddcf8"/>
+      <circle cx="35" cy="38" r="17" fill="#5677de"/>
+      <text class="font" x="30" y="45" fill="#ffffff" font-size="18" font-weight="800">1</text>
+      <text class="font note-title" x="68" y="31">Stack</text>
+      <text class="font note-text" x="68" y="55">함수 종료 후 지역 변수 주소는 위험합니다.</text>
+    </g>
+
+    <g transform="translate(0 126)">
+      <rect x="0" y="0" width="402" height="76" rx="12" fill="#fff7ec" stroke="#f2d3a3"/>
+      <circle cx="35" cy="38" r="17" fill="#e9894c"/>
+      <text class="font" x="30" y="45" fill="#ffffff" font-size="18" font-weight="800">2</text>
+      <text class="font note-title" x="68" y="31">Heap</text>
+      <text class="font note-text" x="68" y="55">해제하지 않으면 메모리 누수가 생깁니다.</text>
+    </g>
+
+    <g transform="translate(0 214)">
+      <rect x="0" y="0" width="402" height="76" rx="12" fill="#f3fbf7" stroke="#cde9dd"/>
+      <circle cx="35" cy="38" r="17" fill="#3d8f84"/>
+      <text class="font" x="30" y="45" fill="#ffffff" font-size="18" font-weight="800">3</text>
+      <text class="font note-title" x="68" y="31">Data / BSS</text>
+      <text class="font note-text" x="68" y="55">전역 변수와 static 변수가 저장됩니다.</text>
+    </g>
+
+    <g transform="translate(0 302)">
+      <rect x="0" y="0" width="402" height="76" rx="12" fill="#f5f7fb" stroke="#dde6f0"/>
+      <circle cx="35" cy="38" r="17" fill="#4e5f78"/>
+      <text class="font" x="30" y="45" fill="#ffffff" font-size="18" font-weight="800">4</text>
+      <text class="font note-title" x="68" y="31">Text</text>
+      <text class="font note-text" x="68" y="55">컴파일된 함수 코드가 위치합니다.</text>
+    </g>
+  </g>
+</svg>
