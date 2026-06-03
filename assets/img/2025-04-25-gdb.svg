@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">GDB command cheat sheet</title>
+  <desc id="desc">Infographic cheat sheet of frequently used GDB commands and shortcuts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9fc"/>
+      <stop offset="1" stop-color="#eef5f2"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#243044"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1f2937" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .font { font-family: "Segoe UI", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; }
+      .mono { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; }
+      .title { fill: #1f2937; font-size: 42px; font-weight: 800; }
+      .subtitle { fill: #66758a; font-size: 20px; }
+      .section { fill: #263445; font-size: 21px; font-weight: 800; }
+      .cmd { fill: #1f2937; font-size: 17px; font-weight: 800; }
+      .desc { fill: #64748b; font-size: 15px; }
+      .term { fill: #d1fae5; font-size: 18px; }
+      .term-muted { fill: #a7b1c2; font-size: 15px; }
+      .key { fill: #ffffff; font-size: 16px; font-weight: 800; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="72" y="56" width="1056" height="608" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+
+  <text class="font title" x="108" y="116">자주 쓰는 gdb 명령어</text>
+  <text class="font subtitle" x="108" y="153">실행, 이동, 변수 확인, 메모리 조회, core 분석을 빠르게 찾는 치트시트입니다.</text>
+
+  <g transform="translate(108 196)">
+    <rect x="0" y="0" width="316" height="360" rx="16" fill="#f5f7fb" stroke="#dbe4ee"/>
+    <text class="font section" x="26" y="42">기본 실행</text>
+    <rect x="26" y="62" width="110" height="34" rx="8" fill="#5677de"/>
+    <text class="mono key" x="48" y="84">run / r</text>
+    <text class="font desc" x="152" y="84">프로그램 실행</text>
+    <rect x="26" y="110" width="110" height="34" rx="8" fill="#5677de"/>
+    <text class="mono key" x="42" y="132">break / b</text>
+    <text class="font desc" x="152" y="132">브레이크포인트</text>
+    <rect x="26" y="158" width="110" height="34" rx="8" fill="#5677de"/>
+    <text class="mono key" x="50" y="180">next / n</text>
+    <text class="font desc" x="152" y="180">다음 줄 실행</text>
+    <rect x="26" y="206" width="110" height="34" rx="8" fill="#5677de"/>
+    <text class="mono key" x="50" y="228">step / s</text>
+    <text class="font desc" x="152" y="228">함수 안으로 진입</text>
+    <rect x="26" y="254" width="110" height="34" rx="8" fill="#5677de"/>
+    <text class="mono key" x="38" y="276">continue</text>
+    <text class="font desc" x="152" y="276">다음 중단점까지</text>
+    <rect x="26" y="302" width="110" height="34" rx="8" fill="#5677de"/>
+    <text class="mono key" x="48" y="324">quit / q</text>
+    <text class="font desc" x="152" y="324">gdb 종료</text>
+  </g>
+
+  <g transform="translate(452 196)">
+    <rect x="0" y="0" width="316" height="360" rx="16" fill="#f3fbf7" stroke="#cde9dd"/>
+    <text class="font section" x="26" y="42">코드와 변수</text>
+    <text class="mono cmd" x="26" y="84">list</text>
+    <text class="font desc" x="126" y="84">현재 위치 소스 보기</text>
+    <text class="mono cmd" x="26" y="128">print var</text>
+    <text class="font desc" x="126" y="128">변수 값 출력</text>
+    <text class="mono cmd" x="26" y="172">info locals</text>
+    <text class="font desc" x="154" y="172">지역 변수 목록</text>
+    <text class="mono cmd" x="26" y="216">bt</text>
+    <text class="font desc" x="126" y="216">호출 스택 보기</text>
+    <text class="mono cmd" x="26" y="260">frame N</text>
+    <text class="font desc" x="126" y="260">N번 프레임 이동</text>
+    <text class="mono cmd" x="26" y="304">up / down</text>
+    <text class="font desc" x="126" y="304">스택 프레임 이동</text>
+  </g>
+
+  <g transform="translate(796 196)">
+    <rect x="0" y="0" width="296" height="360" rx="16" fill="url(#terminal)"/>
+    <rect x="0" y="0" width="296" height="34" rx="16" fill="#374151"/>
+    <circle cx="24" cy="17" r="6" fill="#ff6b6b"/>
+    <circle cx="44" cy="17" r="6" fill="#f7c66f"/>
+    <circle cx="64" cy="17" r="6" fill="#6edb8f"/>
+    <text class="font" x="26" y="70" fill="#ffffff" font-size="21" font-weight="800">실전 조합</text>
+    <text class="mono term" x="26" y="112">(gdb) b main</text>
+    <text class="mono term" x="26" y="146">(gdb) r</text>
+    <text class="mono term" x="26" y="180">(gdb) n</text>
+    <text class="mono term" x="26" y="214">(gdb) p some_var</text>
+    <text class="mono term" x="26" y="248">(gdb) x/4x &amp;var</text>
+    <text class="mono term" x="26" y="282">(gdb) bt</text>
+    <text class="mono term-muted" x="26" y="326">Enter: 이전 명령 반복</text>
+  </g>
+
+  <g transform="translate(108 584)">
+    <rect x="0" y="0" width="230" height="48" rx="12" fill="#fff7ec" stroke="#f2d3a3"/>
+    <text class="mono cmd" x="24" y="30">x/Nf addr</text>
+    <text class="font desc" x="126" y="30">메모리 조회</text>
+
+    <rect x="250" y="0" width="230" height="48" rx="12" fill="#f5f7fb" stroke="#dbe4ee"/>
+    <text class="mono cmd" x="274" y="30">set var</text>
+    <text class="font desc" x="374" y="30">값 변경</text>
+
+    <rect x="500" y="0" width="230" height="48" rx="12" fill="#f2f7ff" stroke="#cddcf8"/>
+    <text class="mono cmd" x="524" y="30">core file</text>
+    <text class="font desc" x="634" y="30">core 열기</text>
+
+    <rect x="750" y="0" width="256" height="48" rx="12" fill="#f3fbf7" stroke="#cde9dd"/>
+    <text class="mono cmd" x="774" y="30">Ctrl+C</text>
+    <text class="font desc" x="876" y="30">실행 중단</text>
+  </g>
+</svg>
