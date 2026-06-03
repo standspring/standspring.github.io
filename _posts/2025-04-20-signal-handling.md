@@ -5,6 +5,8 @@ category: C
 tags: [C, 시스템프로그래밍, signal, sigaction, trap, 리눅스, 프로세스제어, SIGINT]
 ---
 
+![Signal handling infographic](/assets/img/2025-04-20-signal-handling.png)
+
 # `signal` 핸들링과 `trap` — C에서 프로세스를 안전하게 제어하기
 
 리눅스에서 실행 중인 프로세스는 다양한 "신호(Signal)"를 받을 수 있습니다.  
