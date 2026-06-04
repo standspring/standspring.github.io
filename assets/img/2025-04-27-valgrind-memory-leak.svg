@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Valgrind memory leak analysis workflow</title>
+  <desc id="desc">Infographic showing how Valgrind finds memory leaks and uninitialized memory in C programs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9fc"/>
+      <stop offset="1" stop-color="#eef6f1"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#233047"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1f2937" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#425166"/>
+    </marker>
+    <style>
+      .font { font-family: "Segoe UI", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; }
+      .mono { font-family: "Cascadia Mono", Consolas, "Courier New", monospace; }
+      .title { fill: #1f2937; font-size: 41px; font-weight: 800; }
+      .subtitle { fill: #66758a; font-size: 20px; }
+      .step-title { fill: #253244; font-size: 21px; font-weight: 800; }
+      .step-text { fill: #64748b; font-size: 15px; }
+      .code { fill: #d1fae5; font-size: 17px; }
+      .code-muted { fill: #a7b1c2; font-size: 15px; }
+      .badge { fill: #ffffff; font-size: 16px; font-weight: 800; }
+      .small { fill: #64748b; font-size: 14px; }
+      .warn { fill: #be123c; font-size: 17px; font-weight: 800; }
+      .ok { fill: #0f766e; font-size: 17px; font-weight: 800; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="72" y="56" width="1056" height="608" rx="18" fill="#ffffff" filter="url(#shadow)"/>
+
+  <text class="font title" x="108" y="116">valgrind 메모리 오류 분석 흐름</text>
+  <text class="font subtitle" x="108" y="153">C 코드의 leak, uninitialized value, call stack을 따라가며 원인을 찾습니다.</text>
+
+  <g transform="translate(108 194)">
+    <rect x="0" y="0" width="236" height="138" rx="14" fill="#f5f7fb" stroke="#dbe4ee"/>
+    <circle cx="34" cy="34" r="18" fill="#5677de"/>
+    <text class="font badge" x="29" y="40">1</text>
+    <text class="font step-title" x="64" y="41">문제 코드</text>
+    <text class="mono step-text" x="26" y="78">int *p = malloc(...);</text>
+    <text class="mono step-text" x="26" y="104">// free(p) 누락</text>
+    <text class="font warn" x="26" y="129">heap block lost</text>
+
+    <line x1="248" y1="69" x2="300" y2="69" stroke="#425166" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="312" y="0" width="236" height="138" rx="14" fill="#f5f7fb" stroke="#dbe4ee"/>
+    <circle cx="346" cy="34" r="18" fill="#0f766e"/>
+    <text class="font badge" x="341" y="40">2</text>
+    <text class="font step-title" x="376" y="41">디버그 빌드</text>
+    <rect x="338" y="70" width="184" height="42" rx="9" fill="#e8f5f2"/>
+    <text class="mono step-text" x="359" y="96">gcc -g leak.c</text>
+    <text class="font small" x="338" y="129">라인 번호와 함수 추적 준비</text>
+
+    <line x1="560" y1="69" x2="612" y2="69" stroke="#425166" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="624" y="0" width="324" height="138" rx="14" fill="url(#terminal)"/>
+    <circle cx="650" cy="25" r="5" fill="#ef4444"/>
+    <circle cx="668" cy="25" r="5" fill="#f59e0b"/>
+    <circle cx="686" cy="25" r="5" fill="#22c55e"/>
+    <text class="mono code" x="648" y="67">$ valgrind --leak-check=full \</text>
+    <text class="mono code" x="648" y="94">  --track-origins=yes ./leak</text>
+    <text class="mono code-muted" x="648" y="122">leak + uninitialised value 추적</text>
+  </g>
+
+  <g transform="translate(108 376)">
+    <rect x="0" y="0" width="400" height="214" rx="16" fill="#fff7ed" stroke="#fed7aa"/>
+    <text class="font step-title" x="28" y="42">valgrind 리포트 읽기</text>
+    <rect x="28" y="66" width="344" height="102" rx="10" fill="#ffffff" stroke="#fed7aa"/>
+    <text class="mono step-text" x="48" y="96">40 bytes definitely lost</text>
+    <text class="mono step-text" x="48" y="124">by 0x40054A: leak (leak.c:5)</text>
+    <text class="mono step-text" x="48" y="152">by 0x40055D: main (leak.c:11)</text>
+    <text class="font warn" x="28" y="198">definitely lost = 참조할 수 없는 메모리</text>
+
+    <line x1="414" y1="106" x2="456" y2="106" stroke="#425166" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="470" y="0" width="210" height="214" rx="16" fill="#f5f7fb" stroke="#dbe4ee"/>
+    <text class="font step-title" x="498" y="42">원인 추적</text>
+    <path d="M514 74 H642" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="514" cy="74" r="13" fill="#5677de"/>
+    <text class="font badge" x="508" y="80">A</text>
+    <circle cx="578" cy="74" r="13" fill="#ef4444"/>
+    <text class="font badge" x="572" y="80">B</text>
+    <circle cx="642" cy="74" r="13" fill="#0f766e"/>
+    <text class="font badge" x="636" y="80">C</text>
+    <text class="mono step-text" x="498" y="116">malloc()</text>
+    <text class="mono step-text" x="498" y="145">leak.c:5</text>
+    <text class="mono step-text" x="498" y="174">main()</text>
+
+    <line x1="694" y1="106" x2="736" y2="106" stroke="#425166" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <rect x="750" y="0" width="250" height="214" rx="16" fill="#ecfdf5" stroke="#bbf7d0"/>
+    <text class="font step-title" x="778" y="42">수정 후 재검사</text>
+    <rect x="778" y="66" width="168" height="42" rx="9" fill="#ffffff" stroke="#bbf7d0"/>
+    <text class="mono step-text" x="805" y="92">free(p);</text>
+    <text class="font ok" x="778" y="139">no leaks are possible</text>
+    <text class="font step-text" x="778" y="170">초기화 오류는</text>
+    <text class="mono step-text" x="778" y="197">calloc()</text>
+    <text class="font step-text" x="849" y="197">또는 명시 초기화</text>
+  </g>
+</svg>
