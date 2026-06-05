@@ -5,6 +5,8 @@ category: jenkins
 tags: [jenkins, install, CI/CD, jenkins.war, java, ubuntu, ci]
 ---
 
+![Jenkins WAR install flow infographic](/assets/img/2025-05-04-jenkins-install-guide.svg)
+
 # Jenkins 설치 가이드
 
 Jenkins는 오픈 소스 기반의 자동화 서버로, CI/CD(지속적 통합 및 배포) 파이프라인을 구현할 때 가장 널리 사용되는 도구 중 하나입니다. 이 포스트에서는 Ubuntu 기반 리눅스 환경에 Jenkins.war 파일을 이용하여 설치하는 방법을 소개합니다.
