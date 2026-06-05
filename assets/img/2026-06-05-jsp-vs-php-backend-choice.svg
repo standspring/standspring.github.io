@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">JSP and PHP backend choice infographic</title>
+  <desc id="desc">A comparison diagram for choosing JSP with Apache and Tomcat or PHP with Nginx and PHP-FPM.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f8fb"/>
+      <stop offset="1" stop-color="#eaf1f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#182333" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#132033">JSP or PHP Backend Choice</text>
+  <text x="600" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#536273">Avoid mixing stacks unless there is a clear operational reason</text>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="155" width="480" height="355" rx="14" fill="#ffffff"/>
+    <rect x="648" y="155" width="480" height="355" rx="14" fill="#ffffff"/>
+  </g>
+
+  <text x="312" y="202" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#c95f1a">JSP Stack</text>
+  <text x="888" y="202" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#16864b">PHP Stack</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#263548">
+    <rect x="137" y="248" width="125" height="52" rx="8" fill="#fff3e8" stroke="#efb079"/>
+    <text x="199" y="281" text-anchor="middle" font-weight="700">Apache</text>
+    <path d="M262 274h62" stroke="#9ca8b5" stroke-width="4"/>
+    <rect x="324" y="248" width="125" height="52" rx="8" fill="#fff3e8" stroke="#efb079"/>
+    <text x="386" y="281" text-anchor="middle" font-weight="700">Tomcat</text>
+    <path d="M386 300v50" stroke="#9ca8b5" stroke-width="4"/>
+    <rect x="294" y="350" width="185" height="52" rx="8" fill="#fff3e8" stroke="#efb079"/>
+    <text x="386" y="383" text-anchor="middle" font-weight="700">JSP / Servlet</text>
+    <text x="312" y="450" text-anchor="middle" font-size="17" fill="#5b6b7c">Best for Java teams, enterprise apps, WAR/JVM ecosystem</text>
+
+    <rect x="713" y="248" width="125" height="52" rx="8" fill="#edfdf4" stroke="#76c893"/>
+    <text x="775" y="281" text-anchor="middle" font-weight="700">Nginx</text>
+    <path d="M838 274h62" stroke="#9ca8b5" stroke-width="4"/>
+    <rect x="900" y="248" width="125" height="52" rx="8" fill="#edfdf4" stroke="#76c893"/>
+    <text x="962" y="281" text-anchor="middle" font-weight="700">PHP-FPM</text>
+    <path d="M962 300v50" stroke="#9ca8b5" stroke-width="4"/>
+    <rect x="870" y="350" width="185" height="52" rx="8" fill="#edfdf4" stroke="#76c893"/>
+    <text x="962" y="383" text-anchor="middle" font-weight="700">PHP App</text>
+    <text x="888" y="450" text-anchor="middle" font-size="17" fill="#5b6b7c">Best for PHP CMS, simple hosting, fast content services</text>
+  </g>
+</svg>
