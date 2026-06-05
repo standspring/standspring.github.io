@@ -5,6 +5,8 @@ category: jenkins
 tags: [jenkins, plugin, pipeline, jenkinsfile, ci, cd, declarative-pipeline]
 ---
 
+![Jenkins Pipeline workflow infographic](/assets/img/2025-05-11-jenkins-plugin-pipeline.svg)
+
 # Jenkins Pipeline 사용법 가이드
 
 Jenkins Pipeline은 CI/CD 흐름을 코드로 정의하여 더욱 효율적이고 일관성 있는 자동화 작업을 가능하게 합니다. 이 문서에서는 Pipeline 플러그인의 역할, 기본 구조, 주요 기능, 예제까지 자세히 소개합니다.

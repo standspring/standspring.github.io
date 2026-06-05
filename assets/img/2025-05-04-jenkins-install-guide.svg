@@ -39,15 +39,7 @@
     <rect x="46" y="166" width="168" height="26" rx="5" fill="#dbe5ef"/>
     <rect x="46" y="206" width="196" height="26" rx="5" fill="#dbe5ef"/>
     <path d="M150 112 C196 112 232 138 232 176 C232 218 196 244 150 244 C104 244 68 218 68 176 C68 138 104 112 150 112Z" fill="#d33832" opacity="0.1"/>
-    <text x="150" y="294" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#172033">Jenkins Server</text>
-  </g>
-
-  <g stroke="#3b5166" stroke-width="4" stroke-linecap="round" fill="none" marker-end="url(#arrow)">
-    <path d="M255 268 C340 238 405 238 480 272"/>
-    <path d="M255 470 C342 504 407 500 494 390"/>
-    <path d="M790 273 C872 236 935 236 1018 270"/>
-    <path d="M784 389 C875 508 947 506 1026 470"/>
-    <path d="M560 526 C600 586 686 586 725 526"/>
+    <text x="150" y="286" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#172033">Jenkins Runtime</text>
   </g>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
@@ -63,8 +55,8 @@
       <rect width="250" height="132" rx="8" fill="#ffffff" stroke="#cbd7e3" stroke-width="2"/>
       <path d="M41 34 H72 L92 54 V96 H41 Z" fill="#eef4fb" stroke="#3b5166" stroke-width="3"/>
       <path d="M72 34 V55 H92" fill="none" stroke="#3b5166" stroke-width="3"/>
-      <text x="112" y="57" font-size="24" font-weight="800" fill="#172033">jenkins.war</text>
-      <text x="112" y="87" font-size="16" fill="#627184">Download and move</text>
+      <text x="104" y="57" font-size="23" font-weight="800" fill="#172033">jenkins.war</text>
+      <text x="104" y="87" font-size="15" fill="#627184">Download WAR</text>
     </g>
 
     <g transform="translate(954 210)" filter="url(#shadow)">
@@ -81,17 +73,37 @@
       <rect x="43" y="60" width="58" height="42" rx="7" fill="#d33832"/>
       <path d="M55 60 V47 C55 29 89 29 89 47 V60" fill="none" stroke="#3b5166" stroke-width="8" stroke-linecap="round"/>
       <text x="118" y="57" font-size="24" font-weight="800" fill="#172033">Unlock</text>
-      <text x="118" y="87" font-size="16" fill="#627184">Initial admin password</text>
+      <text x="118" y="82" font-size="15" fill="#627184">Initial admin</text>
+      <text x="118" y="102" font-size="15" fill="#627184">password</text>
     </g>
 
-    <g transform="translate(515 548)" filter="url(#shadow)">
-      <rect width="250" height="116" rx="8" fill="#ffffff" stroke="#cbd7e3" stroke-width="2"/>
-      <circle cx="57" cy="58" r="31" fill="#e8f4ff" stroke="#2563eb" stroke-width="3"/>
-      <path d="M57 32 V58 L76 70" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M182 34 h18 v18 h18 v18 h-18 v18 h-18 v-18 h-18 v-18 h18z" fill="#84cc16"/>
-      <text x="104" y="51" font-size="23" font-weight="800" fill="#172033">systemd</text>
-      <text x="104" y="80" font-size="16" fill="#627184">Service + plugins</text>
+    <g transform="translate(490 548)" filter="url(#shadow)">
+      <rect width="300" height="116" rx="8" fill="#ffffff" stroke="#cbd7e3" stroke-width="2"/>
+      <circle cx="82" cy="43" r="26" fill="#e8f4ff" stroke="#2563eb" stroke-width="3"/>
+      <path d="M82 24 V43 L97 52" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="82" y="86" text-anchor="middle" font-size="21" font-weight="800" fill="#172033">systemd</text>
+      <text x="82" y="106" text-anchor="middle" font-size="13" fill="#627184">Service</text>
+
+      <circle cx="218" cy="43" r="26" fill="#ecfdf3" stroke="#84cc16" stroke-width="3"/>
+      <path d="M218 28 V58 M203 43 H233" fill="none" stroke="#65a30d" stroke-width="7" stroke-linecap="round"/>
+      <text x="218" y="86" text-anchor="middle" font-size="21" font-weight="800" fill="#172033">Plugins</text>
+      <text x="218" y="106" text-anchor="middle" font-size="13" fill="#627184">Install</text>
     </g>
+  </g>
+
+  <g stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.92">
+    <path d="M201 346 V400"/>
+    <path d="M330 474 C390 474 430 430 482 390"/>
+    <path d="M794 273 C842 246 894 246 950 270"/>
+    <path d="M1079 346 V400"/>
+    <path d="M954 474 C900 530 850 574 794 604"/>
+  </g>
+  <g stroke="#3b5166" stroke-width="4" stroke-linecap="round" fill="none" marker-end="url(#arrow)">
+    <path d="M201 346 V400"/>
+    <path d="M330 474 C390 474 430 430 482 390"/>
+    <path d="M794 273 C842 246 894 246 950 270"/>
+    <path d="M1079 346 V400"/>
+    <path d="M954 474 C900 530 850 574 794 604"/>
   </g>
 
   <g transform="translate(444 470)">
