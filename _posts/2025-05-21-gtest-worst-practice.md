@@ -5,6 +5,7 @@ category: C
 tags: [C, c++, googletest, gtest, unittest, pattern, test-smell, refactoring]
 ---
 
+![GTest worst practices and refactoring guide infographic](/assets/img/2025-05-21-gtest-worst-practice.svg)
 
 # 🔁 테스트 코드 리팩토링: 실수하기 쉬운 GTest 코드 패턴
 
