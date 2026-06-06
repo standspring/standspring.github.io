@@ -5,6 +5,8 @@ category: C
 tags: [C, c++, googletest, gtest, unittest, mocking, mock, googlemock, mock-object]
 ---
 
+![GoogleMock call verification workflow infographic](/assets/img/2025-05-28-googlemock.svg)
+
 # Mocking을 위한 GoogleMock 사용법
 
 GoogleMock은 GoogleTest에 포함된 강력한 Mocking 도구로, 객체의 메서드 호출 여부, 호출 횟수, 인자 값 등을 쉽게 검증할 수 있도록 도와줍니다. 이 글에서는 GoogleMock을 사용하여 함수 호출을 검증하는 기본 사용법을 단계별로 소개하고 예시 코드도 함께 제공합니다.
