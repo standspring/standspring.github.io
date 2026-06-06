@@ -5,6 +5,8 @@ category: C
 tags: [C, c++, googletest, gtest, unittest, mock, expect_call, gmock, test-fixture]
 ---
 
+![GTest and GMock practical test patterns infographic](/assets/img/2025-05-19-gtest-test-example.svg)
+
 # GoogleTest: 실무에 바로 쓰는 GTest & GMock 가이드
 
 단위 테스트는 코드 품질과 유지보수성 확보에 필수입니다. 이 글에서는 실무에서 자주 쓰는 GoogleTest 매크로와 Test Fixture, Mock 사용법까지 중급 테스트 작성법을 다룹니다.
