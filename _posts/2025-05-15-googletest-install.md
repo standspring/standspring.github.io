@@ -5,6 +5,8 @@ category: C
 tags: [C, c++, googletest, gtest, unittest, cmake, unit-test]
 ---
 
+![GoogleTest install and first test workflow infographic](/assets/img/2025-05-15-googletest-install.svg)
+
 # GoogleTest 설치부터 첫 테스트까지
 
 C++ 프로젝트에서 단위 테스트는 코드의 안정성과 유지보수를 위한 필수 도구입니다. 이 글에서는 GoogleTest(GTest)를 설치하고 간단한 테스트 코드를 작성하여 실행하는 방법까지 단계별로 소개합니다.
