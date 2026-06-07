@@ -5,6 +5,8 @@ category: ssh
 tags: [ssh, ssh-keygen, sshkey, ssh-key, ssh-key-comment, ssh-config, key-rotation, authorized-keys]
 ---
 
+![SSH key management workflow](/assets/img/2025-06-08-ssh-key-management.png)
+
 ## 🔧 1. SSH Key 관리 팁
 
 SSH Key는 생성 후에도 꾸준한 관리가 필요합니다. 관리가 제대로 되지 않으면 오히려 보안 허점이 될 수 있습니다.
