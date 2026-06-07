@@ -5,6 +5,8 @@ category: bash
 tags: [bash, array, for, associative, associativearray, indexed-array, shell-script]
 ---
 
+![Bash arrays and associative arrays for loop](/assets/img/2025-06-29-bash-array-for-associative.png)
+
 # Bash에서 배열(Array)과 연관 배열(Associative Array) 반복문 사용법
 
 Bash에서는 일반 배열(`indexed array`)과 연관 배열(`associative array`)을 지원합니다. 이 글에서는 두 종류의 배열을 `for` 루프를 통해 순회하는 방법을 예제와 함께 자세히 소개합니다.
