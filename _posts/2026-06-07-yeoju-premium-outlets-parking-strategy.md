@@ -281,6 +281,3 @@ EAST
 
 - [신세계사이먼 프리미엄 아울렛 공식 센터맵](https://app.premiumoutlets.co.kr/rpage/map/)
 - [여주 프리미엄 아울렛 공식 매장 검색](https://www.premiumoutlets.co.kr/rpage/store)
-- `2026-06-07-yeoju-map.png` 로컬 지도 이미지
-- `2026-06-07-yeoju-parking-map.png` 블로그용 주차 전략 지도
-- `2026-06-07-yeoju-parking-map-overlay-v2.png` 지도 기반 주차 전략 오버레이
