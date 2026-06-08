@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Mirror reflection angle diagram</title>
+  <desc id="desc">Incident ray and reflected ray make the same angle with the surface normal on a mirror.</desc>
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f97316"/>
+    </marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <rect x="96" y="80" width="1008" height="560" rx="24" fill="#ffffff" filter="url(#softShadow)"/>
+  <rect x="190" y="510" width="820" height="18" rx="9" fill="#64748b"/>
+  <rect x="190" y="528" width="820" height="38" fill="#dbeafe"/>
+  <g stroke="#93c5fd" stroke-width="3">
+    <path d="M220 560 L252 528"/>
+    <path d="M286 560 L318 528"/>
+    <path d="M352 560 L384 528"/>
+    <path d="M418 560 L450 528"/>
+    <path d="M484 560 L516 528"/>
+    <path d="M550 560 L582 528"/>
+    <path d="M616 560 L648 528"/>
+    <path d="M682 560 L714 528"/>
+    <path d="M748 560 L780 528"/>
+    <path d="M814 560 L846 528"/>
+    <path d="M880 560 L912 528"/>
+    <path d="M946 560 L978 528"/>
+  </g>
+  <line x1="600" y1="510" x2="600" y2="155" stroke="#334155" stroke-width="4" stroke-dasharray="12 12"/>
+  <path d="M272 142 L598 508" fill="none" stroke="#2563eb" stroke-width="12" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <path d="M602 508 L928 142" fill="none" stroke="#f97316" stroke-width="12" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+  <path d="M600 342 A168 168 0 0 0 488 385" fill="none" stroke="#2563eb" stroke-width="5"/>
+  <path d="M712 385 A168 168 0 0 0 600 342" fill="none" stroke="#f97316" stroke-width="5"/>
+  <circle cx="600" cy="510" r="11" fill="#0f172a"/>
+  <text x="306" y="146" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="36" font-weight="700" fill="#2563eb">입사광</text>
+  <text x="792" y="146" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="36" font-weight="700" fill="#f97316">반사광</text>
+  <text x="620" y="236" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="30" font-weight="700" fill="#334155">법선</text>
+  <text x="446" y="350" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="34" font-weight="700" fill="#2563eb">입사각 θ</text>
+  <text x="648" y="350" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="34" font-weight="700" fill="#f97316">반사각 θ</text>
+  <text x="430" y="615" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="36" font-weight="700" fill="#0f172a">거울면</text>
+  <text x="256" y="664" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="25" fill="#475569">각도는 거울면이 아니라 법선을 기준으로 잰다.</text>
+</svg>

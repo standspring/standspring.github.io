@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Coherent re-radiation from mirror electrons</title>
+  <desc id="desc">An incoming electromagnetic wave drives surface electrons in a mirror, and their coherent radiation forms the reflected wave.</desc>
+  <defs>
+    <marker id="arrowIn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowOut" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f97316"/>
+    </marker>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="#f8fafc"/>
+  <rect x="86" y="72" width="1028" height="576" rx="24" fill="#ffffff" filter="url(#softShadow)"/>
+  <rect x="200" y="425" width="800" height="34" rx="17" fill="#475569"/>
+  <rect x="200" y="459" width="800" height="90" fill="#e0f2fe"/>
+  <g stroke="#7dd3fc" stroke-width="3">
+    <path d="M224 545 L282 459"/>
+    <path d="M305 545 L363 459"/>
+    <path d="M386 545 L444 459"/>
+    <path d="M467 545 L525 459"/>
+    <path d="M548 545 L606 459"/>
+    <path d="M629 545 L687 459"/>
+    <path d="M710 545 L768 459"/>
+    <path d="M791 545 L849 459"/>
+    <path d="M872 545 L930 459"/>
+  </g>
+  <path d="M205 210 C265 155 325 265 385 210 S505 155 565 210 S685 265 745 210" fill="none" stroke="#2563eb" stroke-width="10" stroke-linecap="round"/>
+  <path d="M210 255 L498 420" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowIn)"/>
+  <path d="M702 420 L990 255" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowOut)"/>
+  <path d="M455 210 C515 155 575 265 635 210 S755 155 815 210 S935 265 995 210" fill="none" stroke="#f97316" stroke-width="10" stroke-linecap="round"/>
+  <g>
+    <circle cx="360" cy="425" r="20" fill="#0f172a"/>
+    <circle cx="480" cy="425" r="20" fill="#0f172a"/>
+    <circle cx="600" cy="425" r="20" fill="#0f172a"/>
+    <circle cx="720" cy="425" r="20" fill="#0f172a"/>
+    <circle cx="840" cy="425" r="20" fill="#0f172a"/>
+    <path d="M340 385 C356 374 372 374 388 385" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M460 385 C476 374 492 374 508 385" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M580 385 C596 374 612 374 628 385" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 385 C716 374 732 374 748 385" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+    <path d="M820 385 C836 374 852 374 868 385" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="190" y="152" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="34" font-weight="700" fill="#2563eb">입사 전자기파</text>
+  <text x="790" y="152" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="34" font-weight="700" fill="#f97316">위상이 맞은 반사파</text>
+  <text x="305" y="360" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="28" font-weight="700" fill="#16a34a">표면 전자의 강제 진동</text>
+  <text x="354" y="608" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="28" fill="#475569">무작위 흡수와 재방출이 아니라, 표면 전체가 함께 만드는 산란이다.</text>
+</svg>
