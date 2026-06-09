@@ -4,6 +4,7 @@ date: "2026-03-01 21:00:00 +0900"
 categories: [python, automation]
 tags: [python, pyautogui, opencv, automation, image-recognition, rpa, template-matching, locateonscreen]
 ---
+![PyAutoGUI image recognition automation workflow](/assets/img/2026-03-01-pyautogui-image-recognition-advanced.png)
 
 좌표 기반 자동화는 빠르지만 치명적인 단점이 있습니다.
 
