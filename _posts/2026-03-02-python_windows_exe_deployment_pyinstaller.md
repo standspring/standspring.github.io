@@ -6,6 +6,7 @@ tags: [python, exe, windows, pyinstaller, packaging, distribution, deployment, w
 toc: true
 toc_sticky: true
 ---
+![Python Windows exe deployment with PyInstaller workflow](/assets/img/2026-03-02-python-windows-exe-deployment-pyinstaller.svg)
 
 Python으로 만든 자동화 프로그램(예: pyautogui 매크로, HTS 자동화, 내부 업무툴 등)을
 **설치 없이 실행파일(.exe) 형태로 배포**하고 싶다면?
