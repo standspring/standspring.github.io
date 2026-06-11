@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![Python Windows exe administrator privilege UAC workflow](/assets/img/2026-03-05-exe-with-administrator-v2.png)
+
 Python으로 만든 자동화 프로그램을 exe로 배포했는데
 실행하면 이런 문제가 생기는 경우가 많습니다.
 
