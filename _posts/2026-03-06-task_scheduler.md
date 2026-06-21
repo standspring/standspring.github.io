@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![Windows Task Scheduler Python automation workflow](/assets/img/2026-03-06-task_scheduler.png)
+
 Python 자동화 프로그램이나 exe를 만들고 나면
 다음 단계는 보통 **정해진 시간에 자동 실행**입니다.
 

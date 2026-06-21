@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![Python list dynamic array and nested list reference](/assets/img/2026-03-06-python-list.png)
+
 결론부터 말하면 **Python의 `list()`는 C/C++처럼 “크기만 미리 선언”하는 방식은 없습니다.**
 
 파이썬 리스트는 **동적 배열(dynamic array)** 이라서, 요소를 추가할 때 자동으로 크기가 늘어납니다.

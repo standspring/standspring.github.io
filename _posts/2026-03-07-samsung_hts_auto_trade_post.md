@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![HTS auto trading Python automation workflow](/assets/img/2026-03-07-samsung_hts_auto_trade_post.png)
+
 삼성증권 HTS를 이용해 자동 매매를 구현할 때 가장 먼저 떠오르는 방법은 화면 좌표를 기반으로 클릭하는 방식이다.
 하지만 실제 운영 환경에서는 단순 좌표 자동화만으로는 안정성을 확보하기 어렵다.
 
