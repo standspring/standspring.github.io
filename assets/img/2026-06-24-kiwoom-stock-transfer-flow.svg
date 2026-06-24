@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">키움증권 주식 타사대체출고 절차도</title>
+  <desc id="desc">키움증권 계좌의 주식을 다른 증권사 계좌로 옮길 때 필요한 준비, 신청, 승인, 확인 과정을 보여주는 안내 이미지</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#132238" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#346a8a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="#f4f7fb"/>
+  <rect x="64" y="62" width="1072" height="506" rx="28" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="96" y="122" font-family="'Noto Sans KR', Arial, sans-serif" font-size="38" font-weight="700" fill="#18212f">키움증권 주식 타사대체출고 흐름</text>
+  <text x="96" y="166" font-family="'Noto Sans KR', Arial, sans-serif" font-size="20" fill="#526171">국내 주식을 매도하지 않고 다른 증권사 본인 계좌로 옮기는 기본 순서</text>
+
+  <g font-family="'Noto Sans KR', Arial, sans-serif">
+    <g transform="translate(98 238)">
+      <rect width="208" height="168" rx="20" fill="#e9f3ee" stroke="#77a885" stroke-width="2"/>
+      <circle cx="44" cy="46" r="22" fill="#2f7d57"/>
+      <text x="44" y="55" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">1</text>
+      <text x="28" y="92" font-size="24" font-weight="700" fill="#183228">받는 계좌 확인</text>
+      <text x="28" y="126" font-size="17" fill="#385044">증권사명, 계좌번호,</text>
+      <text x="28" y="151" font-size="17" fill="#385044">명의 일치 여부 확인</text>
+    </g>
+
+    <g transform="translate(367 238)">
+      <rect width="208" height="168" rx="20" fill="#eaf1fb" stroke="#7ea1c9" stroke-width="2"/>
+      <circle cx="44" cy="46" r="22" fill="#346a8a"/>
+      <text x="44" y="55" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">2</text>
+      <text x="28" y="92" font-size="24" font-weight="700" fill="#1a2f44">출고 메뉴 선택</text>
+      <text x="28" y="126" font-size="17" fill="#415466">영웅문4 HTS</text>
+      <text x="28" y="151" font-size="17" fill="#415466">[0836] 화면에서 신청</text>
+    </g>
+
+    <g transform="translate(636 238)">
+      <rect width="208" height="168" rx="20" fill="#fff1df" stroke="#dfaa68" stroke-width="2"/>
+      <circle cx="44" cy="46" r="22" fill="#b56d1d"/>
+      <text x="44" y="55" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">3</text>
+      <text x="28" y="92" font-size="24" font-weight="700" fill="#4b3217">종목·수량 입력</text>
+      <text x="28" y="126" font-size="17" fill="#644a2a">옮길 종목과 수량,</text>
+      <text x="28" y="151" font-size="17" fill="#644a2a">출고 수수료 확인</text>
+    </g>
+
+    <g transform="translate(905 238)">
+      <rect width="208" height="168" rx="20" fill="#f5eafa" stroke="#b789cc" stroke-width="2"/>
+      <circle cx="44" cy="46" r="22" fill="#7d4b97"/>
+      <text x="44" y="55" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">4</text>
+      <text x="28" y="92" font-size="24" font-weight="700" fill="#3c244c">도착 확인</text>
+      <text x="28" y="126" font-size="17" fill="#5d466b">처리 완료 후</text>
+      <text x="28" y="151" font-size="17" fill="#5d466b">받는 증권사 잔고 확인</text>
+    </g>
+
+    <line x1="320" y1="322" x2="352" y2="322" stroke="#346a8a" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="589" y1="322" x2="621" y2="322" stroke="#346a8a" stroke-width="4" marker-end="url(#arrow)"/>
+    <line x1="858" y1="322" x2="890" y2="322" stroke="#346a8a" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+
+  <rect x="96" y="464" width="1008" height="58" rx="14" fill="#eef2f7"/>
+  <text x="124" y="501" font-family="'Noto Sans KR', Arial, sans-serif" font-size="20" fill="#334155">핵심: 매도·재매수 없이 보유 주식을 이동하지만, 계좌 명의·출고 가능 시간·수수료·이벤트 조건은 신청 전 확인해야 합니다.</text>
+</svg>

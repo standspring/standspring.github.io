@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">타사대체출고 전 확인해야 할 항목</title>
+  <desc id="desc">다른 증권사로 주식을 옮기기 전에 확인해야 할 계좌 명의, 종목, 수량, 현금, 처리 시간, 이벤트 조건 체크리스트</desc>
+  <rect width="1100" height="520" fill="#f7f8fb"/>
+  <rect x="56" y="48" width="988" height="424" rx="24" fill="#ffffff" stroke="#d8dee8"/>
+  <text x="96" y="112" font-family="'Noto Sans KR', Arial, sans-serif" font-size="34" font-weight="700" fill="#1f2937">신청 전 체크리스트</text>
+  <text x="96" y="150" font-family="'Noto Sans KR', Arial, sans-serif" font-size="18" fill="#64748b">이 항목을 먼저 확인하면 반려되는 일을 크게 줄일 수 있습니다.</text>
+
+  <g font-family="'Noto Sans KR', Arial, sans-serif" font-size="21" fill="#273449">
+    <g transform="translate(96 204)">
+      <rect width="428" height="54" rx="12" fill="#eef7f1"/>
+      <circle cx="28" cy="27" r="12" fill="#2f7d57"/>
+      <path d="M22 27 L27 32 L35 22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="35">받는 증권사 계좌 명의가 내 이름인가</text>
+    </g>
+    <g transform="translate(96 278)">
+      <rect width="428" height="54" rx="12" fill="#eef7f1"/>
+      <circle cx="28" cy="27" r="12" fill="#2f7d57"/>
+      <path d="M22 27 L27 32 L35 22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="35">옮길 종목과 수량을 정확히 정했는가</text>
+    </g>
+    <g transform="translate(96 352)">
+      <rect width="428" height="54" rx="12" fill="#eef7f1"/>
+      <circle cx="28" cy="27" r="12" fill="#2f7d57"/>
+      <path d="M22 27 L27 32 L35 22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="35">출고 수수료를 낼 현금이 있는가</text>
+    </g>
+    <g transform="translate(576 204)">
+      <rect width="428" height="54" rx="12" fill="#eef4fb"/>
+      <circle cx="28" cy="27" r="12" fill="#346a8a"/>
+      <path d="M22 27 L27 32 L35 22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="35">출고 가능 시간 안에 신청하는가</text>
+    </g>
+    <g transform="translate(576 278)">
+      <rect width="428" height="54" rx="12" fill="#eef4fb"/>
+      <circle cx="28" cy="27" r="12" fill="#346a8a"/>
+      <path d="M22 27 L27 32 L35 22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="35">미체결 주문·권리 일정이 없는가</text>
+    </g>
+    <g transform="translate(576 352)">
+      <rect width="428" height="54" rx="12" fill="#eef4fb"/>
+      <circle cx="28" cy="27" r="12" fill="#346a8a"/>
+      <path d="M22 27 L27 32 L35 22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="35">입고 이벤트 조건과 기한을 확인했는가</text>
+    </g>
+  </g>
+</svg>

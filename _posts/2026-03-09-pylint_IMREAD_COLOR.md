@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![Pylint OpenCV false positive warning resolution workflow](/assets/img/2026-03-09-pylint_IMREAD_COLOR.png)
+
 Python에서 OpenCV를 사용할 때 VS Code에서 아래와 같은 경고가 뜨는 경우가 있다.
 
 ```text
