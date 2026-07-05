@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![AI coding tool and env file security workflow](/assets/img/2026-03-11-ai-reads-env.png)
+
 개발하면서 VS Code에서 Codex(또는 AI 코딩 도구)를 사용할 때 가장 많이 걱정하는 부분 중 하나가 바로 `.env` 파일이다.
 
 API Key, DB 비밀번호, 인증 토큰 등이 들어 있는 `.env` 파일이
