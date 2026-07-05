@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![Git beginner mistakes troubleshooting workflow](/assets/img/2026-03-15-git-mistake-top10.png)
+
 Git은 처음 배울 때 명령어보다 **작동 원리** 때문에 더 헷갈립니다.
 
 특히 초보자는 비슷한 실수를 반복합니다.
