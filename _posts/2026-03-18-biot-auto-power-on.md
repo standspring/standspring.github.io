@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![BIOS RTC automatic power on](/assets/img/2026-03-18-biot-auto-power-on.png)
+
 컴퓨터를 **매일 아침 특정 시간에 자동으로 켜고 싶을 때**,
 Windows 작업 스케줄러만으로는 해결되지 않는다.
 

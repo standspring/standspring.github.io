@@ -7,6 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
+![Git branch workflow for beginners](/assets/img/2026-03-16-git-branch-guide-for-beginners.png)
+
 Git을 배우다 보면 가장 많이 듣는 말 중 하나가 **브랜치(branch)** 입니다.
 
 처음에는 어렵게 느껴지지만, 브랜치 개념만 제대로 이해하면 Git이 훨씬 쉬워집니다.
