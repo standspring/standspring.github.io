@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Linux find command file search workflow</title>
+  <desc id="desc">A terminal themed diagram showing how the Linux find command searches paths, applies conditions, and runs actions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#102b3f"/>
+      <stop offset="52%" stop-color="#1f4d4f"/>
+      <stop offset="100%" stop-color="#3b5f3b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#061018" flood-opacity="0.32"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#8fd0c8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g opacity="0.18" fill="none" stroke="#ffffff" stroke-width="2">
+    <path d="M84 120h170v86H84z"/>
+    <path d="M116 120v-24h74l24 24"/>
+    <path d="M900 410h186v92H900z"/>
+    <path d="M936 410v-26h78l25 26"/>
+    <path d="M965 96h120v66H965z"/>
+    <path d="M992 96V77h55l18 19"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="72" width="1024" height="486" rx="18" fill="#111827"/>
+    <rect x="88" y="72" width="1024" height="48" rx="18" fill="#253342"/>
+    <path d="M88 103h1024v18H88z" fill="#253342"/>
+    <circle cx="122" cy="96" r="8" fill="#ff6b6b"/>
+    <circle cx="150" cy="96" r="8" fill="#ffd166"/>
+    <circle cx="178" cy="96" r="8" fill="#57cc99"/>
+  </g>
+
+  <text x="134" y="177" fill="#dbeafe" font-family="Consolas, Menlo, monospace" font-size="32" font-weight="700">
+    $ find /var/log -type f -name "*.log" -mtime +30 -exec rm {} +
+  </text>
+
+  <g font-family="Arial, sans-serif">
+    <g>
+      <rect x="140" y="246" width="190" height="104" rx="10" fill="#e8f3f1"/>
+      <text x="235" y="288" text-anchor="middle" fill="#18333b" font-size="21" font-weight="700">Search Path</text>
+      <text x="235" y="320" text-anchor="middle" fill="#34535b" font-size="20">/var/log</text>
+    </g>
+
+    <line x1="330" y1="298" x2="424" y2="298" stroke="#8fd0c8" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <g>
+      <rect x="444" y="246" width="260" height="104" rx="10" fill="#fff4d6"/>
+      <text x="574" y="285" text-anchor="middle" fill="#493617" font-size="21" font-weight="700">Conditions</text>
+      <text x="574" y="316" text-anchor="middle" fill="#634d24" font-size="19">file + *.log + old</text>
+    </g>
+
+    <line x1="704" y1="298" x2="798" y2="298" stroke="#8fd0c8" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <g>
+      <rect x="818" y="246" width="242" height="104" rx="10" fill="#e7ecff"/>
+      <text x="939" y="285" text-anchor="middle" fill="#26335d" font-size="21" font-weight="700">Action</text>
+      <text x="939" y="316" text-anchor="middle" fill="#40517f" font-size="19">print, exec, delete</text>
+    </g>
+  </g>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="24">
+    <text x="150" y="422" fill="#93c5fd">-name</text>
+    <text x="250" y="422" fill="#d1fae5">"*.log"</text>
+    <text x="400" y="422" fill="#93c5fd">-size</text>
+    <text x="488" y="422" fill="#d1fae5">+100M</text>
+    <text x="620" y="422" fill="#93c5fd">-mtime</text>
+    <text x="728" y="422" fill="#d1fae5">+30</text>
+    <text x="832" y="422" fill="#93c5fd">-perm</text>
+    <text x="930" y="422" fill="#d1fae5">/111</text>
+  </g>
+
+  <text x="150" y="486" fill="#e5e7eb" font-family="Arial, sans-serif" font-size="26" font-weight="700">
+    Linux find command
+  </text>
+  <text x="150" y="522" fill="#b7c7d4" font-family="Arial, sans-serif" font-size="20">
+    Search files by name, type, size, time, permission, owner, and run actions safely.
+  </text>
+</svg>
