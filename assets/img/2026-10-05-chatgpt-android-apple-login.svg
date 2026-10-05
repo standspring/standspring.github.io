@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">안드로이드 ChatGPT 이메일 로그인 순서</title>
+  <desc id="desc">이메일로 접속 선택, 애플 프라이빗 이메일 입력, 메일로 받은 인증번호 입력의 세 단계를 표현한 설명용 그림. 실제 앱 스크린샷이 아닙니다.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#effaf7"/><stop offset="1" stop-color="#edf3ff"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#16846c" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <g font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" fill="#182b36">
+    <text x="60" y="66" font-size="18" fill="#16846c" font-weight="700">ANDROID · ChatGPT</text>
+    <text x="60" y="118" font-size="38" font-weight="700">애플 계정으로 쓰던 ChatGPT, 안드로이드에서도</text>
+    <text x="60" y="156" font-size="21" fill="#526573">프라이빗 이메일과 메일 인증번호로 로그인한 사례</text>
+    <g fill="#fff" stroke="#cbd9df" stroke-width="2">
+      <rect x="62" y="212" width="310" height="366" rx="30"/>
+      <rect x="445" y="212" width="310" height="366" rx="30"/>
+      <rect x="828" y="212" width="310" height="366" rx="30"/>
+    </g>
+    <g fill="#19333d"><rect x="167" y="228" width="100" height="7" rx="3.5"/><rect x="550" y="228" width="100" height="7" rx="3.5"/><rect x="933" y="228" width="100" height="7" rx="3.5"/></g>
+    <g fill="#16846c"><circle cx="104" cy="280" r="21"/><circle cx="487" cy="280" r="21"/><circle cx="870" cy="280" r="21"/></g>
+    <g fill="#fff" font-size="21" text-anchor="middle" font-weight="700"><text x="104" y="288">1</text><text x="487" y="288">2</text><text x="870" y="288">3</text></g>
+    <g font-size="24" font-weight="700"><text x="88" y="339">로그인 방법 선택</text><text x="471" y="339">프라이빗 이메일 입력</text><text x="854" y="339">인증번호 입력</text></g>
+    <rect x="88" y="380" width="258" height="62" rx="12" fill="#16846c"/>
+    <text x="217" y="418" text-anchor="middle" font-size="23" fill="#fff" font-weight="700">이메일로 접속</text>
+    <rect x="471" y="380" width="258" height="85" rx="12" fill="#f1f6f8"/>
+    <g font-size="19" font-family="Consolas,monospace"><text x="488" y="413">********</text><text x="488" y="446">@privaterelay.appleid.com</text></g>
+    <rect x="854" y="380" width="258" height="62" rx="12" fill="#f1f6f8"/>
+    <text x="983" y="420" text-anchor="middle" font-size="29" letter-spacing="12" fill="#16846c">••••••</text>
+    <g font-size="19" fill="#526573"><text x="88" y="504">앱에서 이메일 로그인 선택</text><text x="471" y="504">기존 계정의 주소 사용</text><text x="854" y="484">전달된 메일 확인 후 입력</text><text x="854" y="518" font-size="16">번호 칸은 설명용 표현입니다.</text></g>
+    <g stroke="#16846c" stroke-width="3" marker-end="url(#arrow)"><path d="M387 397 H428"/><path d="M770 397 H811"/></g>
+    <text x="60" y="635" font-size="22" font-weight="700">로그인 후 기존 계정의 이메일 · 대화 기록 · 구독 상태를 확인하세요.</text>
+    <text x="60" y="678" font-size="18" fill="#526573">설명용 그림 · 실제 앱 스크린샷이 아니며, 계정과 앱 버전에 따라 로그인 화면이 다를 수 있습니다.</text>
+  </g>
+</svg>

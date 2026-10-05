@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">프라이빗 이메일로 요청한 인증번호 확인 흐름</title>
+  <desc id="desc">ChatGPT에서 프라이빗 이메일 주소로 인증번호를 요청하고, 전달 대상 메일함에서 메일을 확인한 후 앱에 인증번호를 입력합니다.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#16846c" stroke-width="2"/></marker></defs>
+  <rect width="1200" height="440" rx="24" fill="#f3f7fa"/>
+  <g font-family="'Malgun Gothic','Apple SD Gothic Neo',sans-serif" fill="#182b36">
+    <text x="48" y="62" font-size="30" font-weight="700">인증 메일은 어디에서 확인할까요?</text>
+    <text x="48" y="101" font-size="20" fill="#526573">로그인에 입력한 주소와 메일을 확인하는 메일함을 구분하세요.</text>
+    <g fill="#fff" stroke="#d4e0e6" stroke-width="2"><rect x="48" y="145" width="325" height="190" rx="18"/><rect x="437" y="145" width="325" height="190" rx="18"/><rect x="826" y="145" width="325" height="190" rx="18"/></g>
+    <g font-size="22" font-weight="700"><text x="72" y="188">① 프라이빗 이메일</text><text x="461" y="188">② 전달 대상 메일함</text><text x="850" y="188">③ ChatGPT 앱</text></g>
+    <g font-size="20" fill="#526573"><text x="72" y="236">기존 계정 주소로</text><text x="72" y="269">인증번호 요청</text><text x="461" y="236">로그인 인증 메일에서</text><text x="461" y="269">번호 확인</text><text x="850" y="236">메일에서 확인한</text><text x="850" y="269">인증번호 입력</text></g>
+    <g stroke="#16846c" stroke-width="3" marker-end="url(#arrow)"><path d="M386 242 H420"/><path d="M775 242 H809"/></g>
+    <text x="48" y="389" font-size="19" fill="#526573">메일이 안 오면 주소 오타, 스팸함, 애플 계정의 메일 전달 상태를 확인하세요. · 설명용 그림</text>
+  </g>
+</svg>
