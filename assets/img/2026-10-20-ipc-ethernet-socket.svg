@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1240" viewBox="0 0 1520 1240" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">IPC, 소켓, TCP/IP 패킷과 Ethernet 프레임의 관계</title>
+  <desc id="diagram-desc">IPC는 프로세스 사이의 통신이라는 개념이고, 소켓은 운영체제가 제공하는 통신 API다. 같은 호스트의 AF_UNIX SOCK_STREAM 소켓은 두 프로세스를 같은 운영체제 커널을 통해 연결하며 IP 패킷이나 Ethernet 프레임을 사용하지 않는다. 다른 호스트의 AF_INET SOCK_STREAM 소켓은 애플리케이션 데이터를 TCP 세그먼트, IP 패킷, Ethernet 프레임으로 감싸 네트워크로 전달한다. 수신 호스트에서는 반대 순서로 처리한다. Ethernet 프레임은 IP 패킷을, IP 패킷은 TCP 세그먼트를, TCP 세그먼트는 애플리케이션 데이터의 일부를 담는다. 애플리케이션 메시지와 TCP 세그먼트의 경계는 일치하지 않을 수 있다.</desc>
+  <defs>
+    <style>
+      text { font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; fill: #172b45; }
+      .title { font-size: 40px; font-weight: 800; letter-spacing: -1.2px; }
+      .subtitle { font-size: 25px; fill: #52647a; }
+      .section { font-size: 29px; font-weight: 750; letter-spacing: -.4px; }
+      .label { font-size: 25px; font-weight: 700; }
+      .body { font-size: 23px; }
+      .small { font-size: 21px; fill: #52647a; }
+      .mono { font-family: "Cascadia Code", "Consolas", "Malgun Gothic", monospace; font-size: 22px; }
+      .center { text-anchor: middle; }
+      .line { fill: none; stroke: #718198; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1 1 9 5 1 9Z" fill="#718198"/>
+    </marker>
+    <marker id="blue-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" orient="auto">
+      <path d="M1 1 9 5 1 9Z" fill="#3d79b5"/>
+    </marker>
+  </defs>
+
+  <rect width="1520" height="1240" rx="28" fill="#f7f9fc"/>
+  <text x="64" y="77" class="title">IPC · 소켓 · 패킷 · 프레임, 어디가 다를까?</text>
+  <text x="66" y="121" class="subtitle">통신의 목적, 운영체제 API, 프로토콜의 전달 단위를 구분하면 구조가 보인다.</text>
+
+  <g aria-label="용어의 역할">
+    <rect x="64" y="151" width="434" height="83" rx="16" fill="#e8f4ef"/>
+    <text x="85" y="184" class="label" fill="#23745a">IPC</text>
+    <text x="85" y="215" class="small">프로세스 간 통신이라는 개념</text>
+    <rect x="516" y="151" width="434" height="83" rx="16" fill="#eaf1fb"/>
+    <text x="537" y="184" class="label" fill="#275c9b">socket</text>
+    <text x="537" y="215" class="small">OS가 제공하는 통신 API</text>
+    <rect x="968" y="151" width="488" height="83" rx="16" fill="#fff0df"/>
+    <text x="989" y="184" class="label" fill="#97581b">packet / frame</text>
+    <text x="989" y="215" class="small">각 프로토콜 계층의 전달 단위</text>
+  </g>
+
+  <g aria-label="같은 호스트에서 Unix domain socket으로 통신하는 경로">
+    <rect x="64" y="260" width="1392" height="292" rx="20" fill="#ffffff" stroke="#dce4ed" stroke-width="2"/>
+    <circle cx="100" cy="301" r="19" fill="#23745a"/>
+    <text x="100" y="310" class="label center" style="fill:#ffffff">1</text>
+    <text x="133" y="311" class="section">같은 호스트: Unix domain socket</text>
+    <rect x="1024" y="281" width="406" height="39" rx="10" fill="#e8f4ef"/>
+    <text x="1227" y="308" class="mono center">AF_UNIX · SOCK_STREAM</text>
+
+    <rect x="91" y="340" width="1338" height="147" rx="16" fill="#f6faf8" stroke="#d8e8e0" stroke-width="2"/>
+    <rect x="117" y="366" width="302" height="96" rx="13" fill="#ffffff" stroke="#96bdad" stroke-width="2"/>
+    <text x="268" y="401" class="label center">프로세스 A</text>
+    <text x="268" y="435" class="small center">앱이 정한 메시지</text>
+    <path d="M436 414H553" class="line" marker-end="url(#arrow)"/>
+
+    <rect x="572" y="357" width="376" height="114" rx="14" fill="#e8f4ef" stroke="#78ac96" stroke-width="2"/>
+    <text x="760" y="392" class="label center">같은 OS 커널</text>
+    <text x="760" y="424" class="body center">Unix domain socket</text>
+    <text x="760" y="453" class="small center">바이트 스트림 전달</text>
+
+    <path d="M966 414H1083" class="line" marker-end="url(#arrow)"/>
+    <rect x="1101" y="366" width="302" height="96" rx="13" fill="#ffffff" stroke="#96bdad" stroke-width="2"/>
+    <text x="1252" y="401" class="label center">프로세스 B</text>
+    <text x="1252" y="435" class="small center">앱 규칙으로 메시지 복원</text>
+
+    <text x="95" y="526" class="body">IP 패킷 · Ethernet 프레임 없음</text>
+    <text x="1426" y="526" class="small" text-anchor="end">SOCK_STREAM 자체는 메시지 경계를 보존하지 않는다.</text>
+  </g>
+
+  <g aria-label="다른 호스트로 TCP, IP, Ethernet을 통해 통신하는 경로">
+    <rect x="64" y="578" width="1392" height="417" rx="20" fill="#ffffff" stroke="#dce4ed" stroke-width="2"/>
+    <circle cx="100" cy="619" r="19" fill="#346caa"/>
+    <text x="100" y="628" class="label center" style="fill:#ffffff">2</text>
+    <text x="133" y="629" class="section">다른 호스트: TCP/IP over Ethernet</text>
+    <rect x="1024" y="599" width="406" height="39" rx="10" fill="#eaf1fb"/>
+    <text x="1227" y="626" class="mono center">AF_INET · SOCK_STREAM</text>
+
+    <rect x="91" y="655" width="475" height="277" rx="16" fill="#f8faff" stroke="#d8e2ef" stroke-width="2"/>
+    <text x="116" y="688" class="label">송신 호스트</text>
+    <text x="540" y="688" class="small" text-anchor="end">포장 ↓</text>
+    <rect x="115" y="707" width="427" height="43" rx="9" fill="#e8f4ef"/>
+    <text x="328" y="736" class="body center">앱 데이터 → socket API</text>
+    <path d="M328 751V766" class="line" marker-end="url(#arrow)"/>
+    <rect x="115" y="776" width="427" height="38" rx="8" fill="#dfedfc"/>
+    <text x="328" y="803" class="body center">TCP 세그먼트</text>
+    <path d="M328 815V828" class="line" marker-end="url(#arrow)"/>
+    <rect x="115" y="838" width="427" height="38" rx="8" fill="#eee8fb"/>
+    <text x="328" y="865" class="body center">IP 패킷</text>
+    <path d="M328 877V889" class="line" marker-end="url(#arrow)"/>
+    <rect x="115" y="899" width="427" height="33" rx="8" fill="#ffecd5"/>
+    <text x="328" y="924" class="body center">Ethernet 프레임</text>
+
+    <path d="M568 915H643" fill="none" stroke="#3d79b5" stroke-width="4" marker-end="url(#blue-arrow)"/>
+    <rect x="660" y="796" width="200" height="137" rx="24" fill="#f2f5f9" stroke="#bfcbd9" stroke-width="2" stroke-dasharray="7 6"/>
+    <text x="760" y="838" class="label center">네트워크</text>
+    <text x="760" y="871" class="small center">다음 링크에서</text>
+    <text x="760" y="901" class="small center">프레임 재구성 가능</text>
+    <path d="M877 915H952" fill="none" stroke="#3d79b5" stroke-width="4" marker-end="url(#blue-arrow)"/>
+
+    <rect x="954" y="655" width="475" height="277" rx="16" fill="#f8faff" stroke="#d8e2ef" stroke-width="2"/>
+    <text x="979" y="688" class="label">수신 호스트</text>
+    <text x="1403" y="688" class="small" text-anchor="end">해석 ↑</text>
+    <rect x="978" y="707" width="427" height="43" rx="9" fill="#e8f4ef"/>
+    <text x="1192" y="736" class="body center">socket API → 앱 데이터</text>
+    <path d="M1192 773V759" class="line" marker-end="url(#arrow)"/>
+    <rect x="978" y="776" width="427" height="38" rx="8" fill="#dfedfc"/>
+    <text x="1192" y="803" class="body center">TCP 세그먼트</text>
+    <path d="M1192 835V822" class="line" marker-end="url(#arrow)"/>
+    <rect x="978" y="838" width="427" height="38" rx="8" fill="#eee8fb"/>
+    <text x="1192" y="865" class="body center">IP 패킷</text>
+    <path d="M1192 896V884" class="line" marker-end="url(#arrow)"/>
+    <rect x="978" y="899" width="427" height="33" rx="8" fill="#ffecd5"/>
+    <text x="1192" y="924" class="body center">Ethernet 프레임</text>
+
+    <text x="95" y="973" class="small">예시는 양 끝의 링크가 Ethernet인 경우다. 같은 호스트의 loopback TCP는 물리 NIC를 거치지 않는다.</text>
+  </g>
+
+  <g aria-label="Ethernet 프레임 안의 IP 패킷, TCP 세그먼트와 애플리케이션 데이터">
+    <text x="66" y="1040" class="section">계층별 포장 관계</text>
+    <text x="1429" y="1040" class="small" text-anchor="end">그림은 개념도이며 실제 길이 비율을 나타내지 않는다.</text>
+
+    <rect x="65" y="1060" width="1390" height="108" rx="14" fill="#ffecd5" stroke="#dfa25a" stroke-width="2"/>
+    <text x="179" y="1102" class="label center">Ethernet</text>
+    <text x="179" y="1134" class="body center">헤더</text>
+    <rect x="296" y="1073" width="1014" height="82" rx="10" fill="#eee8fb" stroke="#ad98d4" stroke-width="2"/>
+    <text x="390" y="1106" class="label center">IP</text>
+    <text x="390" y="1135" class="body center">헤더</text>
+    <rect x="486" y="1084" width="810" height="60" rx="8" fill="#dfedfc" stroke="#86b1dc" stroke-width="2"/>
+    <text x="583" y="1122" class="body center">TCP 헤더</text>
+    <rect x="687" y="1094" width="595" height="40" rx="7" fill="#e8f4ef" stroke="#88b69e" stroke-width="2"/>
+    <text x="985" y="1122" class="body center">애플리케이션 데이터의 일부</text>
+    <text x="1380" y="1122" class="body center">FCS</text>
+
+    <text x="66" y="1207" class="body">“IPC 패킷”의 형식은 앱이 정한다. 앱 메시지 경계와 TCP 세그먼트 경계는 일치하지 않을 수 있다.</text>
+  </g>
+</svg>
