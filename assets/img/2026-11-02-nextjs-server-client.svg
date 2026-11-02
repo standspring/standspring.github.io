@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">서버 페이지 안의 클라이언트 버튼</title>
+  <desc id="desc">서버 컴포넌트 BlogPage가 글 목록을 만들고, 그 안의 클라이언트 컴포넌트 LikeButton이 useState와 onClick으로 클릭을 처리한다. 클라이언트 컴포넌트도 첫 로드 때 초기 HTML을 서버에서 준비할 수 있다.</desc>
+  <defs><style>
+    text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#172033}
+    .small{font-size:23px;fill:#475569}
+    .mono{font-family:Consolas,monospace;font-size:25px}
+    .label{font-size:26px;font-weight:700}
+  </style></defs>
+  <rect width="1200" height="860" rx="24" fill="#f5f7fb"/>
+  <text x="54" y="72" font-size="36" font-weight="700">상호작용이 필요한 버튼에 경계를 둡니다</text>
+  <text x="54" y="116" class="small">이 그림은 컴포넌트의 포함 관계이며, 네트워크 요청 순서가 아닙니다.</text>
+  <rect x="48" y="154" width="644" height="484" rx="18" fill="#fff" stroke="#0f8a73" stroke-width="3"/>
+  <rect x="72" y="179" width="250" height="42" rx="21" fill="#dff5ef"/>
+  <text x="94" y="208" font-size="23" font-weight="700" fill="#0f766e">서버 컴포넌트</text>
+  <text x="80" y="270" class="mono">app/blog/page.tsx</text>
+  <text x="80" y="317" class="label">BlogPage</text>
+  <text x="80" y="356" class="small">글 목록과 카드의 화면을 구성</text>
+  <rect x="96" y="388" width="548" height="212" rx="14" fill="#edf3ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="122" y="431" font-size="24" font-weight="700">클라이언트 컴포넌트 · LikeButton</text>
+  <text x="122" y="475" class="mono">"use client";</text>
+  <rect x="122" y="504" width="180" height="62" rx="10" fill="#1d4ed8"/>
+  <text x="149" y="544" font-size="25" style="fill:#fff">좋아요 2</text>
+  <text x="326" y="530" font-size="23">useState · 숫자 기억</text>
+  <text x="326" y="565" font-size="23">onClick · 클릭 처리</text>
+  <rect x="730" y="154" width="422" height="484" rx="18" fill="#fff" stroke="#d9e2f0" stroke-width="2"/>
+  <text x="758" y="207" class="label">역할을 나누면</text>
+  <circle cx="771" cy="265" r="6" fill="#0f8a73"/>
+  <text x="794" y="273" font-size="23">페이지는 기본 서버 컴포넌트</text>
+  <circle cx="771" cy="331" r="6" fill="#2563eb"/>
+  <text x="794" y="339" font-size="23">버튼에서 상태와 이벤트 사용</text>
+  <circle cx="771" cy="397" r="6" fill="#2563eb"/>
+  <text x="794" y="405" font-size="23">페이지 전체를 바꿀 필요 없음</text>
+  <path d="M758 445H1124" stroke="#d9e2f0" stroke-width="2"/>
+  <text x="758" y="489" class="small">이 예제의 좋아요는 메모리에만</text>
+  <text x="758" y="526" class="small">있습니다. 새로고침하면 0으로</text>
+  <text x="758" y="563" class="small">돌아갑니다.</text>
+  <rect x="48" y="668" width="1104" height="144" rx="16" fill="#e8edf5"/>
+  <text x="78" y="714" font-size="25" font-weight="700">클라이언트 컴포넌트도 초기 HTML은 서버에서 준비할 수 있습니다.</text>
+  <text x="78" y="756" class="small">첫 로드: 초기 HTML 표시 → 브라우저에서 JavaScript로 상호작용 연결(하이드레이션)</text>
+  <text x="78" y="790" class="small">"use client"는 브라우저에서만 렌더링한다는 뜻이 아닙니다.</text>
+</svg>

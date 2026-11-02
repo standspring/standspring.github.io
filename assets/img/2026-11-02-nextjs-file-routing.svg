@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Next.js 파일과 URL의 관계</title>
+  <desc id="desc">app/page.tsx는 /, app/blog/page.tsx는 /blog 화면을 만든다. app/layout.tsx는 두 페이지를 공통으로 감싼다. components/like-button.tsx는 새 URL을 만들지 않는다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2563eb"/></marker>
+    <style>
+      text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#172033}
+      .mono{font-family:Consolas,monospace;font-size:25px}
+      .small{font-size:23px;fill:#475569}
+      .label{font-size:26px;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1200" height="820" rx="24" fill="#f5f7fb"/>
+  <text x="54" y="72" font-size="36" font-weight="700">폴더와 파일로 페이지를 연결합니다</text>
+  <text x="54" y="116" class="small">App Router · 이 글에서 만드는 두 페이지의 구조</text>
+  <rect x="48" y="154" width="496" height="474" rx="18" fill="#fff" stroke="#d9e2f0" stroke-width="2"/>
+  <text x="78" y="203" class="label">프로젝트 파일</text>
+  <text x="78" y="256" class="mono">app/</text>
+  <path d="M95 272V571M95 306H123M95 374H123M95 439H123M95 518H123M144 449V476H171" fill="none" stroke="#b8c7da" stroke-width="2"/>
+  <rect x="122" y="279" width="308" height="48" rx="8" fill="#dff5ef"/>
+  <text x="136" y="311" class="mono">layout.tsx</text>
+  <rect x="122" y="347" width="308" height="48" rx="8" fill="#e7efff"/>
+  <text x="136" y="379" class="mono">page.tsx</text>
+  <text x="136" y="445" class="mono">blog/</text>
+  <rect x="170" y="451" width="260" height="48" rx="8" fill="#e7efff"/>
+  <text x="184" y="483" class="mono">page.tsx</text>
+  <text x="136" y="528" class="mono">components/</text>
+  <text x="136" y="570" font-family="Consolas,monospace" font-size="23">  like-button.tsx</text>
+  <rect x="644" y="154" width="508" height="474" rx="18" fill="#fff" stroke="#d9e2f0" stroke-width="2"/>
+  <text x="676" y="203" class="label">브라우저 화면</text>
+  <rect x="673" y="229" width="450" height="369" rx="12" fill="#f8fafc" stroke="#0f8a73" stroke-width="2"/>
+  <rect x="674" y="230" width="448" height="89" rx="10" fill="#dff5ef"/>
+  <text x="696" y="266" font-size="25" font-weight="700">공통 메뉴 · layout.tsx</text>
+  <text x="696" y="300" class="small">홈 / 블로그</text>
+  <rect x="700" y="343" width="396" height="70" rx="10" fill="#e7efff"/>
+  <text x="722" y="387" class="mono">/</text>
+  <text x="820" y="387" font-size="24">홈 화면</text>
+  <rect x="700" y="449" width="396" height="70" rx="10" fill="#e7efff"/>
+  <text x="722" y="493" class="mono">/blog</text>
+  <text x="900" y="493" font-size="24">글 목록</text>
+  <text x="700" y="565" class="small">현재 주소에 해당하는 화면을 표시</text>
+  <path d="M440 371H687" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M440 475H687" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="48" y="656" width="1104" height="116" rx="16" fill="#e8edf5"/>
+  <text x="78" y="701" font-size="25" font-weight="700">폴더 이름 → URL 경로  /  page.tsx → 해당 경로의 화면</text>
+  <text x="78" y="744" class="small">layout.tsx는 공통 UI를 감싸고, 일반 컴포넌트 파일은 새 URL을 만들지 않습니다.</text>
+</svg>
