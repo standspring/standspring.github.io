@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">HTS 로그인 완료를 화면 상태로 기다리는 흐름</title>
+  <desc id="desc">로그인 화면, 처리 중, 확인한 공지 팝업, 준비 화면으로 이어지는 예시다. 공지가 없으면 준비 확인으로 진행한다. 팝업을 먼저 확인하고, 공지는 한 번만 닫기를 요청한 뒤 사라짐을 확인하며, 전체 제한 시간은 유지한다.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#527080"/></marker>
+    <style>
+      text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#183344}
+      .state{font-family:Consolas,monospace;font-size:25px;font-weight:700}
+      .label{font-size:24px;font-weight:700}
+      .small{font-size:21px;fill:#48616d}
+      .rule{font-size:22px;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1200" height="630" rx="24" fill="#f4f8f8"/>
+  <text x="54" y="68" font-size="37" font-weight="700">시간이 아니라 화면 상태를 기다립니다</text>
+  <text x="54" y="112" class="small">로그인 제출 이후 · 화면 관찰과 대기 정책을 분리하는 예제</text>
+  <rect x="52" y="145" width="240" height="126" rx="16" fill="#fff" stroke="#cbdce3" stroke-width="2"/>
+  <text x="76" y="184" class="state">LOGIN</text>
+  <text x="76" y="225" class="label">로그인 화면</text>
+  <text x="76" y="256" class="small">아직 준비되지 않음</text>
+  <rect x="338" y="145" width="240" height="126" rx="16" fill="#eaf1fc" stroke="#b7ccec" stroke-width="2"/>
+  <text x="362" y="184" class="state">LOADING</text>
+  <text x="362" y="225" class="label">처리 중</text>
+  <text x="362" y="256" class="small">관찰 간격 후 재확인</text>
+  <rect x="624" y="145" width="240" height="126" rx="16" fill="#fff3dc" stroke="#e7c786" stroke-width="2"/>
+  <text x="648" y="184" class="state">POPUP</text>
+  <text x="648" y="225" class="label">확인한 공지</text>
+  <text x="648" y="256" class="small">닫은 뒤 사라짐 확인</text>
+  <rect x="910" y="145" width="240" height="126" rx="16" fill="#dff3ed" stroke="#97ccba" stroke-width="2"/>
+  <text x="934" y="184" class="state">READY</text>
+  <text x="934" y="225" class="label">준비 화면</text>
+  <text x="934" y="256" class="small">연속 확인 후 반환</text>
+  <path d="M294 213H331" fill="none" stroke="#527080" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M580 213H617" fill="none" stroke="#527080" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M866 213H903" fill="none" stroke="#527080" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="54" y="312" class="small">예시 경로입니다. 공지가 없으면 준비 화면 확인으로 바로 이어집니다.</text>
+  <rect x="52" y="345" width="1098" height="214" rx="18" fill="#fff" stroke="#d4e1e5" stroke-width="2"/>
+  <text x="78" y="387" class="label">모든 단계에 적용하는 세 가지 규칙</text>
+  <circle cx="95" cy="429" r="15" fill="#dff3ed"/><text x="89" y="436" font-size="19" font-weight="700">1</text>
+  <text x="124" y="437" class="rule">팝업을 먼저 확인</text><text x="454" y="437" class="small">뒤에 메인 화면이 보여도 완료로 판단하지 않습니다.</text>
+  <circle cx="95" cy="479" r="15" fill="#fff3dc"/><text x="89" y="486" font-size="19" font-weight="700">2</text>
+  <text x="124" y="487" class="rule">같은 팝업에 연속 클릭 금지</text><text x="454" y="487" class="small">닫기 요청 후 사라질 때까지 다시 관찰합니다.</text>
+  <circle cx="95" cy="529" r="15" fill="#eaf1fc"/><text x="89" y="536" font-size="19" font-weight="700">3</text>
+  <text x="124" y="537" class="rule">전체 제한 시간 유지</text><text x="454" y="537" class="small">상태가 바뀌어도 타이머를 처음부터 시작하지 않습니다.</text>
+  <text x="54" y="604" font-size="19" fill="#607780">구조를 설명하는 개념도이며, 실제 HTS 화면이나 로그인 성공률을 나타내지 않습니다.</text>
+</svg>
