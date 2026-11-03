@@ -8,8 +8,6 @@ toc: true
 toc_sticky: true
 ---
 
-# HTML script의 defer·async 차이와 DOMContentLoaded: jQuery ready 대체하기
-
 ## 들어가며
 
 HTML에 버튼을 만들고 JavaScript로 클릭 이벤트를 등록했는데 `null` 오류가 발생한다. 검색해 보면 스크립트를 맨 아래로 옮기거나, `defer`를 붙이거나, `$(document).ready()`로 감싸라는 해결책이 나온다. 모두 실행 시점과 관련 있지만, 보장하는 범위는 다르다.
@@ -462,6 +460,8 @@ DOM 준비를 이벤트로 기다릴 때는 `DOMContentLoaded`를 사용할 수 
 DOM 준비 문제를 해결한 뒤에는 ES 모듈의 의존성, 이벤트 루프와 마이크로태스크, 코드 분할과 동적 `import()`, 이미지 로딩·디코딩 시점을 살펴보면 실행 순서 문제를 더 정확하게 분석할 수 있다.
 
 ## 참고 자료
+
+React 기반 사이트에서 서버와 브라우저의 역할까지 이어서 배우려면 [Next.js App Router 입문]({% post_url 2026-11-02-nextjs-beginner-app-router-guide %})을 참고하자. 일반 스크립트의 로드 순서와 React 컴포넌트의 생명주기는 구분해서 이해한다.
 
 *본문의 기본 `defer` 예제, 버튼 클릭, `DOMContentLoaded` 이후의 리스너 등록 비교는 Chrome 155.0.8059.85에서 실행을 확인했다.*
 

@@ -8,8 +8,6 @@ toc: true
 toc_sticky: true
 ---
 
-# Python line_profiler 사용법: 느린 코드 한 줄을 찾아 최적화하기
-
 ![코드의 느린 줄과 실행 시간 막대를 돋보기로 살펴보는 Python line_profiler 개념 삽화](/assets/img/2026-10-16-python-line-profiler.png)
 
 *줄별 실행 시간을 확인해 병목을 찾는 과정을 표현한 개념 삽화이며, 실제 프로파일링 화면은 아니다.*
@@ -223,7 +221,7 @@ NumPy·Pandas 등에서 한 줄이 오래 걸린다고 해서 Python 줄 수준�
 
 ### 메모리 사용량을 보여 주는 도구는 아니다
 
-`line_profiler`는 실행 시간을 분석한다. 큰 중간 객체 때문에 메모리가 부족하다면 `tracemalloc` 같은 메모리 분석 도구로 문제를 따로 확인해야 한다. 동시 실행과 측정상의 제약은 [공식 문서의 Limitations](https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#limitations)를 참고하자.
+`line_profiler`는 실행 시간을 분석한다. 큰 중간 객체 때문에 메모리가 부족하다면 [tracemalloc으로 메모리 증가 위치 찾기]({% post_url 2026-10-17-python-tracemalloc %})에서 문제를 따로 확인한다. 동시 실행과 측정상의 제약은 [공식 문서의 Limitations](https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#limitations)를 참고하자.
 
 ## 마무리
 

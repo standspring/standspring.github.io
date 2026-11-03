@@ -11,8 +11,6 @@ image:
   alt: "React 구성 요소로 웹사이트를 조립하고 서버와 브라우저의 역할을 함께 살펴보는 Next.js 입문 삽화"
 ---
 
-# Next.js 입문: App Router로 첫 웹사이트 만들기
-
 *상단 그림은 Next.js로 웹사이트를 만드는 과정을 표현한 개념 삽화다. 실제 개발 도구 화면이나 실행 순서를 나타내지는 않는다.*
 
 ## 들어가며
@@ -445,6 +443,8 @@ Next.js는 React로 여러 페이지와 서버 기능을 가진 사이트를 만
 다음 실습으로는 `/about` 페이지를 직접 추가해 보자. 그다음에는 `[slug]`를 사용하는 글 상세 페이지, 서버에서 데이터 읽기, `loading.tsx`와 `error.tsx`, 메타데이터와 이미지 최적화 순서로 범위를 넓혀 가면 좋다.
 
 ## 참고 자료
+
+직접 DOM을 다루는 기존 JavaScript와 실행 순서를 비교하고 싶다면 [defer·async와 DOMContentLoaded]({% post_url 2026-10-21-html-script-defer-domcontentloaded %})도 함께 읽어 보자. 해당 글의 DOM 조작 코드를 React 컴포넌트에 그대로 옮기기보다, 브라우저 실행 시점의 차이를 이해하는 데 활용한다.
 
 - [Next.js 공식 문서](https://nextjs.org/docs)
 - [Next.js 프로젝트 설치](https://nextjs.org/docs/app/getting-started/installation)

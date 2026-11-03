@@ -1,291 +1,210 @@
 ---
-title: "Windows 작업 스케줄러 등록 자동화 (Python 프로그램 예약 실행 실전 가이드)"
+title: "Windows 작업 스케줄러로 Python 실행하기: 경로·로그온·실패 로그 확인"
+description: "Python과 exe를 작업 스케줄러에 등록하고, 직접 실행은 되는데 예약 실행만 실패할 때 가상환경·시작 위치·실행 계정·GUI 로그온 조건을 점검합니다."
 date: 2026-03-06 00:00:00 +0900
 categories: [python, automation]
-tags: [python, windows, task scheduler, automation, schtasks, scheduling, task-scheduler, windows-automation]
+tags: [python, windows, 작업스케줄러, schtasks, 자동화, 로그]
 toc: true
-toc_sticky: true
 ---
 
-![Windows Task Scheduler Python automation workflow](/assets/img/2026-03-06-task_scheduler.png)
+![Windows 작업 스케줄러의 예약 실행 흐름을 나타낸 개념 그림](/assets/img/2026-03-06-task_scheduler.png)
 
-Python 자동화 프로그램이나 exe를 만들고 나면
-다음 단계는 보통 **정해진 시간에 자동 실행**입니다.
+## 들어가며
 
-예를 들면:
+직접 실행은 되는데 예약 실행만 실패한다면 **실행 파일·인수·시작 위치·실행 계정**부터 비교한다. 관리자 권한으로 바꾸는 것만으로 가상환경이나 파일 경로 문제가 해결되지는 않는다.
 
-- 매일 오전 8시 자동 실행
-- 장 시작 전 자동 로그인
-- 특정 시각 데이터 수집
-- 매일 백업 실행
+이 글은 Windows 10·11의 작업 스케줄러와 PowerShell을 기준으로 한다. 등록 명령은 실제 작업을 생성하므로 경로·이름·시간을 자신의 환경에 맞춘 뒤 사용한다.
 
-Windows에서는 **작업 스케줄러(Task Scheduler)** 를 사용하면 됩니다.
+## 문제 상황: 작업은 실행됐는데 파일도 화면도 보이지 않는다
 
-이번 글에서는:
+다음 상황은 원인이 서로 다르다.
 
-- 수동 등록
-- 명령어 등록 (`schtasks`)
-- Python에서 자동 등록
-- 관리자 권한 포함 실행
+- Python 프로세스 자체가 시작되지 않았다.
+- 다른 Python으로 실행되어 설치한 패키지를 못 찾는다.
+- 시작은 했지만 상대경로 파일을 읽지 못하고 종료됐다.
+- GUI를 조작해야 하는데 사용자의 대화형 데스크톱에서 실행되지 않았다.
 
-까지 실전 기준으로 정리합니다.
+먼저 화면 조작이 없는 진단 스크립트로 프로세스 시작과 로그 기록부터 확인하자.
 
----
+## 원인 분석: GUI 작업과 백그라운드 작업을 구분한다
 
-## 1️⃣ Windows 작업 스케줄러란?
+| 작업 유형 | 예 | 먼저 검토할 실행 조건 |
+|---|---|---|
+| 화면 조작 | PyAutoGUI 클릭·키보드 입력 | 해당 사용자의 로그온과 대화형 세션, 잠기지 않은 대상 데스크톱 |
+| 화면 없는 작업 | 파일 처리·API 데이터 수집 | 로그온 여부와 무관한 실행도 검토 가능, 계정과 파일·네트워크 권한 확인 |
+| 관리자 작업 | 보호된 시스템 설정 변경 | 계정 권한과 실행 수준을 별도로 확인 |
 
-Windows 기본 기능으로:
+‘사용자가 로그온되어 있을 때만 실행’과 ‘가장 높은 수준의 권한으로 실행’은 다른 설정이다. 높은 실행 수준은 로그인 세션이나 화면을 만들어 주지 않는다. [Microsoft 작업 보안 컨텍스트 안내](https://learn.microsoft.com/en-us/windows/win32/taskschd/security-contexts-for-running-tasks)를 참고한다.
 
-> 특정 시간 / 특정 조건에서 프로그램 자동 실행
+## 해결 방법: 세 경로를 각각 설정한다
 
-가능합니다.
+### 가상환경의 Python을 직접 지정한다
 
-실행 대상:
+프로젝트가 `C:\myapp`에 있다면 다음처럼 설정한다.
 
-- `.exe`
-- `.bat`
-- `.cmd`
-- `.ps1`
+| 동작 설정 항목 | 입력 예시 |
+|---|---|
+| 프로그램/스크립트 | `C:\myapp\.venv\Scripts\python.exe` |
+| 인수 추가 | `"C:\myapp\main.py"` |
+| 시작 위치 | `C:\myapp` |
 
-모두 가능
+프로그램 선택은 ‘찾아보기’를 이용한다. 인수의 파일 경로에 공백이 있으면 따옴표로 감싼다. **시작 위치에는 폴더만 넣고 따옴표는 넣지 않는다.** exe를 실행한다면 프로그램에 exe의 절대경로를 지정한다.
 
----
+가상환경 활성화 명령을 작업마다 실행할 필요는 없다. 해당 환경의 `python.exe`를 직접 지정한다. 앱에 필요한 환경변수는 예약 실행 환경에서도 준비해야 한다.
 
-## 2️⃣ 가장 기본 등록 (수동)
+### 로그온·트리거·조건·중복 실행을 확인한다
 
-실행:
+- **일반:** 실행 계정과 로그온 방식을 선택한다. GUI 자동화는 사용자가 로그온한 세션에서 먼저 검증한다.
+- **트리거:** 날짜·시간·사용 여부를 확인한다.
+- **조건:** 유휴 상태·AC 전원·네트워크 조건 때문에 실행이 보류되는지 확인한다.
+- **설정:** 중복 실행 정책과 최대 실행 시간을 검토한다.
 
-```text
-작업 스케줄러 → 작업 만들기
-````
+절전 해제는 기기와 전원 정책에 영향을 받는다. 전원이 완전히 꺼진 PC를 작업 스케줄러만으로 켤 수 있다고 가정하지 않는다. 필요한 경우 [BIOS 자동 부팅 설정]({% post_url 2026-03-18-biot-auto-power-on %})과 별도로 설계한다.
 
-설정:
+### 관리자 권한은 필요한 작업에만 사용한다
 
-### 일반 탭
+파일 처리나 같은 권한의 앱 조작에 항상 최고 권한이 필요한 것은 아니다. `schtasks`의 `/RL HIGHEST`는 실행 수준을 요청하는 옵션이며 일반 사용자를 관리자로 바꾸는 기능이 아니다. 등록·변경 시 필요한 권한도 따로 있다.
 
-* 이름 입력
-* "가장 높은 수준의 권한으로 실행" 체크
+UAC 승인이 있어야만 진행되는 앱은 무인 실행에 적합한 구조인지 검토한다. [관리자 권한 요청 방식]({% post_url 2026-03-05-exe_with_administrator %})에서 차이를 살펴본다.
 
-### 트리거
+## 예제: 로그를 남기는 Python 작업 등록
 
-* 매일
-* 특정 시간
+### 진단용 main.py
 
-### 동작
-
-프로그램 시작:
-
-```text
-C:\myapp\main.exe
-```
-
----
-
-## 3️⃣ 명령어로 등록 (schtasks)
-
-Windows 기본 명령:
-
-```bash
-schtasks /create /tn "MyAutoJob" /tr "C:\myapp\main.exe" /sc daily /st 08:00
-```
-
-설명:
-
-* `/tn` 작업 이름
-* `/tr` 실행 파일
-* `/sc` 주기
-* `/st` 시간
-
----
-
-## 4️⃣ 관리자 권한 포함 등록
-
-```bash
-schtasks /create ^
- /tn "MyAutoJob" ^
- /tr "C:\myapp\main.exe" ^
- /sc daily ^
- /st 08:00 ^
- /rl highest
-```
-
-✔ `/rl highest` = 관리자 권한
-
-자동화 프로그램에서는 거의 필수입니다.
-
----
-
-## 5️⃣ Python에서 자동 등록하기
+`main.py` 옆에 내용이 있는 `input.txt`를 만든다. 아래 코드는 파일을 읽고 로그를 남기며, 마우스나 키보드는 조작하지 않는다.
 
 ```python
-import subprocess
+import logging
+import os
+from pathlib import Path
+import sys
 
-cmd = [
-    "schtasks",
-    "/create",
-    "/tn", "MyAutoJob",
-    "/tr", r"C:\myapp\main.exe",
-    "/sc", "daily",
-    "/st", "08:00",
-    "/rl", "highest"
-]
 
-subprocess.run(cmd, check=True)
+def main():
+    log_dir = Path(os.environ["LOCALAPPDATA"]) / "StandSpringScheduledDemo"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    logging.basicConfig(
+        filename=log_dir / "job.log", encoding="utf-8", level=logging.INFO,
+        format="%(asctime)s %(levelname)s %(message)s",
+    )
+    logging.info("started executable=%s cwd=%s", sys.executable, Path.cwd())
+    try:
+        source = Path(__file__).resolve().parent / "input.txt"
+        content = source.read_text(encoding="utf-8")
+        logging.info("completed input_chars=%d", len(content))
+    except Exception:
+        logging.exception("failed")
+        raise
+
+
+if __name__ == "__main__":
+    main()
 ```
 
----
+예외를 기록한 뒤 다시 발생시켜 실패를 정상 종료로 처리하지 않도록 한다. `LOCALAPPDATA`가 설정된 Windows 사용자 계정을 전제로 한다.
 
-## 6️⃣ 기존 작업 삭제
+### PowerShell로 시작 위치까지 지정한다
 
-```bash
-schtasks /delete /tn "MyAutoJob" /f
+다음은 현재 사용자가 로그온한 상태에서 매일 오전 8시에 실행하는 예다. `New-ScheduledTaskAction`으로 실행 파일·인수·작업 폴더를 나누어 지정한다.
+
+```powershell
+$taskUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$taskAction = New-ScheduledTaskAction -Execute 'C:\myapp\.venv\Scripts\python.exe' -Argument '"C:\myapp\main.py"' -WorkingDirectory 'C:\myapp'
+$taskTrigger = New-ScheduledTaskTrigger -Daily -At '08:00'
+$taskPrincipal = New-ScheduledTaskPrincipal -UserId $taskUser -LogonType Interactive -RunLevel Limited
+Register-ScheduledTask -TaskName 'PythonDailyDemo' -Action $taskAction -Trigger $taskTrigger -Principal $taskPrincipal
 ```
 
-✔ `/f` = 확인 없이 삭제
+기존 작업을 덮어쓰지 않도록 `-Force`는 넣지 않았다. 생성 후 작업 스케줄러에서 실행 계정과 로그온 조건을 확인한다.
 
-Python:
+### Python에서 schtasks를 호출한다
+
+다음 코드는 프로젝트의 가상환경 Python으로 실행한다.
 
 ```python
+from pathlib import Path
 import subprocess
+import sys
 
-subprocess.run([
-    "schtasks",
-    "/delete",
-    "/tn", "MyAutoJob",
-    "/f"
-])
-```
+script = Path(__file__).resolve().parent / "main.py"
+if not script.is_file():
+    raise FileNotFoundError(script)
 
----
-
-## 7️⃣ 작업 존재 여부 확인
-
-```bash
-schtasks /query /tn "MyAutoJob"
-```
-
-Python:
-
-```python
-import subprocess
-
-result = subprocess.run(
-    ["schtasks", "/query", "/tn", "MyAutoJob"],
-    capture_output=True,
-    text=True
+subprocess.run(
+    [
+        "schtasks", "/Create", "/TN", "PythonDailyDemoCLI",
+        "/TR", subprocess.list2cmdline([sys.executable, str(script)]),
+        "/SC", "DAILY", "/ST", "08:00", "/IT", "/RL", "LIMITED",
+    ],
+    check=True,
 )
-
-print(result.stdout)
 ```
 
----
+`/IT` 예제는 실행 계정이 로그온한 경우에만 동작한다. `/TR`은 따옴표를 포함한 하나의 명령 문자열로 구성한다. 이 예에서는 작업 폴더를 지정하지 않으므로 파일은 스크립트 기준 절대경로로 읽는다.
 
-## 8️⃣ 로그인 여부와 무관하게 실행
+## 결과 확인: 등록과 앱 실행 성공을 나누어 확인한다
 
-작업 스케줄러 설정에서:
+1. 같은 Python과 인수로 먼저 직접 실행한다.
+2. 등록 후 작업을 선택해 수동으로 ‘실행’한다.
+3. `%LOCALAPPDATA%\StandSpringScheduledDemo\job.log`에 `started`와 `completed`가 남았는지 확인한다.
+4. 실제 예약 시각에도 실행되는지 확인한다.
 
-✔ "사용자 로그온 여부와 관계없이 실행"
-
-선택 가능
-
-이 경우:
-
-* 백그라운드 실행 가능
-* 서버형 자동화 가능
-
----
-
-## 9️⃣ exe + 관리자 권한 + 예약 실행 조합 (실전 최강 구조)
-
-추천 구조:
-
-```text
-main.exe
- └ 작업 스케줄러 등록
-    └ highest 권한
+```powershell
+Get-ScheduledTaskInfo -TaskName 'PythonDailyDemo'
+Get-Content "$env:LOCALAPPDATA\StandSpringScheduledDemo\job.log" -Tail 20
 ```
 
-즉:
+`LastTaskResult`가 `0`이어도 앱이 실패를 무시하고 정상 종료했다면 처리 성공을 보장하지 않는다. 등록 성공·프로세스 종료·생성 파일이나 업무 결과를 각각 확인한다.
 
-```text
-PC 켜짐 → 예약 시간 도달 → 자동 실행
+진단 코드는 Python 3.14.5에서 다른 작업 폴더로 실행해 파일 읽기와 `started`·`completed` 로그 출력을 확인했다. 입력 파일이 없을 때 `failed` 기록과 비정상 종료도 확인했다. 작업 등록·예약 시각 기동·GUI 조작은 사용하는 환경에서 별도로 확인해야 한다.
+
+## 실무 팁
+
+### 흔한 실수
+
+| 상황 | 확인할 항목 |
+|---|---|
+| `ModuleNotFoundError` | 가상환경의 `python.exe`를 지정했는가 |
+| 파일을 찾을 수 없다 | 시작 위치와 `__file__` 기준 경로 |
+| 로그가 한 번도 남지 않는다 | 실행 경로·계정·로그 폴더 권한·작업 기록 |
+| 직접 실행만 성공한다 | 전원·네트워크 조건·실행 시각·계정 차이 |
+| 프로세스는 있는데 클릭은 안 된다 | 로그온·잠금·대상 데스크톱·대상 창 |
+| 처리가 중복된다 | 기존 인스턴스 실행 중일 때의 설정 |
+
+GUI 자동화는 로그온 여부뿐 아니라 대상 데스크톱에서 화면 검색과 입력이 가능한지도 확인한다. 원격 데스크톱 연결 해제와 화면 잠금은 실제 구성에서 검증하고, 단순히 ‘모니터 전원 켜짐’만 조건으로 삼지 않는다.
+
+### 주의사항
+
+실패 후 무조건 재시도하면 파일 전송이나 주문이 중복될 수 있다. 실행 결과를 확인한 뒤 다시 시도한다. exe의 임시 압축 해제 위치에 로그를 남긴다면 [PyInstaller 로그 저장 경로]({% post_url 2026-03-02-python_windows_exe_deployment_pyinstaller %})도 확인한다.
+
+### 추천 명령어
+
+```powershell
+schtasks /Query /TN "PythonDailyDemo" /V /FO LIST
 ```
 
----
+기록이 보이지 않으면 작업 스케줄러의 기록 사용 설정과 이벤트 뷰어의 `Microsoft-Windows-TaskScheduler/Operational`을 확인한다. 예제 작업이 필요 없어지면 대상 이름을 확인하고 삭제한다.
 
-## 🔟 실전 예제 (매일 오전 7시30분)
-
-```python
-import subprocess
-
-subprocess.run([
-    "schtasks",
-    "/create",
-    "/tn", "StockMorningJob",
-    "/tr", r"C:\stock\main.exe",
-    "/sc", "daily",
-    "/st", "07:30",
-    "/rl", "highest"
-])
+```powershell
+Unregister-ScheduledTask -TaskName 'PythonDailyDemo' -Confirm
 ```
-
----
-
-## 🔥 pyautogui 자동화에서 중요한 점
-
-주의:
-
-작업 스케줄러는 화면 없는 상태에서는
-GUI 자동화가 실패할 수 있습니다.
-
-즉:
-
-❌ 잠금 화면 상태 → pyautogui 실패
-❌ 원격 종료 상태 → 실패
-
-필수 조건:
-
-✔ 로그인 상태 유지
-✔ 화면 켜짐
-
----
-
-## 🚨 가장 흔한 실패 원인
-
-### 1) 경로 공백
-
-```text
-C:\Program Files\...
-```
-
-→ 반드시 따옴표 처리
-
----
-
-### 2) 상대경로 사용
-
-항상 절대경로 사용
-
----
-
-### 3) 관리자 권한 누락
-
-`/rl highest` 필수
-
----
 
 ## 마무리
 
-Windows 작업 스케줄러는
-Python 자동화 프로그램을 실전 운영 단계로 올려주는 핵심 도구입니다.
+### 핵심 요약
 
-특히:
+실행 파일·인수·시작 위치를 분리해 설정하고 같은 계정의 로그로 결과를 확인한다. GUI 로그온 조건과 관리자 권한은 따로 판단한다.
 
-* pyautogui
-* HTS 자동화
-* 데이터 수집
-* 백업
+### 언제 사용하면 좋은가
 
-모두 예약 실행 구조가 안정성을 높입니다.
+데이터 수집과 배치의 정기 실행에 유용하다. 화면 조작이 포함되면 비대화형 실행으로 바꾸는 것만으로 안정화되지 않는다.
 
----
+### 추가 학습 주제
+
+이미지를 찾지 못한다면 [PyAutoGUI 예외 처리와 검색 영역]({% post_url 2026-03-01-pyautogui_image_recognition_advanced %})을 확인한다.
+
+## 참고 자료
+
+- [Microsoft: New-ScheduledTaskAction](https://learn.microsoft.com/en-us/powershell/module/scheduledtasks/new-scheduledtaskaction)
+- [Microsoft: schtasks create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create)
+- [Microsoft: Security Contexts for Tasks](https://learn.microsoft.com/en-us/windows/win32/taskschd/security-contexts-for-running-tasks)

@@ -8,8 +8,6 @@ toc: true
 toc_sticky: true
 ---
 
-# Python tracemalloc 사용법: 메모리가 늘어나는 코드 찾기
-
 ![코드의 할당 위치와 스냅샷 사이에 늘어난 메모리 블록을 돋보기로 살펴보는 Python tracemalloc 개념 삽화](/assets/img/2026-10-17-python-tracemalloc.png)
 
 *메모리 할당 위치와 스냅샷 변화를 추적하는 과정을 표현한 개념 삽화이며, 실제 분석 화면은 아니다.*

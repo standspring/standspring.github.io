@@ -1,8 +1,9 @@
 ---
-title: "pyautogui + pygetwindow로 창 제어까지 하는 GUI 자동화"
+title: "Windows PyGetWindow 사용법: PyAutoGUI 대상 창 찾기·활성화·좌표 고정"
+description: "Windows에서 PyGetWindow로 대상 창을 찾아 복구·활성화하고 크기와 위치를 고정합니다. 이미지 검색 및 예약 실행과 연결할 때 확인할 점도 설명합니다."
 date: "2026-03-01 00:00:00 +0900"
 categories: [python, automation]
-tags: [python, pyautogui, pygetwindow, gui, automation, windows, hts, 자동화, window-control]
+tags: [python, pyautogui, pygetwindow, automation, windows, hts, 자동화, window-control]
 ---
 ![PyAutoGUI and PyGetWindow GUI automation workflow](/assets/img/2026-03-01-pyautogui-pygetwindow-guide.png)
 
@@ -15,6 +16,8 @@ tags: [python, pyautogui, pygetwindow, gui, automation, windows, hts, 자동화,
 - `pyautogui`: 활성화된 창을 대상으로 클릭 / 키보드 입력 / 스크린샷
 
 즉, **창 선택/정렬은 pygetwindow**, **실제 조작은 pyautogui**가 담당합니다.
+
+아래 예제는 `Win32Window`를 사용하는 **Windows용 코드**입니다. PyAutoGUI 입력은 현재 포커스를 가진 창으로 전달되며, 라이브러리가 입력 대상을 특정 창에 고정해 주는 것은 아닙니다. 대상 제목과 화면을 먼저 확인하세요.
 
 ---
 
@@ -34,13 +37,13 @@ pip install opencv-python
 
 ## 2) 기본 안전 설정 (필수)
 
-자동화는 실수하면 마우스가 미친 듯이 움직이거나, 원치 않는 곳에 입력할 수 있어요.
+자동화는 실수하면 마우스가 의도와 다르게 움직이거나, 원치 않는 곳에 입력할 수 있어요.
 아래 두 줄은 거의 필수로 넣어두는 걸 추천합니다.
 
 ```python
 import pyautogui
 
-pyautogui.FAILSAFE = True   # 좌측 상단으로 마우스 이동하면 즉시 중단
+pyautogui.FAILSAFE = True   # 주 모니터 모서리에서 FailSafeException 발생
 pyautogui.PAUSE = 0.2       # 각 동작 사이 0.2초 쉬기
 ```
 
@@ -208,6 +211,8 @@ pyautogui.press("enter")
 - 관리자 권한(UAC) 프로그램은 일반 권한 파이썬에서 포커스가 막힐 수 있습니다.
 - 해결: 파이썬/터미널을 관리자 권한으로 실행해보기
 
+권한 상승이 포커스 성공을 보장하지는 않습니다. 최소화 복구, 대상 창 확인, 대화형 세션과 권한을 나누어 점검하고 [관리자 권한 요청 방식]({% post_url 2026-03-05-exe_with_administrator %})을 필요한 경우에만 적용합니다.
+
 ### 2) 멀티모니터에서 좌표가 틀어지는 경우
 
 - 창을 항상 같은 모니터(예: 주 모니터 좌상단)로 이동시키고 시작하기
@@ -224,3 +229,10 @@ pyautogui.press("enter")
 
 `pyautogui`는 **조작**, `pygetwindow`는 **대상 창 제어**를 담당합니다.
 이 조합만 갖춰도 자동화 안정성이 확 올라가고, “창 찾기 → 정렬 → 캡처/클릭/입력” 같은 실전 흐름이 만들어집니다.
+
+이미지가 보이는데 검색되지 않으면 [PyAutoGUI 이미지 인식 진단]({% post_url 2026-03-01-pyautogui_image_recognition_advanced %})을 확인합니다. 직접 실행은 되는데 예약 실행만 실패하면 [작업 스케줄러의 계정·로그온 조건]({% post_url 2026-03-06-task_scheduler %})을 점검합니다.
+
+## 참고 자료
+
+- [PyGetWindow 공식 문서](https://pygetwindow.readthedocs.io/en/latest/)
+- [PyAutoGUI 공식 문서](https://pyautogui.readthedocs.io/en/latest/)

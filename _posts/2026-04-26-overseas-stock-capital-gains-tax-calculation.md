@@ -389,6 +389,8 @@ tags: [해외주식, 양도소득세, 해외주식세금, 미국주식세금, �
 
 ## 참고 자료
 
+같은 종목을 여러 번 매수한 뒤 일부만 매도했다면 [선입선출법과 이동평균법 계산 비교]({% post_url 2026-10-23-overseas-stock-tax-fifo-vs-moving-average %})에서 취득가액이 달라지는 과정을 이어서 확인할 수 있다. 적용 가능한 방식과 요건은 해당 글의 확인 기준일과 공식 자료를 함께 검토하자.
+
 - 국세청, 주식등 양도소득세 세액계산요령  
   https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=8800&mi=12274
 

@@ -1,5 +1,6 @@
 ---
 title: "삼성증권 HTS 자동 매매 구현기"
+description: "삼성증권 POP HTS의 실행 여부와 로그인 창을 확인하는 GUI 자동화 구현 기록입니다. 이미지 검색·창 제어·로그인 코드 글로 이어서 볼 수 있습니다."
 date: 2026-03-07 00:00:00 +0900
 categories: [python, automation]
 tags: [python, 삼성증권, 자동매매, automation, hts, pyautogui, trading-bot]
@@ -304,3 +305,5 @@ pyautogui.write(text, interval=0.02)
 ---
 
 다음 글에서 주문창 열기부터, 유사하게 하는데도 안되서 다른 방법으로 구현했던 부분도 기술하겠다.
+
+로그인 단계의 구체적인 함수는 [POP HTS 실행·로그인 코드]({% post_url 2026-03-08-hts-login %})에 정리했다. 이미지가 보이는데 검색이 실패한다면 [미검출 예외·배율·검색 영역 진단]({% post_url 2026-03-01-pyautogui_image_recognition_advanced %})을 먼저 확인한다. 예약 실행은 [작업 스케줄러의 로그온 조건]({% post_url 2026-03-06-task_scheduler %})까지 따로 검증해야 한다.
