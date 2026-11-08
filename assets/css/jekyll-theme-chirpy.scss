@@ -1,0 +1,27 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+// Keep the complete cover visible when reading a post.
+article > header .preview-img {
+  aspect-ratio: auto;
+  height: auto;
+  overflow: visible;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
