@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1060" viewBox="0 0 1440 1060" role="img" aria-labelledby="title desc">
+  <title id="title">DSM에서 수동 WOL 작업을 만드는 설정 개념도</title>
+  <desc id="desc">작업 스케줄러에서 사용자 정의 스크립트를 만들고, 작업 이름 Wake PC와 실행 사용자 root를 지정한다. 자동 예약 실행은 비활성화하고 synonet 명령에 대상 PC의 MAC과 NAS의 LAN 인터페이스를 입력한다. 실제 DSM 화면이 아닌 설명용 도식이다.</desc>
+  <defs><style>text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#193047}.label{font-size:29px;font-weight:700}.body{font-size:25px;fill:#526779}.mono{font-family:Consolas,monospace;font-size:25px}</style></defs>
+  <rect width="1440" height="1060" rx="28" fill="#f3f7fb"/><rect width="1440" height="12" fill="#087e8b"/>
+  <text x="64" y="79" font-size="22" font-weight="700" style="fill:#087e8b">TASK SETTINGS / 02</text>
+  <text x="64" y="145" font-size="46" font-weight="700">예약 실행은 끄고, 필요할 때 직접 실행</text>
+  <text x="64" y="197" class="body">설정 항목을 정리한 개념도입니다. 실제 DSM 화면과 메뉴 배치는 버전에 따라 다릅니다.</text>
+  <rect x="48" y="240" width="1344" height="117" rx="20" fill="#e0eeef"/>
+  <text x="80" y="287" class="label">제어판 → 작업 스케줄러 → 생성 → 예약된 작업</text>
+  <text x="80" y="330" class="body">작업 유형: 사용자 정의 스크립트</text>
+  <rect x="48" y="386" width="645" height="262" rx="20" fill="#fff" stroke="#d3dfec" stroke-width="2"/>
+  <text x="80" y="438" class="label">일반 설정</text>
+  <text x="80" y="491" class="body">작업 이름</text><text x="309" y="491" class="label">Wake PC</text>
+  <text x="80" y="548" class="body">실행 사용자</text><text x="309" y="548" class="label">root</text>
+  <text x="80" y="604" class="body">관리자 로그인과 작업 실행 권한은 구분합니다.</text>
+  <rect x="722" y="386" width="670" height="262" rx="20" fill="#fff3df" stroke="#e2c99e" stroke-width="2"/>
+  <text x="754" y="438" class="label">자동 실행 방지</text>
+  <rect x="754" y="476" width="30" height="30" rx="4" fill="#fff" stroke="#a8752a" stroke-width="2"/>
+  <text x="801" y="501" class="body">활성화 / 사용: 체크 해제</text>
+  <text x="754" y="554" class="body">저장 후 작업 목록에서도 비활성 상태 확인</text>
+  <text x="754" y="604" class="body">깨울 때 작업을 선택하고 [실행] 누르기</text>
+  <rect x="48" y="678" width="1344" height="284" rx="20" fill="#fff" stroke="#d3dfec" stroke-width="2"/>
+  <text x="80" y="730" class="label">작업 설정 · 사용자 정의 스크립트</text>
+  <rect x="80" y="755" width="1280" height="70" rx="12" fill="#edf2f8"/>
+  <text x="102" y="800" class="mono">/usr/syno/sbin/synonet --wake 02:11:22:33:44:55 eth0</text>
+  <text x="80" y="872" class="body">02:11:22:33:44:55 → 깨울 PC의 유선 MAC 주소로 변경</text>
+  <text x="80" y="919" class="body">eth0 → NAS가 PC와 같은 LAN에 연결된 인터페이스인지 확인</text>
+  <text x="64" y="1014" font-size="24" style="fill:#526779">명령 경로와 --wake 옵션은 실제 DSM에서 확인합니다. 실행 결과 0만으로 PC 부팅 성공을 판단하지 않습니다.</text>
+</svg>

@@ -1,0 +1,18 @@
+Mode: built-in image_gen
+Skill: imagegen
+User approved this substitute because /hand-written was not installed.
+Asset: assets/img/2026-11-09-synology-wol-handwritten-hero.png
+
+Use case: infographic-diagram.
+Asset type: one landscape hero illustration for a Korean technical blog titled "시놀로지 NAS로 외부에서 PC 켜기: QuickConnect와 WOL 작업 설정".
+Primary request: Create a warm handwritten sketchnote infographic on off-white lightly textured paper. Black fineliner drawings and Korean handwriting with teal marker highlights and a few soft yellow highlighter accents. Visually consistent with an engineer's friendly handwritten notebook explainer. Flat illustrated page, not a photographed desk, not a clean corporate vector chart. Landscape 3:2 layout. Generous margins and readable text.
+Title at top, exact text: "NAS로 PC 깨우기"
+Subtitle, exact text: "QuickConnect + Wake-on-LAN"
+The main visual story is left-to-right. On the left, a smartphone outside the home with a small "LTE / 5G" label, showing a simple abstract authenticated request button with text "작업 실행". In the middle, a friendly white two-bay Synology-style NAS box (no real logo), clearly labelled "DS215j NAS", located inside a loose hand-drawn home/LAN enclosure. On the right within that SAME home/LAN enclosure, one desktop tower and monitor, labelled "대상 PC", with an illuminated teal power symbol. The NAS is powered on with a green status LED. The PC has a power cord plugged into a normal wall outlet; standby electricity matters.
+An arrow from the phone to the NAS labelled "QuickConnect" represents a remote MANAGEMENT REQUEST, and a distinct arrow/cable from the NAS through a tiny home router/switch symbol to the PC labelled "매직 패킷" represents wired LOCAL LAN wake traffic. The tiny router symbol should visually act only as LAN transport, not a VPN server. Label the loose enclosure "집 안 · 같은 LAN". Do NOT depict a magic packet passing directly through QuickConnect from smartphone to powered-off PC.
+A small yellow handwritten note, exact text: "NAS는 켜 두기!"
+Three spacious notes across the bottom, exact text:
+"1. PC의 WOL 먼저 확인"
+"2. NAS에 깨우기 작업 등록"
+"3. 외부에서 작업 실행"
+Prefer charming hand-drawn hardware and arrows over dense technical text. All requested Korean must be spelled accurately and legible. No fake realistic DSM screenshot, no command code, no passwords, no actual MAC or IP address, no branding logos, no watermark, no extra paragraphs, no claim that an off NAS can receive QuickConnect. The illustration is a conceptual diagram, not a physical wiring installation guide. The main lesson is that the always-on NAS sends the local wake packet after an authenticated DSM task request.

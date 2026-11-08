@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1010" viewBox="0 0 1440 1010" role="img" aria-labelledby="title desc">
+  <title id="title">NAS WOL을 세 단계로 나누어 검증하는 방법</title>
+  <desc id="desc">먼저 집 Wi-Fi의 핸드폰으로 PC의 로컬 WOL을 확인하고, 다음에 집 안 DSM에서 NAS 작업 실행을 시험한다. 마지막으로 Wi-Fi를 끈 핸드폰에서 LTE 또는 5G와 QuickConnect로 DSM에 접속해 같은 작업을 실행한다.</desc>
+  <defs><style>text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#193047}.label{font-size:30px;font-weight:700}.body{font-size:26px;fill:#526779}.num{font-size:30px;fill:#fff;font-weight:700}</style></defs>
+  <rect width="1440" height="1010" rx="28" fill="#f3f7fb"/><rect width="1440" height="12" fill="#087e8b"/>
+  <text x="64" y="80" font-size="22" font-weight="700" style="fill:#087e8b">VERIFY IN THREE STAGES / 03</text>
+  <text x="64" y="146" font-size="46" font-weight="700">실패 지점을 나누면, 바꿀 설정이 보입니다</text>
+  <text x="64" y="198" class="body">각 단계에서 대상 PC를 정상 종료한 뒤, 다음 송신 경로로 켜지는지 확인합니다.</text>
+  <path d="M109 326V789" stroke="#c5dce1" stroke-width="6"/>
+  <rect x="165" y="249" width="1227" height="184" rx="20" fill="#fff" stroke="#d3dfec" stroke-width="2"/>
+  <circle cx="109" cy="340" r="33" fill="#087e8b"/><text x="100" y="351" class="num">1</text>
+  <text x="198" y="298" class="label">로컬 WOL · 핸드폰 → PC</text>
+  <text x="198" y="350" class="body">핸드폰은 집 Wi-Fi · PC는 유선 LAN · MAC 주소로 깨우기</text>
+  <text x="198" y="397" font-size="24" style="fill:#087e8b">실패하면: PC의 BIOS·드라이버·전원 조건부터 확인</text>
+  <rect x="165" y="467" width="1227" height="184" rx="20" fill="#fff" stroke="#d3dfec" stroke-width="2"/>
+  <circle cx="109" cy="558" r="33" fill="#087e8b"/><text x="100" y="569" class="num">2</text>
+  <text x="198" y="516" class="label">NAS 송신 · 집 안 DSM → 작업 실행 → PC</text>
+  <text x="198" y="568" class="body">Wake PC 작업을 직접 실행 · PC가 실제로 켜지는지 확인</text>
+  <text x="198" y="615" font-size="24" style="fill:#087e8b">1단계는 되는데 실패하면: 실행 권한·명령 경로·MAC·NAS 인터페이스 확인</text>
+  <rect x="165" y="685" width="1227" height="184" rx="20" fill="#e4f3ef" stroke="#9bc9bf" stroke-width="2"/>
+  <circle cx="109" cy="776" r="33" fill="#087e8b"/><text x="100" y="787" class="num">3</text>
+  <text x="198" y="734" class="label">외부 요청 · LTE/5G → QuickConnect → 같은 작업</text>
+  <text x="198" y="786" class="body">핸드폰 Wi-Fi 끄기 · DSM에 로그인 · Wake PC 실행</text>
+  <text x="198" y="833" font-size="24" style="fill:#087e8b">2단계는 되는데 실패하면: QuickConnect의 DSM 접속과 계정 권한 확인</text>
+  <rect x="48" y="906" width="1344" height="62" rx="15" fill="#e8edf5"/>
+  <text x="79" y="947" font-size="25">마지막에는 종료 직후와 10~30분 뒤를 비교하고, 부팅 후 사용할 원격 접속 서비스도 별도로 확인합니다.</text>
+</svg>
