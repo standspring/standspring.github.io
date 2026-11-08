@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">집 밖에서 Wake-on-LAN을 사용하는 중계 구조</title>
+  <desc id="desc">외부 스마트폰은 VPN으로 집 안의 켜진 공유기나 중계 장치에 접속한다. 중계 장치가 대상 PC와 같은 LAN에 매직 패킷을 보내고, PC가 켜지면 별도 원격 접속 프로그램으로 연결한다. 잠든 PC만을 VPN 서버로 두면 이 흐름을 시작할 수 없다.</desc>
+  <defs>
+    <style>text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#193047}.body{font-size:25px;fill:#516779}.label{font-size:29px;font-weight:700}</style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#087e8b" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1440" height="960" rx="28" fill="#f3f7fb"/>
+  <rect width="1440" height="12" fill="#087e8b"/>
+  <text x="64" y="80" font-size="22" font-weight="700" style="fill:#087e8b">REMOTE ACCESS / 03</text>
+  <text x="64" y="146" font-size="46" font-weight="700">집 밖에서는, 집 안의 장치에 부탁합니다</text>
+  <text x="64" y="197" class="body">일반적인 L3 VPN은 LAN의 브로드캐스트를 그대로 옮겨 주지 않습니다.</text>
+  <rect x="48" y="250" width="334" height="392" rx="22" fill="#fff" stroke="#d5e2eb" stroke-width="2"/>
+  <text x="81" y="300" font-size="24" font-weight="700" style="fill:#4669b3">집 밖 · LTE / 5G</text>
+  <rect x="148" y="336" width="108" height="153" rx="16" fill="#e4eafb" stroke="#4669b3" stroke-width="4"/>
+  <text x="94" y="548" class="label">스마트폰 / 노트북</text>
+  <text x="96" y="594" class="body">인증 후 깨우기 요청</text>
+  <path d="M396 438H534" stroke="#087e8b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="429" y="394" font-size="25" font-weight="700" style="fill:#087e8b">VPN</text>
+  <rect x="568" y="250" width="824" height="392" rx="22" fill="#e3f2ef" stroke="#9ccdbd" stroke-width="2"/>
+  <text x="601" y="300" font-size="24" font-weight="700" style="fill:#087e8b">집 안 · 대상 PC와 같은 LAN</text>
+  <rect x="598" y="347" width="310" height="230" rx="16" fill="#fff"/>
+  <text x="625" y="394" class="label">켜져 있는 중계 장치</text>
+  <text x="625" y="440" class="body">공유기 WOL / NAS / Pi</text>
+  <text x="625" y="487" class="body">내부에서 패킷 전송</text>
+  <text x="625" y="541" font-size="24" font-weight="700" style="fill:#087e8b">상시 전원 필요</text>
+  <path d="M925 438H1058" stroke="#087e8b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="930" y="397" font-size="22">매직 패킷</text>
+  <rect x="1090" y="347" width="270" height="230" rx="16" fill="#fff"/>
+  <text x="1133" y="400" class="label">잠든 대상 PC</text>
+  <text x="1121" y="450" class="body">유선 랜카드 수신</text>
+  <text x="1121" y="492" class="body">절전 해제 / 부팅</text>
+  <text x="1121" y="541" font-size="24" font-weight="700" style="fill:#087e8b">이후 원격 접속</text>
+  <rect x="48" y="682" width="1344" height="208" rx="22" fill="#fff" stroke="#d5e2eb" stroke-width="2"/>
+  <text x="80" y="734" class="label">구성할 때 기억할 세 가지</text>
+  <text x="80" y="780" class="body">1. VPN의 도착점은 켜져 있어야 합니다. 잠든 PC 한 대만으로는 시작할 수 없습니다.</text>
+  <text x="80" y="824" class="body">2. VPN 연결 뒤 공유기 WOL 메뉴를 열거나, 내부 중계 장치에서 전송 명령을 실행합니다.</text>
+  <text x="80" y="868" class="body">3. WOL은 깨우기만 합니다. 화면 조작·로그인에는 별도의 원격 접속 설정이 필요합니다.</text>
+  <text x="64" y="931" font-size="22" style="fill:#516779">개념도 · VPN 서버와 WOL 전송 기능은 한 공유기에 함께 있거나, 서로 다른 장치에 있을 수 있습니다.</text>
+</svg>

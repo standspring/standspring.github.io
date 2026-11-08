@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">Wake-on-LAN의 동작 원리와 매직 패킷</title>
+  <desc id="desc">같은 LAN의 스마트폰이 공유기를 통해 매직 패킷을 보내면 대기 전원을 받는 유선 랜카드가 대상 MAC 주소를 인식하고 PC를 깨운다. 기본 매직 패킷 본문은 FF 6바이트와 MAC 주소 16회 반복으로 102바이트다.</desc>
+  <defs>
+    <style>text{font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;fill:#193047}.muted{fill:#516779;font-size:26px}.label{font-size:30px;font-weight:700}.mono{font-family:Consolas,monospace;font-size:27px}</style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#087e8b" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1440" height="960" rx="28" fill="#f3f7fb"/>
+  <rect x="0" y="0" width="1440" height="12" fill="#087e8b"/>
+  <text x="64" y="83" font-size="22" font-weight="700" style="fill:#087e8b">NETWORK GUIDE / 01</text>
+  <text x="64" y="151" font-size="48" font-weight="700">꺼진 듯한 PC를 깨우는 작은 신호</text>
+  <text x="64" y="201" class="muted">Wake-on-LAN · PC의 운영체제 대신, 대기 중인 랜카드가 먼저 반응합니다.</text>
+  <rect x="48" y="250" width="1344" height="352" rx="24" fill="#fff" stroke="#d5e2eb" stroke-width="2"/>
+  <rect x="107" y="301" width="106" height="160" rx="18" fill="#e2f2f4" stroke="#087e8b" stroke-width="5"/>
+  <rect x="123" y="325" width="74" height="99" rx="5" fill="#fff"/>
+  <circle cx="160" cy="443" r="5" fill="#087e8b"/>
+  <text x="78" y="510" class="label">스마트폰 / 다른 PC</text>
+  <text x="91" y="551" class="muted">WOL 전송 도구 실행</text>
+  <path d="M327 381H481" stroke="#087e8b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="336" y="341" font-size="23">Wi-Fi 또는 유선</text>
+  <rect x="532" y="355" width="178" height="82" rx="14" fill="#e2f2f4" stroke="#087e8b" stroke-width="4"/>
+  <path d="M559 355V298M683 355V298" stroke="#087e8b" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="566" cy="400" r="6" fill="#087e8b"/><circle cx="591" cy="400" r="6" fill="#087e8b"/>
+  <text x="515" y="510" class="label">공유기 / 스위치</text>
+  <text x="525" y="551" class="muted">같은 LAN으로 전달</text>
+  <path d="M758 381H912" stroke="#087e8b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="774" y="341" font-size="23">유선 이더넷</text>
+  <rect x="989" y="290" width="290" height="175" rx="16" fill="#edf2ff" stroke="#4669b3" stroke-width="4"/>
+  <rect x="1009" y="310" width="250" height="113" rx="6" fill="#fff"/>
+  <text x="1057" y="357" font-size="26" font-weight="700">NIC 대기 중</text>
+  <text x="1041" y="397" font-size="24" style="fill:#087e8b">MAC 일치 → 깨우기</text>
+  <path d="M1134 465V486M1085 486H1183" stroke="#4669b3" stroke-width="5"/>
+  <text x="1029" y="534" class="label">대상 PC</text>
+  <text x="978" y="575" font-size="24" style="fill:#516779">대기 전원 + WOL 지원 필요</text>
+  <text x="64" y="667" class="label">매직 패킷의 기본 본문 = 102바이트</text>
+  <rect x="64" y="700" width="385" height="120" rx="16" fill="#d8eff0"/>
+  <text x="88" y="745" class="mono">FF FF FF FF FF FF</text>
+  <text x="88" y="790" font-size="24">동기화 패턴 · 6바이트</text>
+  <text x="474" y="771" font-size="44" style="fill:#087e8b">+</text>
+  <rect x="530" y="700" width="846" height="120" rx="16" fill="#e4eafb"/>
+  <text x="558" y="745" class="mono">02:11:22:33:44:55 × 16</text>
+  <text x="558" y="790" font-size="24">대상 유선 랜카드의 MAC · 6바이트 × 16 = 96바이트</text>
+  <text x="64" y="875" font-size="26" font-weight="700">콘센트 전원까지 끊으면 수신할 수 없습니다.</text>
+  <text x="64" y="919" font-size="23" style="fill:#516779">개념도 · UDP 전송 시 IP·UDP·이더넷 헤더는 102바이트에 별도로 붙습니다.</text>
+</svg>

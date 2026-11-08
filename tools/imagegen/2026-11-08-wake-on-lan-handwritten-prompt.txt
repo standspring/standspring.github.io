@@ -1,0 +1,13 @@
+Mode: built-in image_gen
+Skill: imagegen (handwritten-named skill was not installed)
+Asset: assets/img/2026-11-08-wake-on-lan-handwritten-hero.png
+
+Use case: infographic-diagram.
+Asset type: one landscape hero illustration for a Korean technical blog article about Wake-on-LAN.
+Primary request: A polished handwritten sketchnote explainer, as if an engineer drew it by hand in a notebook with a black fineliner, soft teal marker and warm yellow highlighter. The image itself is the flat illustrated page, not a photograph of a notebook on a desk. Warm off-white paper, subtle paper grain, imperfect confident ink lines, friendly hand-drawn devices, handwritten annotations. Spacious composition, high readability, coherent single-page visual story. Landscape 3:2 composition.
+Title near the top, exactly: "Wake-on-LAN"
+Subtitle, exactly: "네트워크로 PC 깨우기"
+Main visual story across the middle in three clear stages: a smartphone with a small wake button, a home router/switch, and a desktop computer waking up with a teal illuminated power symbol. Draw one clear arrow from phone to router labelled "매직 패킷", and a solid wired Ethernet cable/arrow from router to desktop labelled "유선 LAN". Label the phone "스마트폰", router "공유기", desktop "대상 PC". The smartphone may connect to router wirelessly, but target desktop must visibly connect by Ethernet. Depict a small sleeping cue transitioning to an awake desktop in this one stage, avoid two PCs.
+Bottom strip has three numbered handwritten notes with small hand-drawn icons, exact text: "1. BIOS에서 WOL 켜기", "2. 랜카드 깨우기 허용", "3. 같은 LAN에서 시험".
+A small yellow sticky-note style reminder beside the PC, exact text: "대기 전원 필요!"
+Accuracy: Wake-on-LAN uses the network adapter with standby power, it does not supply electricity through the network. Show a discreet power cord from desktop to an ordinary connected wall outlet. The phone is a sender, the router delivers, the wired PC is the wake target. No internet/cloud/VPN claims in this local LAN diagram. No fake OS screenshots, no brands, no watermark. Avoid excessive tiny text, tables, binary digits, or extra paragraphs. All Korean text must be spelled correctly and be legible; all specified text only. This is a genuinely warm hand-drawn sketch aesthetic, not clean vector corporate flowchart, not photorealism, not glossy 3D.
