@@ -8,10 +8,8 @@ toc: true
 toc_sticky: true
 image:
   path: /assets/img/2026-11-08-wake-on-lan-handwritten-hero.png
-  alt: "손그림으로 표현한 Wake-on-LAN: 스마트폰의 매직 패킷이 공유기와 유선 LAN을 거쳐 대기 전원이 공급되는 PC를 깨우는 과정"
+  alt: "Wake-on-LAN: 스마트폰의 매직 패킷이 공유기와 유선 LAN을 거쳐 대기 전원이 공급되는 PC를 깨우는 과정"
 ---
-
-*상단 그림은 AI로 생성한 손그림 스타일의 개념 삽화이며, 본문의 도식은 직접 제작했다. 실제 BIOS나 Windows 설정 화면을 캡처한 이미지는 아니다.*
 
 ## 들어가며
 

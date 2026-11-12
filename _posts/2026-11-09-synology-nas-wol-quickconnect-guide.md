@@ -8,10 +8,8 @@ toc: true
 toc_sticky: true
 image:
   path: /assets/img/2026-11-09-synology-wol-handwritten-hero.png
-  alt: "핸드폰에서 QuickConnect로 NAS 작업을 실행하면, 켜져 있는 DS215j가 같은 LAN의 PC를 깨우는 손그림 개념도"
+  alt: "핸드폰에서 QuickConnect로 NAS 작업을 실행하면, 켜져 있는 DS215j가 같은 LAN의 PC를 깨우는 과정"
 ---
-
-*상단 그림은 AI로 생성한 손글씨·손그림 스타일의 개념 삽화다. 본문의 도식은 직접 제작했으며, 실제 DSM 화면을 캡처한 이미지는 아니다.*
 
 ## 들어가며
 
