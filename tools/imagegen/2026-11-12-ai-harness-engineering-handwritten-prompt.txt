@@ -1,0 +1,9 @@
+Use case: infographic-diagram. One landscape Korean technical blog hero.
+Finished article: AI harness engineering for beginners; AGENTS.md is one part of an environment connecting tools, tests, failure feedback and completion checks. Python shipping-fee example.
+Warm off-white textured paper, black fineliner handwritten sketchnote, teal marker and restrained yellow highlights, generous margins.
+Title: AI 하네스 엔지니어링
+Robot working inside a frame labeled 작업 환경.
+Labels: 규칙, 도구, 테스트, 실패하면 수정, 확인하고 완료.
+Cycle arrows from robot using tool to test checklist and back to robot.
+Minimal readable Korean. No code, fake screenshots, secrets or watermark.
+Generated with built-in image_gen tool; selected output copied into assets/img.
