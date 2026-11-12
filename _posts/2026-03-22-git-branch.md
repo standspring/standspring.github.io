@@ -5,6 +5,9 @@ categories: [Git, GitHub]
 tags: [git, github, branch, remote-branch, local-branch, git-push, git-pull, git-beginner]
 description: "Git에서 local 브랜치와 remote 브랜치가 무엇이 다른지, origin/main과 main은 어떻게 다른지, push·pull·fetch 시 어떤 일이 일어나는지 예시와 함께 상세히 설명합니다."
 slug: git-local-branch-vs-remote-branch
+image:
+  path: /assets/img/2026-03-22-git-branch-handwritten-hero.webp
+  alt: "Git local 브랜치와 remote 브랜치 차이 완전 정리: 예시로 이해하는 브랜치 동작 방식의 핵심 개념과 흐름"
 ---
 
 Git을 공부하다 보면 이런 표현을 자주 보게 됩니다.

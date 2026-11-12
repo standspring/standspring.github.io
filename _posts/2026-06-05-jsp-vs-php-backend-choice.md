@@ -4,6 +4,9 @@ description: "JSP와 PHP를 한 서비스에서 함께 사용할 필요가 있�
 date: 2026-06-05
 categories: [Server, Web]
 tags: [JSP, PHP, Apache, Tomcat, Nginx, PHP-FPM, Backend, WAS, 서버운영]
+image:
+  path: /assets/img/2026-06-05-jsp-vs-php-backend-choice-handwritten-hero.webp
+  alt: "JSP와 PHP를 둘 다 써야 할까? 백엔드 스택 선택 기준의 핵심 개념과 흐름"
 ---
 
 ![JSP와 PHP 백엔드 선택 인포그래픽](/assets/img/2026-06-05-jsp-vs-php-backend-choice.svg)

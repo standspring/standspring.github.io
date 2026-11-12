@@ -4,6 +4,9 @@ description: "레버리지 ETF 가격이 기초지수와 어떻게 연결되는�
 date: 2026-06-08
 categories: [투자, ETF]
 tags: [레버리지ETF, ETF, 기초지수, NAV, iNAV, 괴리율, 추적오차, 투자기초]
+image:
+  path: /assets/img/2026-06-08-leveraged-etf-index-price-matching-handwritten-hero.webp
+  alt: "레버리지 ETF의 기초지수와 가격을 매칭시키는 방법의 핵심 개념과 흐름"
 ---
 
 ![레버리지 ETF 가격이 기초지수, NAV, iNAV와 매칭되는 구조](/assets/img/2026-06-08-leveraged-etf-index-price-matching.png)

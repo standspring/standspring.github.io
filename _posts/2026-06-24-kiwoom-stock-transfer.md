@@ -4,6 +4,9 @@ description: "키움증권 영웅문4 HTS에서 보유 주식을 다른 증권�
 date: 2026-06-24
 categories: [금융, 주식]
 tags: [키움증권, 타사대체출고, 주식이체, 증권사이전, 영웅문4, HTS, 주식옮기기, 대체출고]
+image:
+  path: /assets/img/2026-06-24-kiwoom-stock-transfer-handwritten-hero.webp
+  alt: "키움증권 주식을 다른 증권사로 옮기는 방법: 타사대체출고 따라하기의 핵심 개념과 흐름"
 ---
 
 ![키움증권 주식 타사대체출고 절차도](/assets/img/2026-06-24-kiwoom-stock-transfer-flow.svg)

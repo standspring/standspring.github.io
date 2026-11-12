@@ -4,6 +4,9 @@ description: "주식 매수 주문 방식 중 LOC, TWAP, VWAP의 개념과 장�
 date: 2026-05-06
 categories: [금융, 투자]
 tags: [주식투자, 매수방법, LOC, TWAP, VWAP, 알고리즘주문, 분할매수]
+image:
+  path: /assets/img/2026-05-06-stock-buying-loc-twap-vwap-handwritten-hero.webp
+  alt: "주식 매수 방법 LOC, TWAP, VWAP 완전 정리: 체결 방식과 실전 예시의 핵심 개념과 흐름"
 ---
 
 ![주식 매수 방법 LOC TWAP VWAP](/assets/img/2026-05-06-stock-buying-loc-twap-vwap.png)

@@ -4,6 +4,9 @@ description: "Ubuntu 같은 호스트에서 직접 운영하던 MariaDB를 Docke
 date: 2026-06-11
 categories: [Database, Docker]
 tags: [MariaDB, Docker, Docker Compose, Database, Backup, Restore, Linux, 서버운영]
+image:
+  path: /assets/img/2026-06-11-mariadb-host-to-docker-handwritten-hero.webp
+  alt: "호스트 MariaDB를 Docker MariaDB로 옮기는 방법의 핵심 개념과 흐름"
 ---
 
 ![MariaDB 호스트에서 Docker로 이전하는 흐름](/assets/img/2026-06-11-mariadb-host-to-docker.svg)

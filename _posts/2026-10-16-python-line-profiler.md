@@ -6,6 +6,9 @@ categories: [Development, Python]
 tags: [Python, line_profiler, Profiling, Performance, 최적화, 프로파일링]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-16-python-line-profiler-handwritten-hero.webp
+  alt: "Python line_profiler 사용법: 느린 코드 한 줄을 찾아 최적화하기의 핵심 개념과 흐름"
 ---
 
 ![코드의 느린 줄과 실행 시간 막대를 돋보기로 살펴보는 Python line_profiler 개념 삽화](/assets/img/2026-10-16-python-line-profiler.png)

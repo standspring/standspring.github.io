@@ -5,6 +5,9 @@ categories: vscode
 tags: [vscode, ai, codex, password, security, secrets, env-file]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-11-ai-reads-env-handwritten-hero.webp
+  alt: "VS Code에서 Codex 사용할 때 .env 파일 유출될까? 안전하게 쓰는 방법 정리의 핵심 개념과 흐름"
 ---
 
 ![AI coding tool and env file security workflow](/assets/img/2026-03-11-ai-reads-env.png)

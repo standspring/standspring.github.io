@@ -3,6 +3,9 @@ title: "GoogleTest: 실수하기 쉬운 GTest 코드 패턴"
 date: 2025-05-21
 category: C
 tags: [C, c++, googletest, gtest, unittest, pattern, test-smell, refactoring]
+image:
+  path: /assets/img/2025-05-21-gtest-worst-practice-handwritten-hero.webp
+  alt: "GoogleTest: 실수하기 쉬운 GTest 코드 패턴의 핵심 개념과 흐름"
 ---
 
 ![GTest worst practices and refactoring guide infographic](/assets/img/2025-05-21-gtest-worst-practice.svg)

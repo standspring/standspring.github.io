@@ -4,6 +4,9 @@ date: 2026-03-20
 categories: [Database, SQL]
 tags: [sql, sql최적화, database, 인덱스, 성능튜닝, mysql, query, backend]
 description: "SQL 성능을 빠르게 개선하는 실전 최적화 방법 13가지. 인덱스, 실행계획, JOIN, WHERE 튜닝까지 한 번에 정리."
+image:
+  path: /assets/img/2026-03-20-sql-optimization-handwritten-hero.webp
+  alt: "SQL 최적화 완벽 가이드 (실무에서 바로 쓰는 13가지 방법)의 핵심 개념과 흐름"
 ---
 
 SQL 최적화의 핵심은 단 하나입니다.

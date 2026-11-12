@@ -3,6 +3,9 @@ title: "Mocking을 위한 GoogleMock 사용법"
 date: 2025-05-28
 category: C
 tags: [C, c++, googletest, gtest, unittest, mocking, mock, googlemock, mock-object]
+image:
+  path: /assets/img/2025-05-28-googlemock-handwritten-hero.webp
+  alt: "Mocking을 위한 GoogleMock 사용법의 핵심 개념과 흐름"
 ---
 
 ![GoogleMock call verification workflow infographic](/assets/img/2025-05-28-googlemock.svg)

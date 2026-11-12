@@ -4,6 +4,9 @@ description: "2026년 5월 현행 기준으로 ISA 계좌의 가입 조건, 비�
 date: 2026-05-28
 categories: [금융, 절세]
 tags: [ISA, 개인종합자산관리계좌, 중개형ISA, 서민형ISA, 절세계좌, ETF투자, 배당소득세, 손익통산, 연금저축, IRP]
+image:
+  path: /assets/img/2026-05-28-isa-account-guide-handwritten-hero.webp
+  alt: "ISA 계좌 완전 정리: 가입 조건, 세금 혜택, 납입한도, 중개형 ISA, 만기 전략까지의 핵심 개념과 흐름"
 ---
 
 ![ISA 계좌 핵심 요약](/assets/img/2026-05-28-isa-account-guide.png)

@@ -4,6 +4,9 @@ date: 2026-03-22 15:00:00 +0900
 category: finance
 tags: [주식세금, ETF세금, 종합과세, 금융소득종합과세, 해외주식]
 description: "1억 수익 기준으로 국내/해외 주식 및 ETF 세금을 종합과세까지 포함해 비교합니다."
+image:
+  path: /assets/img/2026-03-22-finance-tax-handwritten-hero.webp
+  alt: "주식·ETF 세금 비교 + 종합과세까지 고려한 완벽 정리 (1억 수익 기준)의 핵심 개념과 흐름"
 ---
 
 ![주식·ETF 세금 비교](/assets/img/2026-03-22-finance-tax-v2.png)

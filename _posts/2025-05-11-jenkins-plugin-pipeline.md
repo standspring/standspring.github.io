@@ -3,6 +3,9 @@ title: "Jenkins Pipeline 사용법 가이드"
 date: 2025-05-11
 category: jenkins
 tags: [jenkins, plugin, pipeline, jenkinsfile, ci, cd, declarative-pipeline]
+image:
+  path: /assets/img/2025-05-11-jenkins-plugin-pipeline-handwritten-hero.webp
+  alt: "Jenkins Pipeline 사용법 가이드의 핵심 개념과 흐름"
 ---
 
 ![Jenkins Pipeline workflow infographic](/assets/img/2025-05-11-jenkins-plugin-pipeline.svg)

@@ -4,6 +4,9 @@ description: "퀀트 투자의 뜻, 전통적인 투자와의 차이, 팩터 투
 date: 2026-04-28
 categories: [금융, 투자]
 tags: [퀀트투자, 알고리즘투자, 팩터투자, 백테스트, 주식투자]
+image:
+  path: /assets/img/2026-04-28-quant-investing-guide-handwritten-hero.webp
+  alt: "퀀트 투자란 무엇인가: 개념, 전략, 장점과 한계까지 쉽게 정리의 핵심 개념과 흐름"
 ---
 
 ![퀀트 투자 개념도](/assets/img/2026-04-28-quant-investing.png)

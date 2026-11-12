@@ -5,6 +5,9 @@ date: "2026-03-01 21:00:00 +0900"
 categories: [python, automation]
 tags: [python, pyautogui, opencv, ImageNotFoundException, 이미지인식, 자동화]
 toc: true
+image:
+  path: /assets/img/2026-03-01-pyautogui_image_recognition_advanced-handwritten-hero.webp
+  alt: "PyAutoGUI 이미지 인식 안 될 때: 예외 처리와 검색 영역 설정의 핵심 개념과 흐름"
 ---
 
 ![PyAutoGUI 이미지 검색과 클릭 흐름을 나타낸 개념 그림](/assets/img/2026-03-01-pyautogui-image-recognition-advanced.png)

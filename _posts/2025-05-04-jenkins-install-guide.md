@@ -3,6 +3,9 @@ title: "Jenkins war 파일 이용해서 설치"
 date: 2025-05-04
 category: jenkins
 tags: [jenkins, install, CI/CD, jenkins.war, java, ubuntu, ci]
+image:
+  path: /assets/img/2025-05-04-jenkins-install-guide-handwritten-hero.webp
+  alt: "Jenkins war 파일 이용해서 설치의 핵심 개념과 흐름"
 ---
 
 ![Jenkins WAR install flow infographic](/assets/img/2025-05-04-jenkins-install-guide.svg)

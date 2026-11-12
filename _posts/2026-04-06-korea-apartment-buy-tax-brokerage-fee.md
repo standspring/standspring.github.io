@@ -3,6 +3,9 @@ title: "한국 아파트 매수 시 세금과 부동산 복비 총정리 (2026�
 date: 2026-04-06
 categories: [부동산, 세금]
 tags: [아파트매수, 취득세, 지방교육세, 농어촌특별세, 중개보수, 복비, 인지세, 등기비용]
+image:
+  path: /assets/img/2026-04-06-korea-apartment-buy-tax-brokerage-fee-handwritten-hero.webp
+  alt: "한국 아파트 매수 시 세금과 부동산 복비 총정리 (2026년 기준)의 핵심 개념과 흐름"
 ---
 
 ![한국 아파트 매수 비용 한눈에 보기](/assets/img/2026-04-06-korea-apartment-buy-tax-brokerage-fee.svg)

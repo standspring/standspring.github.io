@@ -4,6 +4,9 @@ date: 2026-04-04
 categories: [Linux, Ubuntu]
 tags: [ubuntu, systemd, service, linux, devops]
 description: "Ubuntu에서 systemd를 이용해 서비스를 등록하고 자동 실행하는 방법을 초보자도 이해할 수 있도록 자세히 설명합니다."
+image:
+  path: /assets/img/2026-04-04-ubuntu-service-handwritten-hero.webp
+  alt: "Ubuntu 서비스 등록 방법 (systemd 완전 정리)의 핵심 개념과 흐름"
 ---
 
 Ubuntu에서 프로그램을 **자동 실행 서비스로 등록**하려면 `systemd`를 사용합니다.

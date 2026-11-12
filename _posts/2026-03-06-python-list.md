@@ -5,6 +5,9 @@ categories: python
 tags: [python, list, dynamic-array, mutable-sequence]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-06-python-list-handwritten-hero.webp
+  alt: "python list 선언시 길이 설정의 핵심 개념과 흐름"
 ---
 
 ![Python list dynamic array and nested list reference](/assets/img/2026-03-06-python-list.png)

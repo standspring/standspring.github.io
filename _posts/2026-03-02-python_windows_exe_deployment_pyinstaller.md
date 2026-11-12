@@ -5,6 +5,9 @@ date: 2026-03-02 00:00:00 +0900
 categories: [python, deployment]
 tags: [python, windows, pyinstaller, exe, 배포, 파일경로]
 toc: true
+image:
+  path: /assets/img/2026-03-02-python_windows_exe_deployment_pyinstaller-handwritten-hero.webp
+  alt: "PyInstaller로 Python exe 만들기: 이미지·설정 파일 경로 오류 해결의 핵심 개념과 흐름"
 ---
 
 ![Python 프로그램을 Windows exe로 묶는 과정을 나타낸 개념 그림](/assets/img/2026-03-02-python-windows-exe-deployment-pyinstaller.svg)

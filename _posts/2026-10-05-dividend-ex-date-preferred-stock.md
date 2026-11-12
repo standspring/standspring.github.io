@@ -6,6 +6,9 @@ categories: [투자, 주식]
 tags: [배당, 배당금, 배당주, 배당투자, 배당락, 배당기준일, 우선주, 보통주, 배당수익률]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-05-dividend-ex-date-preferred-stock-handwritten-hero.webp
+  alt: "배당 투자 전에 알아야 할 배당락과 우선주, 쉽게 정리하기의 핵심 개념과 흐름"
 ---
 
 # 배당 투자 전에 알아야 할 배당락과 우선주, 쉽게 정리하기

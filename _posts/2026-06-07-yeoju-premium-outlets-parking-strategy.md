@@ -4,6 +4,9 @@ description: "여주 프리미엄 아울렛 방문 전 EAST, WEST, 중간 주차
 date: 2026-06-07
 categories: [여행, 쇼핑]
 tags: [여주프리미엄아울렛, 신세계프리미엄아울렛, 여주아울렛주차, 아울렛지도, 아이와가볼만한곳]
+image:
+  path: /assets/img/2026-06-07-yeoju-premium-outlets-parking-strategy-handwritten-hero.webp
+  alt: "여주 신세계 프리미엄 아울렛 주차 전략: 목적별로 가까운 주차장 고르는 법의 핵심 개념과 흐름"
 ---
 
 ![여주 프리미엄 아울렛 지도 기반 목적별 주차 전략](/assets/img/2026-06-07-yeoju-parking-map-overlay-v2.png)

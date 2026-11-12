@@ -5,6 +5,9 @@ categories: github
 tags: [github, branch, git, git-branch, git-merge, git-beginner, vscode-git, branching]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-16-git-branch-guide-for-beginners-handwritten-hero.webp
+  alt: "Git 브랜치(branch) 완전 이해하기: 초보자도 헷갈리지 않게 상세 설명의 핵심 개념과 흐름"
 ---
 
 ![Git branch workflow for beginners](/assets/img/2026-03-16-git-branch-guide-for-beginners.png)

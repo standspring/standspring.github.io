@@ -4,6 +4,9 @@ description: "C/C++ 빌드 최적화 기법인 Unity Build의 개념, 탄생 배
 date: 2026-05-20
 categories: [C++, Build]
 tags: [unity-build, jumbo-build, cpp, cplusplus, cmake, compile-time, build-optimization]
+image:
+  path: /assets/img/2026-05-20-unity-build-handwritten-hero.webp
+  alt: "Unity Build란? 탄생 배경부터 장단점, CMake 적용 방법까지의 핵심 개념과 흐름"
 ---
 
 ![Unity Build 개념도](/assets/img/2026-05-20-unity-build.svg)

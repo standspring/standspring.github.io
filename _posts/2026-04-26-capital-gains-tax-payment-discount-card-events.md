@@ -4,6 +4,9 @@ description: "양도소득세를 납부할 때 실제로 할인이나 혜택을 
 date: 2026-04-26
 categories: [금융, 세금]
 tags: [양도소득세, 양도세납부, 카드사이벤트, 국세카드납부, 지방소득세, 세금할인]
+image:
+  path: /assets/img/2026-04-26-capital-gains-tax-payment-discount-card-events-handwritten-hero.webp
+  alt: "양도세 납부할 때 할인받는 방법 있나: 카드사 이벤트, 수수료, 포인트 활용까지의 핵심 개념과 흐름"
 ---
 
 ![양도세 납부 할인 카드 이벤트](/assets/img/2026-04-26-capital-gains-tax-payment-discount-card-events.png)

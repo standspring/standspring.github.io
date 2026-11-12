@@ -4,6 +4,9 @@ description: "해외 주식 양도소득세를 한국 기준으로 어떻게 계
 date: 2026-04-26
 categories: [금융, 세금]
 tags: [해외주식, 양도소득세, 해외주식세금, 미국주식세금, 양도세계산]
+image:
+  path: /assets/img/2026-04-26-overseas-stock-capital-gains-tax-calculation-handwritten-hero.webp
+  alt: "해외 주식 양도세 계산 방법 완전정리: 기본공제 250만 원, 손익통산, 환율, 신고기한까지의 핵심 개념과 흐름"
 ---
 
 ![해외 주식 양도세 계산 흐름](/assets/img/2026-04-26-overseas-stock-capital-gains-tax-calculation.svg)

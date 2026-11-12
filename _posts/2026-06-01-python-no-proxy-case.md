@@ -3,6 +3,9 @@ title: "Python os.environ에서 no_proxy와 NO_PROXY는 차이가 있을까?"
 date: 2026-06-01
 categories: [python, network]
 tags: [python, proxy, no_proxy, NO_PROXY, os.environ, urllib, requests, httpx, curl, 환경변수]
+image:
+  path: /assets/img/2026-06-01-python-no-proxy-case-handwritten-hero.webp
+  alt: "Python os.environ에서 no_proxy와 NO_PROXY는 차이가 있을까?의 핵심 개념과 흐름"
 ---
 
 ![Python no_proxy와 NO_PROXY 비교](/assets/img/2026-06-01-python-no-proxy-case.svg)

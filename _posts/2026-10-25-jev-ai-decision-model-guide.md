@@ -6,6 +6,9 @@ categories: [Development, AI]
 tags: [Jev, TypeSafe, AI, DecisionModel, LLM, Python, Automation]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-25-jev-ai-decision-model-guide-handwritten-hero.webp
+  alt: "Jev AI 의사결정 모델: LLM과의 차이와 Python 연동 방법의 핵심 개념과 흐름"
 ---
 
 # Jev AI 의사결정 모델: LLM과의 차이와 Python 연동 방법

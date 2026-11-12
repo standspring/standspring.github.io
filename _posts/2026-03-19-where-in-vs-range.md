@@ -5,6 +5,9 @@ categories: sql
 tags: [sql, where, where in, database, performance, index, range scan, where in 성능, 인덱스 seek,]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-19-where-in-vs-range-handwritten-hero.webp
+  alt: "SQL WHERE IN vs 범위 조건(a < x AND x < b) 성능 차이 완전 정리의 핵심 개념과 흐름"
 ---
 
 SQL 성능 튜닝을 하다 보면 자주 마주치는 질문이 있습니다.

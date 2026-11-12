@@ -6,6 +6,9 @@ categories: [Development, Web]
 tags: [HTML, JavaScript, script, defer, async, DOMContentLoaded, jQuery]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-21-html-script-defer-domcontentloaded-handwritten-hero.webp
+  alt: "HTML script의 defer·async 차이와 DOMContentLoaded: jQuery ready 대체하기의 핵심 개념과 흐름"
 ---
 
 ## 들어가며

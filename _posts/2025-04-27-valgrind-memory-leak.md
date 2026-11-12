@@ -3,6 +3,9 @@ title: "valgrind 사용법과 메모리 누수 잡기 — 실습 가이드"
 date: 2025-04-27
 category: C
 tags: [C, valgrind, 디버깅, 메모리누수, 시스템프로그래밍, memcheck, leak-check]
+image:
+  path: /assets/img/2025-04-27-valgrind-memory-leak-handwritten-hero.webp
+  alt: "valgrind 사용법과 메모리 누수 잡기 — 실습 가이드의 핵심 개념과 흐름"
 ---
 
 # valgrind 사용법과 메모리 누수 잡기 — 실습 가이드

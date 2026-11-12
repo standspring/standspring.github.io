@@ -5,6 +5,9 @@ date: 2026-03-05 00:00:00 +0900
 categories: [python, windows]
 tags: [python, windows, pyinstaller, UAC, 관리자권한, exe]
 toc: true
+image:
+  path: /assets/img/2026-03-05-exe_with_administrator-handwritten-hero.webp
+  alt: "Python exe 관리자 권한 요청하기: PyInstaller --uac-admin과 재실행 예제의 핵심 개념과 흐름"
 ---
 
 ![Windows exe의 관리자 권한 요청 흐름을 나타낸 개념 그림](/assets/img/2026-03-05-exe-with-administrator-v2.png)

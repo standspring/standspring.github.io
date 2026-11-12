@@ -4,6 +4,9 @@ description: "Linux find 명령어의 기본 문법, 이름 검색, 파일 타�
 date: 2026-08-16
 categories: [Linux]
 tags: [Linux, find, command, shell, bash, file-search, devops]
+image:
+  path: /assets/img/2026-08-16-linux-find-command-handwritten-hero.webp
+  alt: "리눅스 find 명령어 사용법 완벽 정리: 파일 검색부터 삭제, exec 실행까지의 핵심 개념과 흐름"
 ---
 
 ![Linux find command file search workflow](/assets/img/2026-08-16-linux-find-command.svg)

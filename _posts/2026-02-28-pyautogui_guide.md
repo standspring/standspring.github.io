@@ -4,6 +4,9 @@ description: "PyAutoGUI로 마우스와 키보드를 제어하고 화면을 캡�
 date: 2026-02-28
 categories: [python, automation]
 tags: [python, pyautogui, 자동화, gui-automation, rpa, mouse-keyboard]
+image:
+  path: /assets/img/2026-02-28-pyautogui_guide-handwritten-hero.webp
+  alt: "Python PyAutoGUI 사용법: 마우스·키보드·스크린샷 자동화의 핵심 개념과 흐름"
 ---
 ![Python PyAutoGUI GUI automation workflow](/assets/img/2026-02-28-pyautogui-guide.png)
 

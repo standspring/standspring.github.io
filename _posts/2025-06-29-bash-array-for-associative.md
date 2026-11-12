@@ -3,6 +3,9 @@ title: "Bash에서 배열(Array)과 연관 배열(Associative Array) 반복문 �
 date: 2025-06-29
 category: bash
 tags: [bash, array, for, associative, associativearray, indexed-array, shell-script]
+image:
+  path: /assets/img/2025-06-29-bash-array-for-associative-handwritten-hero.webp
+  alt: "Bash에서 배열(Array)과 연관 배열(Associative Array) 반복문 사용법의 핵심 개념과 흐름"
 ---
 
 ![Bash arrays and associative arrays for loop](/assets/img/2025-06-29-bash-array-for-associative.png)

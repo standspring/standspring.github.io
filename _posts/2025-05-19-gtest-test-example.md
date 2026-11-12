@@ -3,6 +3,9 @@ title: "GoogleTest: 실무에 바로 쓰는 GTest & GMock 가이드"
 date: 2025-05-19
 category: C
 tags: [C, c++, googletest, gtest, unittest, mock, expect_call, gmock, test-fixture]
+image:
+  path: /assets/img/2025-05-19-gtest-test-example-handwritten-hero.webp
+  alt: "GoogleTest: 실무에 바로 쓰는 GTest & GMock 가이드의 핵심 개념과 흐름"
 ---
 
 ![GTest and GMock practical test patterns infographic](/assets/img/2025-05-19-gtest-test-example.svg)

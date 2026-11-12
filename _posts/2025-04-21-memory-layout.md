@@ -3,6 +3,9 @@ title: "C에서 메모리 구조(stack/heap/static)를 시각적으로 이해하
 date: 2025-04-20
 category: C
 tags: [C, 메모리, 시스템프로그래밍, 스택, 힙, 정적 메모리, bss, data-segment]
+image:
+  path: /assets/img/2025-04-21-memory-layout-handwritten-hero.webp
+  alt: "C에서 메모리 구조(stack/heap/static)를 시각적으로 이해하기의 핵심 개념과 흐름"
 ---
 
 # C에서 메모리 구조(stack/heap/static)를 시각적으로 이해하기

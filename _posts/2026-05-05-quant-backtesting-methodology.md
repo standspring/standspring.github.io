@@ -4,6 +4,9 @@ description: "퀀트 투자를 시작할 때 필요한 백테스팅 방법론을
 date: 2026-05-05
 categories: [금융, 투자]
 tags: [퀀트투자, 백테스트, 백테스팅, 알고리즘투자, 투자전략]
+image:
+  path: /assets/img/2026-05-05-quant-backtesting-methodology-handwritten-hero.webp
+  alt: "퀀트 투자 백테스팅 방법론: 과거 데이터로 전략을 검증하는 법의 핵심 개념과 흐름"
 ---
 
 ![퀀트 투자 백테스팅 방법론](/assets/img/2026-05-05-quant-backtesting-methodology.png)

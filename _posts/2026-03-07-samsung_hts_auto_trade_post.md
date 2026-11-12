@@ -6,6 +6,9 @@ categories: [python, automation]
 tags: [python, 삼성증권, 자동매매, automation, hts, pyautogui, trading-bot]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-07-samsung_hts_auto_trade_post-handwritten-hero.webp
+  alt: "삼성증권 HTS 자동 매매 구현기의 핵심 개념과 흐름"
 ---
 
 ![HTS auto trading Python automation workflow](/assets/img/2026-03-07-samsung_hts_auto_trade_post.png)

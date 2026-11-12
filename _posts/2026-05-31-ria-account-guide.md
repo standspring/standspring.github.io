@@ -4,6 +4,9 @@ description: "Reshoring Investment Account, 즉 국내시장복귀계좌(RIA)의
 date: 2026-06-01
 categories: [금융, 절세]
 tags: [RIA, 국내시장복귀계좌, Reshoring Investment Account, 해외주식, 양도소득세, 절세계좌, 국내주식, ETF, 서학개미, 조세특례제한법]
+image:
+  path: /assets/img/2026-05-31-ria-account-guide-handwritten-hero.webp
+  alt: "RIA 계좌 완전 정리: 국내시장복귀계좌 조건, 세제혜택, 한도, 주의사항의 핵심 개념과 흐름"
 ---
 
 ![국내시장복귀계좌 RIA 핵심 요약](/assets/img/2026-05-31-ria-account-guide.png)

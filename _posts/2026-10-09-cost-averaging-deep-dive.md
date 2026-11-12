@@ -6,6 +6,9 @@ categories: [Investment, Strategy]
 tags: [코스트애버리징, DCA, 적립식투자, 분할매수, 일시금투자, ValueAveraging, ETF]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-09-cost-averaging-deep-dive-handwritten-hero.webp
+  alt: "코스트 애버리징 완전 정리: 적립식 투자 원리, 한계와 실전 전략의 핵심 개념과 흐름"
 ---
 
 # 코스트 애버리징 완전 정리: 적립식 투자 원리, 한계와 실전 전략

@@ -3,6 +3,9 @@ title: "ssh-keygen 두 PC 간 비밀번호 없는 접속 설정"
 date: 2026-04-27
 categories: [Linux, DevOps]
 tags: [ssh, ssh-keygen, 인증, 서버관리, 보안]
+image:
+  path: /assets/img/2026-04-27-ssh-keygen-sample-handwritten-hero.webp
+  alt: "ssh-keygen 두 PC 간 비밀번호 없는 접속 설정의 핵심 개념과 흐름"
 ---
 
 ![SSH keygen passwordless login](/assets/img/2026-04-27-ssh-keygen-sample.png)

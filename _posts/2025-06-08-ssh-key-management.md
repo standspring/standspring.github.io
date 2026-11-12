@@ -3,6 +3,9 @@ title: "ssh key 관리 팁"
 date: 2025-06-08
 category: ssh
 tags: [ssh, ssh-keygen, sshkey, ssh-key, ssh-key-comment, ssh-config, key-rotation, authorized-keys]
+image:
+  path: /assets/img/2025-06-08-ssh-key-management-handwritten-hero.webp
+  alt: "ssh key 관리 팁의 핵심 개념과 흐름"
 ---
 
 ![SSH key management workflow](/assets/img/2025-06-08-ssh-key-management.png)

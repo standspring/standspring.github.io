@@ -4,6 +4,9 @@ description: "C/C++ 빌드 최적화 옵션인 LTO(Link Time Optimization)의 �
 date: 2026-05-20
 categories: [C++, Build]
 tags: [lto, link-time-optimization, ipo, cpp, cplusplus, cmake, compiler-optimization, build-optimization]
+image:
+  path: /assets/img/2026-05-20-lto-build-option-handwritten-hero.webp
+  alt: "LTO Build Option이란? 탄생 배경부터 장단점, 실무 적용 기준까지의 핵심 개념과 흐름"
 ---
 
 ![LTO Build Option 개념도](/assets/img/2026-05-20-lto-build-option.svg)

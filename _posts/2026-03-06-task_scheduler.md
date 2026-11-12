@@ -5,6 +5,9 @@ date: 2026-03-06 00:00:00 +0900
 categories: [python, automation]
 tags: [python, windows, 작업스케줄러, schtasks, 자동화, 로그]
 toc: true
+image:
+  path: /assets/img/2026-03-06-task_scheduler-handwritten-hero.webp
+  alt: "Windows 작업 스케줄러로 Python 실행하기: 경로·로그온·실패 로그 확인의 핵심 개념과 흐름"
 ---
 
 ![Windows 작업 스케줄러의 예약 실행 흐름을 나타낸 개념 그림](/assets/img/2026-03-06-task_scheduler.png)

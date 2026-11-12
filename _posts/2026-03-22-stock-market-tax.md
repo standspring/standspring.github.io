@@ -4,6 +4,9 @@ date: 2026-03-22 09:00:00 +0900
 category: finance
 tags: [주식세금, ETF세금, 해외주식, 금융투자소득, 절세]
 description: "한국/미국 주식 및 ETF 투자 시 세금 차이를 1억 수익 기준으로 비교하고, 실제 손에 남는 금액을 정리합니다."
+image:
+  path: /assets/img/2026-03-22-stock-market-tax-handwritten-hero.webp
+  alt: "한국 vs 미국 주식·ETF 세금 비교 (1억 수익 기준)의 핵심 개념과 흐름"
 ---
 
 주식 투자에서 **수익률만큼 중요한 것이 바로 세금**입니다.

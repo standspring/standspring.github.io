@@ -4,6 +4,9 @@ description: "2026년 5월 출시되는 국민참여형 국민성장펀드의 �
 date: 2026-05-07
 categories: [금융, 투자]
 tags: [국민성장펀드, 국민참여형펀드, 정책펀드, 소득공제, 분리과세, 첨단전략산업, 펀드투자]
+image:
+  path: /assets/img/2026-05-07-national-growth-fund-handwritten-hero.webp
+  alt: "국민성장펀드 완전 정리: 국민참여형 펀드 구조, 세제혜택, 가입 조건, 주의사항의 핵심 개념과 흐름"
 ---
 
 ![국민성장펀드 요약 이미지](/assets/img/2026-05-07-national-growth-fund.svg)

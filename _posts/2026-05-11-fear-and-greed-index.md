@@ -4,6 +4,9 @@ description: "공포·탐욕 지수의 의미, 0~100 점수 해석, CNN 주식�
 date: 2026-05-11
 categories: [금융, 투자]
 tags: [공포탐욕지수, 공탐지수, 투자심리, 시장심리, CNNFearAndGreedIndex, CryptoFearAndGreedIndex, VIX]
+image:
+  path: /assets/img/2026-05-11-fear-and-greed-index-handwritten-hero.webp
+  alt: "공포·탐욕 지수 완전 정리: 뜻, 계산 방식, 해석법, 투자 활용법의 핵심 개념과 흐름"
 ---
 
 ![공포·탐욕 지수 요약 이미지](/assets/img/2026-05-11-fear-and-greed-index.svg)

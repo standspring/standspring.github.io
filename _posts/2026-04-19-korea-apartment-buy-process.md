@@ -4,6 +4,9 @@ description: "한국에서 아파트를 살 때 필요한 전체 절차를 계�
 date: 2026-04-19
 categories: [부동산, 실전가이드]
 tags: [아파트매수, 부동산매매, 잔금, 소유권이전등기, 취득세, 실거래신고, 자금조달계획서]
+image:
+  path: /assets/img/2026-04-19-korea-apartment-buy-process-handwritten-hero.webp
+  alt: "한국 아파트 매수 절차 총정리: 계약부터 잔금, 등기까지의 핵심 개념과 흐름"
 ---
 
 ![한국 아파트 매수 절차 한눈에 보기](/assets/img/2026-04-19-korea-apartment-buy-process.svg)

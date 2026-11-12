@@ -5,6 +5,9 @@ categories: python
 tags: [python, pylint, OpenCV, cv2, IMREAD_COLOR, E1101, no-member, vscode, linting, false-positive]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-09-pylint_IMREAD_COLOR-handwritten-hero.webp
+  alt: "VS Code에서 OpenCV cv2.IMREAD_COLOR Pylint 경고 해결하기 (E1101 no-member)의 핵심 개념과 흐름"
 ---
 
 ![Pylint OpenCV false positive warning resolution workflow](/assets/img/2026-03-09-pylint_IMREAD_COLOR.png)

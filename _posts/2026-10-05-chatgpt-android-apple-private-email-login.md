@@ -6,6 +6,9 @@ categories: [IT, ChatGPT]
 tags: [ChatGPT, 안드로이드, 애플아이디, Apple, 로그인, 프라이빗이메일, 나의이메일가리기, 인증번호]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-05-chatgpt-android-apple-private-email-login-handwritten-hero.webp
+  alt: "안드로이드 ChatGPT 앱에서 애플 계정으로 로그인하기: 프라이빗 이메일과 인증번호 사용의 핵심 개념과 흐름"
 ---
 
 # 안드로이드 ChatGPT 앱에서 애플 계정으로 로그인하기

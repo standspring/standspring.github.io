@@ -6,6 +6,9 @@ categories: [AI, 생산성]
 tags: [AI플랫폼, AI구독가격, ChatGPT, Claude, Gemini, Perplexity, 코딩AI, 생성형AI]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-04-ai-platform-subscription-pricing-comparison-handwritten-hero.webp
+  alt: "2026 AI 플랫폼 종류와 구독 가격 비교: ChatGPT·Claude·Gemini부터 코딩 AI까지의 핵심 개념과 흐름"
 ---
 
 # 2026 AI 플랫폼 종류와 구독 가격 비교

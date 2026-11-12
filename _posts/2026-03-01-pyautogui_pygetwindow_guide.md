@@ -4,6 +4,9 @@ description: "Windows에서 PyGetWindow로 대상 창을 찾아 복구·활성�
 date: "2026-03-01 00:00:00 +0900"
 categories: [python, automation]
 tags: [python, pyautogui, pygetwindow, automation, windows, hts, 자동화, window-control]
+image:
+  path: /assets/img/2026-03-01-pyautogui_pygetwindow_guide-handwritten-hero.webp
+  alt: "Windows PyGetWindow 사용법: PyAutoGUI 대상 창 찾기·활성화·좌표 고정의 핵심 개념과 흐름"
 ---
 ![PyAutoGUI and PyGetWindow GUI automation workflow](/assets/img/2026-03-01-pyautogui-pygetwindow-guide.png)
 

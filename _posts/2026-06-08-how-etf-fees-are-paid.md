@@ -4,6 +4,9 @@ description: "ETF 투자자가 부담하는 증권사 매매수수료, 총보수
 date: 2026-06-08
 categories: [투자, ETF]
 tags: [ETF, ETF수수료, 총보수, TER, 운용보수, 매매수수료, 호가스프레드, 투자기초]
+image:
+  path: /assets/img/2026-06-08-how-etf-fees-are-paid-handwritten-hero.webp
+  alt: "ETF 수수료는 어떻게 지불될까? 매매수수료와 총보수 차이의 핵심 개념과 흐름"
 ---
 
 ![ETF 매매수수료와 총보수가 각각 거래 시점과 NAV에 반영되는 구조](/assets/img/2026-06-08-how-etf-fees-are-paid.png)

@@ -5,6 +5,9 @@ categories: vscode
 tags: [vscode, c, preprocessor, ifdef, define, c-cpp]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-03-10-vscode-preprocessor-handwritten-hero.webp
+  alt: "VS Code에서 C 전처리 지시자(#ifdef, #if) 임의로 컨트롤하는 방법의 핵심 개념과 흐름"
 ---
 
 C 개발을 하다 보면 `#ifdef`, `#if`, `#define` 같은 전처리 지시자를 자주 사용하게 됩니다.

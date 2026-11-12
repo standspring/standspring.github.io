@@ -4,6 +4,9 @@ description: "ps 명령어의 기본 사용법부터 옵션, 출력 해석, 실�
 date: 2026-04-14
 categories: [Linux, DevOps]
 tags: [linux, ps, process, system, monitoring]
+image:
+  path: /assets/img/2026-04-14-ps-command-handwritten-hero.webp
+  alt: "Linux ps 명령어 완벽 가이드 (프로세스 조회, 옵션, 실전 활용)의 핵심 개념과 흐름"
 ---
 
 `ps` 명령어는 현재 실행 중인 **프로세스(Process)** 상태를 확인하는 가장 기본적인 도구입니다.

@@ -3,6 +3,9 @@ title: "shm_open, mmap, close의 관계 정리"
 date: 2025-04-19
 category: C
 tags: [C, 시스템프로그래밍, 공유메모리, shm_open, mmap, posix, ipc]
+image:
+  path: /assets/img/2025-04-19-shm-open-mmap-close-handwritten-hero.webp
+  alt: "shm_open, mmap, close의 관계 정리의 핵심 개념과 흐름"
 ---
 
 ![POSIX shared memory lifecycle](/assets/img/2025-04-19-shm-open-mmap-close.png)

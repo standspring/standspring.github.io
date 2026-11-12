@@ -6,6 +6,9 @@ categories: [금융, 세금]
 tags: [해외주식, 미국주식, 양도소득세, 이동평균법, 선입선출법, 취득가액, 절세]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-23-overseas-stock-tax-fifo-vs-moving-average-handwritten-hero.webp
+  alt: "해외주식 양도소득세: 이동평균법과 선입선출법 계산 차이 상세 비교의 핵심 개념과 흐름"
 ---
 
 해외주식을 여러 번 나누어 산 뒤 일부만 팔면, **판 주식의 매수원가를 얼마로 볼 것인가**라는 문제가 생긴다. 이 원가를 정하는 대표적인 방식이 **선입선출법(FIFO)**과 **이동평균법**이다.

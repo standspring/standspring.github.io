@@ -4,6 +4,9 @@ description: "SSD에 설치된 Ubuntu 22.04 웹서버를 HDD로 이전하는 전
 date: 2026-05-31
 categories: [Linux, Server]
 tags: [Ubuntu, Ubuntu 22.04, SSD, HDD, Apache, Tomcat, rsync, GRUB, fstab, 웹서버]
+image:
+  path: /assets/img/2026-05-31-move-ubuntu-ssd-to-hdd-handwritten-hero.webp
+  alt: "Ubuntu 22.04 웹서버를 SSD에서 HDD로 옮기는 방법의 핵심 개념과 흐름"
 ---
 
 ![Ubuntu 22.04 웹서버 SSD에서 HDD로 이전 인포그래픽](/assets/img/2026-05-31-move-ubuntu-ssd-to-hdd.png)

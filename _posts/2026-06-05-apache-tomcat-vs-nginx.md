@@ -4,6 +4,9 @@ description: "Apache HTTP Server와 Nginx를 웹서버, 리버스 프록시, 성
 date: 2026-06-05
 categories: [Server, Web]
 tags: [Apache, Tomcat, Nginx, Web Server, WAS, Reverse Proxy, Load Balancer, Linux, 서버운영]
+image:
+  path: /assets/img/2026-06-05-apache-tomcat-vs-nginx-handwritten-hero.webp
+  alt: "Apache와 Nginx 비교 분석: Tomcat은 어디에 붙는가?의 핵심 개념과 흐름"
 ---
 
 ![Apache와 Nginx 비교 인포그래픽](/assets/img/2026-06-05-apache-tomcat-vs-nginx.svg)

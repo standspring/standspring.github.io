@@ -4,6 +4,9 @@ description: "빛이 거울에서 멈추는지, 흡수와 재방출이라는 설
 date: 2026-06-09
 categories: [Physics, Optics]
 tags: [빛의반사, 거울반사, 입사각, 반사각, 전자기파, 광자, 물리기초]
+image:
+  path: /assets/img/2026-06-09-does-light-stop-at-mirror-handwritten-hero.webp
+  alt: "빛은 거울에 반사될 때 정지할까? 흡수와 재방출로 보는 반사의 원리의 핵심 개념과 흐름"
 ---
 
 # 빛은 거울에 반사될 때 정지할까? 흡수와 재방출로 보는 반사의 원리

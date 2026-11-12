@@ -3,6 +3,9 @@ title: "GoogleTest 설치부터 첫 테스트까지"
 date: 2025-05-15
 category: C
 tags: [C, c++, googletest, gtest, unittest, cmake, unit-test]
+image:
+  path: /assets/img/2025-05-15-googletest-install-handwritten-hero.webp
+  alt: "GoogleTest 설치부터 첫 테스트까지의 핵심 개념과 흐름"
 ---
 
 ![GoogleTest install and first test workflow infographic](/assets/img/2025-05-15-googletest-install.svg)

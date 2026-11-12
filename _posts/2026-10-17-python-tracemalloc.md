@@ -6,6 +6,9 @@ categories: [Development, Python]
 tags: [Python, tracemalloc, Memory, Profiling, 메모리, 최적화, 프로파일링]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-17-python-tracemalloc-handwritten-hero.webp
+  alt: "Python tracemalloc 사용법: 메모리가 늘어나는 코드 찾기의 핵심 개념과 흐름"
 ---
 
 ![코드의 할당 위치와 스냅샷 사이에 늘어난 메모리 블록을 돋보기로 살펴보는 Python tracemalloc 개념 삽화](/assets/img/2026-10-17-python-tracemalloc.png)

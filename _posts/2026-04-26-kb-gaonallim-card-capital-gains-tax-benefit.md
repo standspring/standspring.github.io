@@ -4,6 +4,9 @@ description: "KB 가온올림카드(실속형)로 양도세를 납부할 때 실
 date: 2026-04-26
 categories: [금융, 세금]
 tags: [KB국민카드, 가온올림카드, 양도소득세, 지방소득세, 세금카드납부, 포인트리]
+image:
+  path: /assets/img/2026-04-26-kb-gaonallim-card-capital-gains-tax-benefit-handwritten-hero.webp
+  alt: "KB 가온올림카드로 양도세 납부하면 혜택 있나: 양도소득세와 지방소득세를 나눠서 봐야 하는 이유의 핵심 개념과 흐름"
 ---
 
 `KB 가온올림카드(실속형)`로 양도세를 내면 혜택이 있는 것 같다는 이야기가 종종 나옵니다.

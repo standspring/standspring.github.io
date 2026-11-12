@@ -3,6 +3,9 @@ title: "MariaDB SQL 기본 사용법 정리 (CREATE, INSERT, SELECT 완전 기�
 date: 2026-03-26
 categories: [Database, SQL]
 tags: [MariaDB, SQL, DB, 입문]
+image:
+  path: /assets/img/2026-03-26-mariadb-sql-handwritten-hero.webp
+  alt: "MariaDB SQL 기본 사용법 정리 (CREATE, INSERT, SELECT 완전 기초)의 핵심 개념과 흐름"
 ---
 
 MariaDB는 MySQL과 호환되는 대표적인 오픈소스 관계형 데이터베이스입니다.

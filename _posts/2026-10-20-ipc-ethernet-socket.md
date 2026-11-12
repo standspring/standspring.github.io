@@ -6,6 +6,9 @@ categories: [Development, Network]
 tags: [IPC, Socket, Ethernet, TCP, UDP, Linux, Network, Python]
 toc: true
 toc_sticky: true
+image:
+  path: /assets/img/2026-10-20-ipc-ethernet-socket-handwritten-hero.webp
+  alt: "IPC 패킷·이더넷 패킷·소켓 통신 비교: 프로세스에서 네트워크까지의 핵심 개념과 흐름"
 ---
 
 # IPC 패킷·이더넷 패킷·소켓 통신 비교: 프로세스에서 네트워크까지
