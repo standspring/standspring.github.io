@@ -30,8 +30,8 @@ image:
 | 페이지 템플릿 | 자주 쓰는 화면의 출발점 제공 | 설정 화면, 대시보드 |
 | CLI | API·토큰·템플릿 조회와 프로젝트 연동 | AI가 구현 전 실제 API 확인 |
 
-![React 앱에 Astryx 컴포넌트와 테마가 연결되고 CLI 문서를 개발자와 AI가 참고하는 구조](/assets/img/2026-11-13-meta-astryx-react-design-system-guide-architecture.svg)
-_화면을 만드는 라이브러리와, 그 라이브러리의 사용법을 찾는 도구가 함께 제공된다._
+![같은 입력창과 토글 및 저장 버튼에 밝은 테마와 어두운 테마를 적용한 설정 화면 비교](/assets/img/2026-11-13-meta-astryx-react-design-system-guide-themes-handwritten.png)
+_같은 컴포넌트 구성을 유지하면서 테마로 색상과 표면 표현을 바꿀 수 있다. CLI는 이 부품과 테마의 사용법을 찾는 데 쓰인다._
 
 Astryx 내부 스타일은 StyleX로 작성됐지만, 일반적인 소비 프로젝트에는 미리 만들어진 CSS와 JavaScript가 배포된다. 따라서 Astryx 사용만을 위해 StyleX 컴파일러를 설정할 필요는 없다. 기존 CSS나 CSS Modules, Tailwind와의 조합도 가능하다. 다만 공식 설치 명령에는 `@stylexjs/stylex` 의존성이 포함된다. “별도 스타일 빌드 설정이 필요 없다”를 “의존성 패키지가 전혀 없다”로 읽으면 안 된다. [구조 설명](https://astryx.atmeta.com/blog/how-astryx-works)
 
@@ -172,8 +172,8 @@ npx @astryxdesign/cli init
 
 공식 문서에 따르면 이 명령은 `AGENTS.md`·`CLAUDE.md`에 컴포넌트 탐색을 위한 가이드를 작성한다. 실행 후에는 기존 지침과 어떻게 합쳐졌는지 Git diff로 확인한다. CLI는 설치된 프로젝트 버전을 기준으로 문서와 도구를 사용하도록 돕는다. [CLI 공식 문서](https://github.com/meta/astryx/blob/main/packages/cli/README.md)
 
-![문서 조회에서 구현과 빌드 및 화면 확인으로 이어지는 Astryx 적용 순서](/assets/img/2026-11-13-meta-astryx-react-design-system-guide-workflow.svg)
-_문서를 먼저 찾고, 구현 결과는 빌드와 실제 조작으로 확인한다._
+![개발자의 작업 요청을 받은 AI가 CLI 문서를 조회하고 코드를 작성한 뒤 빌드와 키보드 및 화면을 확인하는 네 단계](/assets/img/2026-11-13-meta-astryx-react-design-system-guide-workflow-handwritten.png)
+_작업 요청 → CLI 문서 조회 → 코드 작성 → 결과 확인 순서로 진행한다. 빌드 성공과 키보드·화면 확인은 각각 검증한다._
 
 AI에게는 다음처럼 구체적인 작업을 줄 수 있다.
 

@@ -1,0 +1,10 @@
+Use case: illustration-story.
+Asset: NEW Korean technical blog body illustration, landscape 3:2. Supplied image is STYLE AND CHARACTER reference only; do not edit or copy layout. Match warm off-white paper, hand-drawn black fineliner, teal marker washes and restrained yellow highlights. Reuse friendly teal-shirt developer and small rounded teal-accent AI robot from reference. Professional crafted sketchnote with a clear four-scene narrative, not generic boxes.
+Title verbatim: "AI와 함께, 문서부터 확인".
+Large roomy 2 by 2 composition with clear numbered badges and arrows: top-left 1 to top-right 2, then curved arrow along RIGHT outer gutter downward to bottom-right 3, then arrow leftward to bottom-left 4. Reading is clockwise; numbers make flow unambiguous.
+Top-left badge 1, heading "작업 요청": developer gestures at a sketch of a settings page, speech bubble verbatim "설정 화면을 만들어 줘".
+Top-right badge 2, heading "문서 조회": reference robot reads an open book labelled "CLI", book has three short clear separate labels "컴포넌트", "테마", "API".
+Bottom-right badge 3, heading "코드 작성": same robot at laptop, screen shows several simple code strokes and a small settings UI preview, NO literal code.
+Bottom-left badge 4, heading "결과 확인": developer and robot examine browser with same settings screen, button and clear keyboard Tab key icon. Two large separate check marks with verbatim labels "빌드" and "키보드·화면".
+Bottom centered short yellow-highlighted line verbatim "문서로 확인하고, 실행해서 검증하기".
+Use only prescribed Korean text and CLI/API/Tab. Large readable handwriting, no dense text. Distinct scenes connected by teal arrows, open whitespace rather than heavy rectangular frames. Keep arrows out of text, everything fully inside margins. No watermark, no company logos, no fake screenshots. Illustration of development process, not an AI product diagram.
