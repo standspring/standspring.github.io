@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+<title id="title">공식을 실행하는 앞·오른쪽 작업 자리</title>
+<desc id="desc">윗면 U, 앞면 F, 오른쪽 면 R을 표시한 2×2 큐브. 위·앞·오른쪽 꼭짓점 UFR에서 노란색을 위로 향하게 하고 다음 조각은 U로 옮긴다.</desc>
+<defs><style>text{font-family:'Malgun Gothic',sans-serif;fill:#243b3a}.label{font-size:27px;font-weight:bold}.small{font-size:23px}.edge{stroke:#283b38;stroke-width:4;stroke-linejoin:round}</style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#087f80" stroke-width="2"/></marker></defs>
+<rect width="1100" height="620" rx="20" fill="#fbf5e9"/>
+<text x="55" y="63" class="label">2단계 작업 자리: 위 · 앞 · 오른쪽 (UFR)</text>
+<g class="edge">
+<path d="M150 225L330 135L510 225L330 315Z" fill="#dfe7e4"/>
+<path d="M150 225L330 315L330 515L150 425Z" fill="#9acbc1"/>
+<path d="M330 315L510 225L510 425L330 515Z" fill="#f0d85c"/>
+<path d="M240 180L420 270M240 270L420 180M150 325L330 415M240 270L240 470M330 415L510 325M420 270L420 470" fill="none"/>
+</g>
+<circle cx="330" cy="315" r="17" fill="#087f80" stroke="#fff" stroke-width="4"/>
+<path d="M350 315L570 265" stroke="#087f80" stroke-width="3" fill="none"/>
+<text x="585" y="256" class="label">UFR: 이 조각만 보고 반복</text>
+<text x="585" y="296" class="small">R′ D′ R D</text>
+<text x="585" y="335" class="small">노란색이 U를 향하면 멈춤</text>
+<text x="520" y="168" class="label">U (위)</text>
+<text x="95" y="480" class="label">F (앞)</text>
+<text x="470" y="480" class="label">R (오른쪽)</text>
+<path d="M192 160Q325 66 465 156" stroke="#087f80" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<text x="585" y="410" class="label">다음 조각은 U만 돌려 이동</text>
+<text x="585" y="452" class="small">큐브 전체 방향은 유지</text>
+<text x="55" y="575" class="small">색은 면 위치 구분용 · 흰색 첫 층은 아래(D)에 둔다</text>
+</svg>
