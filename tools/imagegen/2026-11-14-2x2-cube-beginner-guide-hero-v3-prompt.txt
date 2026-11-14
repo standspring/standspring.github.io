@@ -1,0 +1,5 @@
+Mode: built-in ImageGen edit.
+Target: assets/img/2026-11-14-2x2-cube-beginner-guide-handwritten-hero-v2.png
+Typography reference: tools/imagegen/2026-11-14-2x2-correct-label-reference.png
+
+Edit image 1 (the illustrated cube blog cover). Image 2 is a TYPOGRAPHY REFERENCE showing the correct label in a Korean font. Replace the ENTIRE first label next to circled 1 in image 1 with the exact shapes and spelling in image 2: "흰색 첫 층". Use clear bold printed Korean sans-serif typography exactly matching image 2 for this label; do not reproduce the handwritten wrong glyph from image 1. Copy the letter shapes from reference 2. Especially the first syllable must have ㅎ above a long horizontal ㅡ and a right-side vertical ㅣ, with ㄴ at bottom. The long horizontal ㅡ must have NO upward short vertical stem. This is 흰 U+D770. Keep the rest of image 1 (cube, hands, other labels, title, markers, paper) unchanged. Fit the corrected label between circled 1 and the teal check, above teal underline. Reference 2 is only for correct text appearance; do not insert its rectangular background or extra label elsewhere.

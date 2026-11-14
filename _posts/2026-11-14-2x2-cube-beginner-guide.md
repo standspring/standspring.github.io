@@ -7,7 +7,7 @@ tags: [큐브, 2x2큐브, 루빅스큐브, 큐브해법, 초보자]
 toc: true
 toc_sticky: true
 image:
-  path: /assets/img/2026-11-14-2x2-cube-beginner-guide-handwritten-hero-v2.png
+  path: /assets/img/2026-11-14-2x2-cube-beginner-guide-handwritten-hero-v3.png
   alt: "2×2 큐브를 흰색 첫 층, 노란색 면, 마지막 자리 맞추기의 세 단계로 완성하는 과정"
 ---
 
