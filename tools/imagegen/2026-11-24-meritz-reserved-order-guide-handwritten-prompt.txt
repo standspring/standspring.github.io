@@ -1,0 +1,10 @@
+Use case: illustration-story.
+Asset type: one landscape hero illustration for a completed Korean financial blog article, 1536x1024 composition.
+Primary request: Summarize Meritz Securities stock reservation ordering: verify market and schedule, enter price and quantity, verify actual executions later, and distinguish reservation from guaranteed fill.
+Style: warm off-white textured paper, black fineliner, teal marker and restrained yellow highlighter, handwritten sketchnote consistent with the body illustrations. Large correct Korean, generous margins.
+Main visual: a calm investor at a desk holds a reservation order sheet with a tiny clock symbol and a price tag; left side a calendar and two small trading venues labelled KRX and NXT, with a globe for overseas stocks; right side a magnifying glass examines an order slip showing a partially shaded quantity bar, beside coins and stock certificates. Show the practical idea of checking the order result, not guaranteed profit. Subtle day/night clock motif. No financial chart trending upward, no exact clock times, no brand logo, no fake app screenshots, no watermark.
+Title verbatim: "메리츠증권 예약매매"
+Subtitle verbatim: "시간 확인부터 체결 확인까지"
+Three short labels verbatim: "시장·시간", "가격·수량", "취소·체결"
+Bottom takeaway verbatim: "예약 접수 ≠ 체결 완료"
+Use only specified text plus KRX and NXT. Keep every label fully inside the frame, with strong mobile readability.

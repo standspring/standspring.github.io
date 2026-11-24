@@ -1,0 +1,23 @@
+Built-in image_gen prompts. No trading account was accessed.
+
+[Reservation lifecycle]
+Use case: illustration-story.
+Asset type: one landscape body illustration for a Korean finance blog, 1536x1024 composition.
+Primary request: Explain that saving a stock reservation is different from submitting an exchange order and getting an actual trade.
+Style: warm off-white paper, black fineliner handwritten sketchnote, teal marker, restrained yellow highlights, large readable Korean, generous margins. No logo, watermark or fake app screenshots.
+Scene: a continuous left-to-right desk scene in three numbered vignettes. At left a person at night gives a paper order slip to a securities broker's overnight tray under a moon. At center in morning the broker examines a wallet and stock certificates with a magnifying glass before forwarding an order slip toward a trading venue. At right two hands exchange a stock certificate and coins only when matched; an unmatched paper waits beside them. Make the middle checkpoint explicit and avoid a guaranteed success arrow.
+Title verbatim: "예약 접수와 체결은 다르다"
+Labels verbatim: "1 예약 접수", "2 실주문 전환", "증거금·잔고 확인", "3 체결 확인", "미체결 가능".
+Use only those labels. No extra text. All Korean accurate and complete. Depict sequential concepts without specific clock times.
+
+[Limit vs market]
+Use case: scientific-educational.
+Asset type: landscape body illustration for Korean finance blog, 1536x1024.
+Primary request: Compare a buy limit order with a buy market order after an overnight price jump, using a hypothetical stock and same conditions.
+Style: off-white textured paper, black fineliner, teal marker, yellow highlighter; warm handwritten sketchnote matching the previous reservation illustration. Large accurate Korean text with generous margins. No logo, no watermark, no fake screenshot.
+Composition: two side-by-side trading counter scenes, same simple investor character and same stock certificates offered for sale with a prominent price tag "105". Left buyer holds a paper with "100 이하" and pauses, certificate remains on counter, showing no execution when ask is 105. Right buyer holds an order with a blank price field, studies a price tag "105" and a small coin wallet, showing market price uncertainty. Do not depict guaranteed fill or fixed-price protection for market order.
+Title verbatim: "예약해도 가격은 고정되지 않는다"
+Left panel labels verbatim: "지정가 매수", "100 이하", "105", "가격 조건이 맞아야 체결"
+Right panel labels verbatim: "시장가 매수", "105", "체결가·필요금액 변동"
+Small footer verbatim: "가상 예시"
+Use only specified text. No arrows implying that a limit buy at 100 can fill at 105. Keep all text inside margins.
